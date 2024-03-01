@@ -4,10 +4,19 @@ import React from 'react'
 import {
   ResetPassword,
   generateMetadata as generateMeta,
-} from '@payloadcms/next/pages/ResetPassword'
-import { Metadata } from 'next'
-import config from '@payload-config'
+} from "@payloadcms/next/pages/ResetPassword/index";
+import { Metadata } from "next";
+import config from "@payload-config";
 
-export const generateMetadata = async (): Promise<Metadata> => generateMeta({ config })
+type Args = {
+  params: { [key: string]: string };
+};
 
-export default async ({ params }) => <ResetPassword config={config} token={params.token} />
+export const generateMetadata = async (): Promise<Metadata> =>
+  generateMeta({ config });
+
+const Page = async ({ params }: Args) => (
+  <ResetPassword config={config} token={params.token} />
+);
+
+export default Page;
