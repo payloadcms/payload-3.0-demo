@@ -17,4 +17,20 @@ export default buildConfig({
   db: mongooseAdapter({
     url: "mongodb://localhost:27017/next-payload-3",
   }),
+  async onInit(payload) {
+    const existingUsers = await payload.find({
+      collection: 'users',
+      limit: 1,
+    })
+
+    if (existingUsers.docs.length === 0) {
+      await payload.create({
+        collection: 'users',
+        data: {
+          email: 'dev@payloadcms.com',
+          password: 'test',
+        }
+      })
+    }
+  },
 });

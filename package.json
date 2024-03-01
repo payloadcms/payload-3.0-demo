@@ -9,12 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@payloadcms/db-mongodb": "3.0.0-alpha.3",
-    "@payloadcms/next": "3.0.0-alpha.3",
-    "@payloadcms/richtext-slate": "3.0.0-alpha.3",
-    "@payloadcms/ui": "3.0.0-alpha.3",
-    "next": "14.1.1-canary.26",
-    "payload": "3.0.0-alpha.3",
+    "@payloadcms/db-mongodb": "3.0.0-alpha.4",
+    "@payloadcms/next": "3.0.0-alpha.4",
+    "@payloadcms/richtext-slate": "3.0.0-alpha.4",
+    "@payloadcms/ui": "3.0.0-alpha.4",
+    "next": "14.1.1-canary.82",
+    "payload": "3.0.0-alpha.4",
     "react": "^18",
     "react-dom": "^18",
     "react-router": "^6.22.2",
