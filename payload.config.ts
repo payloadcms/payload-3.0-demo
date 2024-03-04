@@ -6,7 +6,17 @@ import { buildConfig } from "payload/config";
 
 export default buildConfig({
   editor: slateEditor({}), // editor-config
-  collections: [],
+  collections: [
+    {
+      slug: 'pages',
+      fields: [
+        {
+          name: 'title',
+          type: 'text',
+        }
+      ]
+    }
+  ],
   secret: "asdfasdf",
   typescript: {
     outputFile: path.resolve(__dirname, "payload-types.ts"),
