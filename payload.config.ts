@@ -3,7 +3,7 @@ import path from "path";
 import { mongooseAdapter } from "@payloadcms/db-mongodb"; // database-adapter-import
 import { slateEditor } from "@payloadcms/richtext-slate"; // editor-import
 import { buildConfig } from "payload/config";
-// import sharp from 'sharp'
+import sharp from 'sharp'
 
 export default buildConfig({
   editor: slateEditor({}), // editor-config
@@ -61,5 +61,5 @@ export default buildConfig({
       })
     }
   },
-  // sharp,
+  sharp,
 });

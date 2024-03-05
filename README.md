@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Payload 3.0 Alpha Demo
 
-## Getting Started
+This repo showcases a demo of Payload 3.0 running completely within Next.js.
 
-First, run the development server:
+It's extremely important to note that as of now, this demo contains ALPHA software and you are 100% guaranteed to run into bugs / weird stuff.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+We're actively working toward a beta release, and then a full stable release as fast as we possibly can.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Highlights
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Payload is now Next.js-native
+2. Turbopack works out of the box (this will get faster over time, expect more here)
+3. The Payload admin UI is built with React Server Components and automatically eliminates server-side code from your admin bundle, completely alleviating the need to use Webpack aliases to remove hooks, access control, etc.
+4. GraphQL is now initialized only when you hit the GraphQL endpoint, and does not affect overhead of REST API routes
+5. All UI components have been abstracted into a separate `@payloadcms/ui` package, which will be fully documented and exposed for your re-use once we hit stable 3.0 or before
+6. You can run your own Next.js site alongside of Payload in the same app
+7. You can now deploy Payload to Vercel, and there will be official support for Vercel Blob Storage coming soon (so no S3 needed for files)
+8. Server-side HMR works out of the box, with no need for `nodemon` or similar. When the Payload config changes, your app will automatically re-initialize Payload seamlessly in the background
+9. All custom React components can be server components by default, and you can decide if you want them to be server components or client components
+10. Sharp has been abstracted to be an optional dependency
+11. Payload now relies on the Web Request / Response APIs rather than the Node Request / Response
+12. Express can still be used with Next.js' Custom Server functionality
+13. Payload itself has slimmed down significantly and can now be fully portable, run anywhere. You can leverage the Payload Local API completely outside of Next.js if you want.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Work to come
 
-## Learn More
+We are making this available to our community so that we can gather your feedback and test the new approach that Payload is taking. Don't expect it to be fully functional yet. There are some things that we are aware of that are not yet completed, but we're going to keep blazing through the remaining items as fast as we can to reach stable 3.0 as quickly and efficiently as possible. Here are a few of the items that we are still working on (not a full list):
 
-To learn more about Next.js, take a look at the following resources:
+1. `beforeDuplicate` hooks
+2. The config `preview` function
+3. Focal point / cropping
+4. Documentation
+5. Vercel Blob Storage adapter
+6. Lots of bugs for sure
+7. 100% of tests passing
+8. Overall speed improvements
+9. Support for all official plugins
+10. An install script to be able to install Payload easily into any existing Next.js app
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Technical details
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**The app folder**
 
-## Deploy on Vercel
+You'll see that Payload requires a few files to be present in your `/app` folder. There are files for the admin UI as well as files for all route handlers. We've consolidated all admin views into a single `page.tsx` and consolidated most of the REST endpoints into a single `route.ts` file for simplicity, but also for development performance. With this pattern, you only have to compile the admin UI / REST API / GraphQL API a single time - and from there, it will be lightning-fast.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**The `next.config.js` `withPayload` function**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+You'll see in the Next.js config that we have a `withPayload` function installed. This function is required for Payload to operate, and it ensures compatibility with packages that Payload needs such as `drizzle-kit`, `sharp`, `pino`, and `mongodb`.
+
+---
+
+---
+
+### Find a bug?
+
+Open an issue at `https://github.com/payloadcms/payload` with as much detail as you can provide and we will tackle them as fast as we can. Let's get stable!
