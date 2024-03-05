@@ -9,15 +9,22 @@ export default buildConfig({
   collections: [
     {
       slug: 'pages',
+      admin: {
+        useAsTitle: 'title',
+      },
       fields: [
         {
           name: 'title',
           type: 'text',
+        },
+        {
+          name: 'test',
+          type: 'number',
         }
       ]
     }
   ],
-  secret: "asdfasdf",
+  secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
     outputFile: path.resolve(__dirname, "payload-types.ts"),
   },
@@ -25,7 +32,7 @@ export default buildConfig({
     schemaOutputFile: path.resolve(__dirname, "generated-schema.graphql"),
   },
   db: mongooseAdapter({
-    url: "mongodb://localhost:27017/next-payload-3",
+    url: process.env.MONGODB_URI || '',
   }),
   async onInit(payload) {
     const existingUsers = await payload.find({
