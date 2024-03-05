@@ -21,6 +21,7 @@ We're actively working toward a beta release, and then a full stable release as 
 11. Payload now relies on the Web Request / Response APIs rather than the Node Request / Response
 12. Express can still be used with Next.js' Custom Server functionality
 13. Payload itself has slimmed down significantly and can now be fully portable, run anywhere. You can leverage the Payload Local API completely outside of Next.js if you want.
+14. The data layer, including the shape of the database Payload used and the API responses in 2.0, has not been affected whatsoever
 
 ### Work to come
 
@@ -36,6 +37,7 @@ We are making this available to our community so that we can gather your feedbac
 8. Overall speed improvements
 9. Support for all official plugins
 10. An install script to be able to install Payload easily into any existing Next.js app
+11. A full list of breaking changes for 2.0 -> 3.0, including an in-depth migration guide
 
 ### Technical details
 
