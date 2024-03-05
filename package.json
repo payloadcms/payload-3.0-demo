@@ -13,7 +13,7 @@
     "@payloadcms/next": "3.0.0-alpha.12",
     "@payloadcms/richtext-slate": "3.0.0-alpha.12",
     "@payloadcms/ui": "3.0.0-alpha.12",
-    "next": "14.1.2-canary.7",
+    "next": "14.1.2",
     "payload": "3.0.0-alpha.12",
     "react": "^18",
     "react-dom": "^18",
@@ -26,15 +26,5 @@
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
     "typescript": "^5"
-  },
-  "pnpm": {
-    "supportedArchitectures": {
-      "os": [
-        "darwin"
-      ],
-      "cpu": [
-        "arm64"
-      ]
-    }
   }
 }
