@@ -4,9 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  sharp: 0.32.6
-
 dependencies:
   '@payloadcms/db-mongodb':
     specifier: 3.0.0-alpha.12
@@ -4564,7 +4561,7 @@ packages:
     engines: {node: '>=18.17.0'}
     hasBin: true
     peerDependencies:
-      sharp: 0.32.6
+      sharp: 0.33.2
     dependencies:
       '@payloadcms/translations': 3.0.0-alpha.12
       bson-objectid: 2.0.4
