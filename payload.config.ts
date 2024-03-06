@@ -1,12 +1,14 @@
 import path from "path";
-
+import { postgresAdapter } from '@payloadcms/db-postgres'
+// import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import { mongooseAdapter } from "@payloadcms/db-mongodb"; // database-adapter-import
 import { slateEditor } from "@payloadcms/richtext-slate"; // editor-import
 import { buildConfig } from "payload/config";
 import sharp from 'sharp'
 
 export default buildConfig({
-  editor: slateEditor({}), // editor-config
+  // editor: lexicalEditor({}),
+  editor: slateEditor({}),
   collections: [
     {
       slug: 'pages',
@@ -19,8 +21,8 @@ export default buildConfig({
           type: 'text',
         },
         {
-          name: 'test',
-          type: 'number',
+          name: 'content',
+          type: 'richText',
         }
       ]
     },
@@ -39,9 +41,11 @@ export default buildConfig({
   typescript: {
     outputFile: path.resolve(__dirname, "payload-types.ts"),
   },
-  graphQL: {
-    schemaOutputFile: path.resolve(__dirname, "generated-schema.graphql"),
-  },
+  // db: postgresAdapter({
+  //   pool: {
+  //     connectionString: process.env.POSTGRES_URI
+  //   }
+  // }),
   db: mongooseAdapter({
     url: process.env.MONGODB_URI || '',
   }),
