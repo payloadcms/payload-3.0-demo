@@ -36,11 +36,22 @@ We are making this available to our community so that we can gather your feedbac
 1. Vercel Blob Storage adapter
 1. Lots of bugs for sure
 1. 100% of tests passing
-1. Compiler speed improvements
+1. Compiler speed improvements (turbo is beta still, it is slower than it should be. it will get faster)
 1. Overall speed improvements
 1. Support for all official plugins
 1. An install script to be able to install Payload easily into any existing Next.js app
 1. A full list of breaking changes for 2.0 -> 3.0, including an in-depth migration guide
+
+### Using this repo
+
+To try out this repo yourself, follow the steps below:
+
+1. Clone the repo to your computer (`git clone git@github.com:payloadcms/payload-3.0-alpha-demo.git`)
+1. `cd` into the new folder by running `cd ./payload-3.0-alpha-demo`
+1. Copy the `.env.example` by running `cp .env.example .env` in the repo, then fill out the values including the connection string to your DB
+1. Install dependencies with whatever package manager you use (`yarn`, `npm install`, `pnpm i`, etc.)
+1. Fire it up (`yarn dev`, `npm run dev`, `pnpm dev`, etc.)
+1. Visit https://localhost:3000 and log in with the user created within the config's `onInit` method
 
 ### Technical details
 

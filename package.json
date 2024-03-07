@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "generate:types": "payload generate:types",
     "start": "next start",
     "lint": "next lint"
   },
@@ -12,9 +13,10 @@
     "@payloadcms/db-mongodb": "3.0.0-alpha.31",
     "@payloadcms/db-postgres": "^3.0.0-alpha.31",
     "@payloadcms/next": "3.0.0-alpha.31",
+    "@payloadcms/ui": "3.0.0-alpha.31",
     "@payloadcms/richtext-lexical": "^3.0.0-alpha.31",
     "@payloadcms/richtext-slate": "3.0.0-alpha.31",
-    "next": "^14.2.0-canary.6",
+    "next": "^14.2.0-canary.7",
     "payload": "3.0.0-alpha.31",
     "react": "^18",
     "react-dom": "^18",
