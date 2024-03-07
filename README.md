@@ -31,7 +31,7 @@ We are making this available to our community so that we can gather your feedbac
 
 1. `beforeDuplicate` hooks
 1. The config `preview` function
-1. Focal point / cropping
+1. Document Duplication
 1. Documentation
 1. Vercel Blob Storage adapter
 1. Lots of bugs for sure
