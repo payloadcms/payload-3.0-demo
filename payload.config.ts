@@ -1,5 +1,5 @@
 import path from "path";
-import { postgresAdapter } from '@payloadcms/db-postgres'
+// import { postgresAdapter } from '@payloadcms/db-postgres'
 // import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import { mongooseAdapter } from "@payloadcms/db-mongodb"; // database-adapter-import
 import { slateEditor } from "@payloadcms/richtext-slate"; // editor-import
