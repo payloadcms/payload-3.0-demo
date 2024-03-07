@@ -2,9 +2,10 @@
 
 This repo showcases a demo of Payload 3.0 running completely within Next.js.
 
-It's extremely important to note that as of now, this demo contains ALPHA software and you are 100% guaranteed to run into bugs / weird stuff.
-
-We're actively working toward a beta release, and then a full stable release as fast as we possibly can.
+> [!IMPORTANT]
+> It's extremely important to note that as of now, this demo contains ALPHA software and you are 100% guaranteed to run into bugs / weird stuff.
+> 
+> We're actively working toward a beta release, and then a full stable release as fast as we possibly can.
 
 ### Highlights
 
