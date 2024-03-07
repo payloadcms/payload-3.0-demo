@@ -1403,10 +1403,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@payloadcms/db-mongodb@3.0.0-alpha.29":
-  version "3.0.0-alpha.29"
-  resolved "https://registry.npmjs.org/@payloadcms/db-mongodb/-/db-mongodb-3.0.0-alpha.29.tgz#30c4454822e0ad4068c0568948dcef81df1d6680"
-  integrity sha512-012IHfrVDfzAvWIfXmhoYmsHB2Jl/JENM5E0BXOjC0pCTcwBv8Z7c77eeeeZSrXSOASic3B6/XSOD3hl1BX6JQ==
+"@payloadcms/db-mongodb@3.0.0-alpha.31":
+  version "3.0.0-alpha.31"
+  resolved "https://registry.npmjs.org/@payloadcms/db-mongodb/-/db-mongodb-3.0.0-alpha.31.tgz#c09309963157cf1c7a0d5e4092e3a1ded4929540"
+  integrity sha512-3n3bOGqw7pjPagNyIfGHX7spZKgVG+/RLMdfVREshAAJN08Ytrh8svxOFjvn7SSBLp6Uy+B/aGluANLxzKtP0w==
   dependencies:
     bson-objectid "2.0.4"
     deepmerge "4.3.1"
@@ -1418,10 +1418,10 @@
     prompts "2.4.2"
     uuid "9.0.0"
 
-"@payloadcms/db-postgres@^3.0.0-alpha.29":
-  version "3.0.0-alpha.29"
-  resolved "https://registry.npmjs.org/@payloadcms/db-postgres/-/db-postgres-3.0.0-alpha.29.tgz#f9673d9b278a9db7fb9d77dba9cd5438bfa7f1a6"
-  integrity sha512-BuUbGC9oWmvxHP3Ew88koto1206od+21LoJ+Srn9hP6rmNhQJt9HmR3yir+5bLYbJzOUI4bQjlpKd7oX2qaD0A==
+"@payloadcms/db-postgres@^3.0.0-alpha.31":
+  version "3.0.0-alpha.31"
+  resolved "https://registry.npmjs.org/@payloadcms/db-postgres/-/db-postgres-3.0.0-alpha.31.tgz#b154b929a31084fe90346d906dc29f03d32abc6a"
+  integrity sha512-jTowisWyIBXozrRFKubSZ+0bYBSFswzJzvlGCi4XHdi2tpn6SWE+c0nRm18y6AvifUnSxAWGt9HTUMQNjpKRdw==
   dependencies:
     "@libsql/client" "^0.5.2"
     console-table-printer "2.11.2"
@@ -1432,10 +1432,10 @@
     to-snake-case "1.0.0"
     uuid "9.0.0"
 
-"@payloadcms/graphql@3.0.0-alpha.29":
-  version "3.0.0-alpha.29"
-  resolved "https://registry.npmjs.org/@payloadcms/graphql/-/graphql-3.0.0-alpha.29.tgz#06322d54bdb95e9a492feda0fad272db3c873b7d"
-  integrity sha512-59ejTjEVG+0iyRJnc3xR3EHwfeAXY0lePtPXhzk337YMpv/HD+FYl/0FTsnBZzcY9GrnWy57733UnrMfIyyYCw==
+"@payloadcms/graphql@3.0.0-alpha.31":
+  version "3.0.0-alpha.31"
+  resolved "https://registry.npmjs.org/@payloadcms/graphql/-/graphql-3.0.0-alpha.31.tgz#00e365f0e9c581f57555b17bbd0893f0b6dd22ed"
+  integrity sha512-UMgKYI9TjmScmmtR39o3sSDbitch93k9l4uB6lvuAUrG1lWxVR4YfoxHQcE71u3Ui7SK2oduLpKXG1Voq4sA1g==
   dependencies:
     graphql "16.8.1"
     graphql-http "^1.22.0"
@@ -1445,15 +1445,15 @@
     graphql-type-json "0.3.2"
     pluralize "8.0.0"
 
-"@payloadcms/next@3.0.0-alpha.29":
-  version "3.0.0-alpha.29"
-  resolved "https://registry.npmjs.org/@payloadcms/next/-/next-3.0.0-alpha.29.tgz#0dbc9091d04dcf9a3096f3b3110ac4a4901b3d8f"
-  integrity sha512-CSXF/S1Do/nRrJ4wKblaqUmXGM6CGhHrXWqEqyp1nflu7o4zIXJSybAEfXJa90whWCEbP/7JgwwERcK8RXwmQg==
+"@payloadcms/next@3.0.0-alpha.31":
+  version "3.0.0-alpha.31"
+  resolved "https://registry.npmjs.org/@payloadcms/next/-/next-3.0.0-alpha.31.tgz#d26fa824161918635a0eee87607dd9e2ed3397ec"
+  integrity sha512-IrHjHrQn9kz1CsuuVMAs87mWoSVaFYz7C7ROQm6lUYpgijMPm4+FwaR+6jj0y1mor/oVECCPtxRTmUkKl2PxwQ==
   dependencies:
     "@dnd-kit/core" "6.0.8"
-    "@payloadcms/graphql" "3.0.0-alpha.29"
-    "@payloadcms/translations" "3.0.0-alpha.29"
-    "@payloadcms/ui" "3.0.0-alpha.29"
+    "@payloadcms/graphql" "3.0.0-alpha.31"
+    "@payloadcms/translations" "3.0.0-alpha.31"
+    "@payloadcms/ui" "3.0.0-alpha.31"
     "@types/busboy" "^1.5.3"
     busboy "^1.6.0"
     deep-equal "2.2.2"
@@ -1467,10 +1467,10 @@
     sass "^1.71.1"
     ws "^8.16.0"
 
-"@payloadcms/richtext-lexical@^3.0.0-alpha.29":
-  version "3.0.0-alpha.29"
-  resolved "https://registry.npmjs.org/@payloadcms/richtext-lexical/-/richtext-lexical-3.0.0-alpha.29.tgz#4601f86bb3a474607eb2565e8821dec2c866460e"
-  integrity sha512-8UKwFbkNfVHfuPPFd2vMoW2yOm5kwhQGlF3CV5Vur0EWvW3CJaFFBrfMmo66m06Ql540pB2iFtJ8TU+3g3U6Cg==
+"@payloadcms/richtext-lexical@^3.0.0-alpha.31":
+  version "3.0.0-alpha.31"
+  resolved "https://registry.npmjs.org/@payloadcms/richtext-lexical/-/richtext-lexical-3.0.0-alpha.31.tgz#77f97cd73e011a1bc2e5c98b47c0bf607d4a835b"
+  integrity sha512-bSMA41wOvPIUyULgLgNMlC08/pKaSPfLhjb9nMW0j2nyYybEImmiuv3RNdRlS2XlsVARljejFodsjwkHs5BO3A==
   dependencies:
     "@faceless-ui/modal" "2.0.2"
     "@lexical/headless" "0.13.1"
@@ -1493,10 +1493,10 @@
     react-error-boundary "4.0.12"
     ts-essentials "7.0.3"
 
-"@payloadcms/richtext-slate@3.0.0-alpha.29":
-  version "3.0.0-alpha.29"
-  resolved "https://registry.npmjs.org/@payloadcms/richtext-slate/-/richtext-slate-3.0.0-alpha.29.tgz#ebb2cd3f6917b9c86af4308dac33939d6f6fb2ea"
-  integrity sha512-7cQuuZ9oxaJnBpG6irUDsc9bD9mlseskUBm9vkMgBB9GG/OzHfSp6AKuzOKewbifhSyp67/qJJhXYbaLNeoYsw==
+"@payloadcms/richtext-slate@3.0.0-alpha.31":
+  version "3.0.0-alpha.31"
+  resolved "https://registry.npmjs.org/@payloadcms/richtext-slate/-/richtext-slate-3.0.0-alpha.31.tgz#a9d6defa9f97a5e6e4fff13b00924f4bd722c0e6"
+  integrity sha512-+7wftfJhHCmUQ+9FT7iDXc70x7Ym6VztNMU7mEOftwi7FSOgf2qEvm4ukWYvzkeUVmrnFQdbi2pdSoYm7ZLchA==
   dependencies:
     "@faceless-ui/modal" "2.0.2"
     is-hotkey "0.2.0"
@@ -1506,15 +1506,15 @@
     slate-hyperscript "0.81.3"
     slate-react "0.92.0"
 
-"@payloadcms/translations@3.0.0-alpha.29":
-  version "3.0.0-alpha.29"
-  resolved "https://registry.npmjs.org/@payloadcms/translations/-/translations-3.0.0-alpha.29.tgz#acc2e158e3b0992748f37e28d50e107b59dc24ef"
-  integrity sha512-Si3xWUl0l+wH3f3EdERGY4vMYiqYL2gVYieW/TVu6x7HfRlGHiBLMnReKvw8RCmc7EGx2RJxXXjubXBfGiMGOQ==
+"@payloadcms/translations@3.0.0-alpha.31":
+  version "3.0.0-alpha.31"
+  resolved "https://registry.npmjs.org/@payloadcms/translations/-/translations-3.0.0-alpha.31.tgz#82f819d5f37c3e68ed4927b83de402aa28398741"
+  integrity sha512-HavoKxuUE4ywjkiQmtoat8RqTQ9mJ/Q662+hQwMJqg21KWypTL2/9aQ2VdgZYbrn6GDM0oPp65SJMTfauN8gJA==
 
-"@payloadcms/ui@3.0.0-alpha.29":
-  version "3.0.0-alpha.29"
-  resolved "https://registry.npmjs.org/@payloadcms/ui/-/ui-3.0.0-alpha.29.tgz#a1d9322e7d2ac510bfe77056fae7fd28a3cdfd90"
-  integrity sha512-V2CGftjWg5finZbzqxFyHAIUxIaBm7PL8PoViaGD0d7Xd/IhwClWQRV9QLLtrLrYGN69KiRJ76NaW/tPKvuOgw==
+"@payloadcms/ui@3.0.0-alpha.31":
+  version "3.0.0-alpha.31"
+  resolved "https://registry.npmjs.org/@payloadcms/ui/-/ui-3.0.0-alpha.31.tgz#b45651673c7f984a76d25c3d9ecf694a7f75c830"
+  integrity sha512-9eqznkclHFblnbfKzjRVU94GLTAv+dZ6WesgMB+g8RAYUacLt6CW8hgK/XIRUJ7ltG3kJiO09JQZw+b44SJhtw==
   dependencies:
     "@dnd-kit/core" "6.0.8"
     "@dnd-kit/sortable" "7.0.2"
@@ -1522,7 +1522,7 @@
     "@faceless-ui/scroll-info" "1.3.0"
     "@faceless-ui/window-info" "2.1.2"
     "@monaco-editor/react" "4.5.1"
-    "@payloadcms/translations" "3.0.0-alpha.29"
+    "@payloadcms/translations" "3.0.0-alpha.31"
     body-scroll-lock "4.0.0-beta.0"
     bson-objectid "2.0.4"
     date-fns "2.30.0"
@@ -4278,7 +4278,7 @@ is-path-inside@^3.0.3:
   resolved "https://registry.npmjs.org/is-path-inside/-/is-path-inside-3.0.3.tgz#d231362e53a07ff2b0e0ea7fed049161ffd16283"
   integrity sha512-Fd4gABb+ycGAmKou8eMftCupSir5lRxqf4aD/vd0cD2qc4HL07OjCeuHMr8Ro4CoMaeCKDB0/ECBOVWjTwUvPQ==
 
-is-plain-object@5.0.0, is-plain-object@^5.0.0:
+is-plain-object@^5.0.0:
   version "5.0.0"
   resolved "https://registry.npmjs.org/is-plain-object/-/is-plain-object-5.0.0.tgz#4427f50ab3429e9025ea7d52e9043a9ef4159344"
   integrity sha512-VRSzKkbMm5jMDoKLbltAkFQ5Qr7VDiTFGXxYFXXowVj387GeGNOCsOH6Msy00SGZ3Fp84b1Naa1psqgcCIEP5Q==
@@ -5181,12 +5181,12 @@ path-type@^4.0.0:
   resolved "https://registry.npmjs.org/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
-payload@3.0.0-alpha.29:
-  version "3.0.0-alpha.29"
-  resolved "https://registry.npmjs.org/payload/-/payload-3.0.0-alpha.29.tgz#e2cde26d10b50f5e8da108562e76311fc388e360"
-  integrity sha512-oSU2nwMYIdk54mSe/1lKaLIEGo3DW+HM7JrmBlR+2qe0n8ueUN563wuQCliHrL9X7Hrw0Y0rcLvKjyxwwsH9IA==
+payload@3.0.0-alpha.31:
+  version "3.0.0-alpha.31"
+  resolved "https://registry.npmjs.org/payload/-/payload-3.0.0-alpha.31.tgz#5861f1fbc2c0765962151083fad9fbe8eae27236"
+  integrity sha512-2U0yRqwibBZokB1zmKBVxT4CRJkfWsjGdhYzhHe1pEWKXW3X4NyjTVd7IDXLbPBw2h+2KwZD4DYFeHIXkP1aeg==
   dependencies:
-    "@payloadcms/translations" "3.0.0-alpha.29"
+    "@payloadcms/translations" "3.0.0-alpha.31"
     bson-objectid "2.0.4"
     conf "10.2.0"
     console-table-printer "2.11.2"
@@ -5196,7 +5196,6 @@ payload@3.0.0-alpha.29:
     find-up "4.1.0"
     get-tsconfig "^4.7.2"
     http-status "1.6.2"
-    is-plain-object "5.0.0"
     joi "^17.12.1"
     json-schema-to-typescript "11.0.3"
     jsonwebtoken "9.0.1"
