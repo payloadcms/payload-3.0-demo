@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "generate:types": "payload generate:types",
+    "payload": "payload",
     "start": "next start",
     "lint": "next lint"
   },

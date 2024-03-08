@@ -11,8 +11,8 @@ export interface Config {
     pages: Page;
     media: Media;
     users: User;
-    "payload-preferences": PayloadPreference;
-    "payload-migrations": PayloadMigration;
+    'payload-preferences': PayloadPreference;
+    'payload-migrations': PayloadMigration;
   };
   globals: {};
 }
@@ -31,8 +31,8 @@ export interface Page {
         version: number;
         [k: string]: unknown;
       }[];
-      direction: ("ltr" | "rtl") | null;
-      format: "left" | "start" | "center" | "right" | "end" | "justify" | "";
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
       indent: number;
       version: number;
     };
@@ -81,7 +81,7 @@ export interface User {
 export interface PayloadPreference {
   id: string;
   user: {
-    relationTo: "users";
+    relationTo: 'users';
     value: string | User;
   };
   key?: string | null;
@@ -109,6 +109,7 @@ export interface PayloadMigration {
   createdAt: string;
 }
 
-declare module "payload" {
+
+declare module 'payload' {
   export interface GeneratedTypes extends Config {}
 }
