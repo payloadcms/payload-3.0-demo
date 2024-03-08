@@ -1,7 +1,15 @@
 import path from "path";
 // import { postgresAdapter } from '@payloadcms/db-postgres'
-import { lexicalEditor } from '@payloadcms/richtext-lexical'
-// import { slateEditor } from '@payloadcms/richtext-slate'
+import {
+  AlignFeature, BlockQuoteFeature,
+  BlocksFeature, BoldFeature, CheckListFeature, HeadingFeature, IndentFeature, InlineCodeFeature, ItalicFeature,
+  lexicalEditor,
+  LinkFeature, OrderedListFeature,
+  ParagraphFeature,
+  RelationshipFeature, UnorderedListFeature,
+  UploadFeature,
+} from '@payloadcms/richtext-lexical'
+//import { slateEditor } from '@payloadcms/richtext-slate'
 import { mongooseAdapter } from "@payloadcms/db-mongodb";
 import { buildConfig } from "payload/config";
 import sharp from 'sharp'
@@ -11,8 +19,8 @@ const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
 export default buildConfig({
-  editor: lexicalEditor({}),
-  // editor: slateEditor({}),
+  //editor: slateEditor({}),
+   editor: lexicalEditor(),
   collections: [
     {
       slug: 'pages',
@@ -53,6 +61,13 @@ export default buildConfig({
   db: mongooseAdapter({
     url: process.env.MONGODB_URI || '',
   }),
+  admin: {
+    autoLogin: {
+      email: 'dev@payloadcms.com',
+      password: 'test',
+      prefillOnly: true,
+    }
+  },
   async onInit(payload) {
     const existingUsers = await payload.find({
       collection: 'users',
