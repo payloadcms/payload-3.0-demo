@@ -15,24 +15,24 @@
     "node": ">=18.17.0"
   },
   "dependencies": {
-    "@payloadcms/db-mongodb": "3.0.0-alpha.34",
-    "@payloadcms/db-postgres": "3.0.0-alpha.34",
-    "@payloadcms/next": "3.0.0-alpha.34",
-    "@payloadcms/richtext-lexical": "3.0.0-alpha.34",
-    "@payloadcms/richtext-slate": "3.0.0-alpha.34",
-    "next": "^14.2.0-canary.7",
-    "payload": "3.0.0-alpha.34",
-    "react": "^18",
-    "react-dom": "^18",
+    "@payloadcms/db-mongodb": "alpha",
+    "@payloadcms/db-postgres": "alpha",
+    "@payloadcms/next": "alpha",
+    "@payloadcms/richtext-lexical": "alpha",
+    "@payloadcms/richtext-slate": "alpha",
+    "next": "14.2.0-canary.10",
+    "payload": "alpha",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "sharp": "0.32.6"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
+    "@types/node": "^20.11.25",
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "eslint": "^8.57.0",
     "eslint-config-next": "14.1.0",
-    "typescript": "^5"
+    "typescript": "^5.4.2"
   },
   "packageManager": "pnpm@8.15.4+sha256.cea6d0bdf2de3a0549582da3983c70c92ffc577ff4410cbf190817ddc35137c2"
 }
