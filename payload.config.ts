@@ -1,8 +1,8 @@
 import path from "path";
 // import { postgresAdapter } from '@payloadcms/db-postgres'
-// import { lexicalEditor } from '@payloadcms/richtext-lexical'
-import { slateEditor } from '@payloadcms/richtext-slate'
-import { mongooseAdapter } from "@payloadcms/db-mongodb"; // database-adapter-import
+import { lexicalEditor } from '@payloadcms/richtext-lexical'
+// import { slateEditor } from '@payloadcms/richtext-slate'
+import { mongooseAdapter } from "@payloadcms/db-mongodb";
 import { buildConfig } from "payload/config";
 import sharp from 'sharp'
 import { fileURLToPath } from "url";
@@ -11,8 +11,8 @@ const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
 export default buildConfig({
-  // editor: lexicalEditor({}),
-  editor: slateEditor({}),
+  editor: lexicalEditor({}),
+  // editor: slateEditor({}),
   collections: [
     {
       slug: 'pages',
@@ -69,5 +69,11 @@ export default buildConfig({
       })
     }
   },
+  // Sharp is now an optional dependency -
+  // if you want to resize images, crop, set focal point, etc. 
+  // make sure to install it and pass it to the config.
+
+  // This is temporary - we may make an adapter pattern
+  // for this before reaching 3.0 stable
   sharp,
 });

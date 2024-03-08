@@ -10,14 +10,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@payloadcms/db-mongodb": "3.0.0-alpha.32",
-    "@payloadcms/db-postgres": "^3.0.0-alpha.32",
-    "@payloadcms/next": "3.0.0-alpha.32",
-    "@payloadcms/richtext-lexical": "3.0.0-alpha.32",
-    "@payloadcms/richtext-slate": "3.0.0-alpha.32",
-    "@payloadcms/ui": "3.0.0-alpha.32",
+    "@payloadcms/db-mongodb": "3.0.0-alpha.33",
+    "@payloadcms/db-postgres": "^3.0.0-alpha.33",
+    "@payloadcms/next": "3.0.0-alpha.33",
+    "@payloadcms/richtext-lexical": "3.0.0-alpha.33",
+    "@payloadcms/richtext-slate": "3.0.0-alpha.33",
+    "@payloadcms/ui": "3.0.0-alpha.33",
     "next": "^14.2.0-canary.7",
-    "payload": "3.0.0-alpha.32",
+    "payload": "3.0.0-alpha.33",
     "react": "^18",
     "react-dom": "^18",
     "sharp": "0.32.6"

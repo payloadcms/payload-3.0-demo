@@ -4,7 +4,7 @@ This repo showcases a demo of Payload 3.0 running completely within Next.js.
 
 > [!IMPORTANT]
 > It's extremely important to note that as of now, this demo contains ALPHA software and you are 100% guaranteed to run into bugs / weird stuff.
-> 
+>
 > We're actively working toward a beta release, and then a full stable release as fast as we possibly can.
 
 ### Highlights
@@ -63,7 +63,9 @@ You'll see that Payload requires a few files to be present in your `/app` folder
 
 You'll see in the Next.js config that we have a `withPayload` function installed. This function is required for Payload to operate, and it ensures compatibility with packages that Payload needs such as `drizzle-kit`, `sharp`, `pino`, and `mongodb`.
 
----
+**Using a TypeScript alias to point to your Payload config**
+
+In the `tsconfig.json` within this repo, you'll see that we have `paths` set up to point `@payload-config` to the Payload config, which is located in the root. You can put your config wherever you want. By default, the `page.tsx` files and `route.ts` files within the `/app` folder use this alias. In the future, we might make it optional to use `paths` - and by default, we might just hard-code relative path imports to the config. We would like to hear your feedback on this part. What do you prefer? Use `paths` or just use relative imports?
 
 ---
 
