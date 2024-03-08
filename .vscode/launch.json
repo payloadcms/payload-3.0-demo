@@ -1,0 +1,12 @@
+{
+  "configurations": [
+    {
+      "command": "pnpm run dev",
+      "cwd": "${workspaceFolder}",
+      "name": "Run Dev (pnpm)",
+      "request": "launch",
+      "type": "node-terminal"
+    }
+  ],
+  "version": "0.2.0"
+}
