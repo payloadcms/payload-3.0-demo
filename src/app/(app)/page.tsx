@@ -6,15 +6,18 @@ const Page = () => {
   return (
     <article className={['container'].filter(Boolean).join(' ')}>
       <h1>
-        Payload 3.0 <span className='rainbow'>ALPHA</span>!
+        Payload 3.0 <span className="rainbow">ALPHA</span>!
       </h1>
       <p>
         This alpha is rapidly evolving, you can report any bugs against{' '}
-        <a href='https://github.com/payloadcms/payload-3.0-alpha-demo/issues' target='_blank'>
+        <a href="https://github.com/payloadcms/payload-3.0-alpha-demo/issues" target="_blank">
           the repo
         </a>{' '}
         or in the{' '}
-        <a href='https://discord.com/channels/967097582721572934/1215659716538273832' target='_blank'>
+        <a
+          href="https://discord.com/channels/967097582721572934/1215659716538273832"
+          target="_blank"
+        >
           dedicated channel in Discord
         </a>
         .
@@ -22,12 +25,12 @@ const Page = () => {
 
       <p>
         <strong>
-          Payload is running at <Link href='/admin'>/admin</Link>
+          Payload is running at <Link href="/admin">/admin</Link>
         </strong>
       </p>
 
       <p>
-        <Link href='/my-route' target='_blank'>
+        <Link href="/my-route" target="_blank">
           /my-route
         </Link>{' '}
         contains an example of a custom route running the Local API.
@@ -40,7 +43,8 @@ const Page = () => {
       <pre>
         <code>
           {`import { getPayload } from 'payload'
-const payload = await getPayload()
+import configPromise from "@payload-config";
+const payload = await getPayload({ config: configPromise })
 
 const data = await payload.find({
   collection: 'posts',
