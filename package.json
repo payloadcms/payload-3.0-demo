@@ -15,13 +15,13 @@
     "node": ">=18.17.0"
   },
   "dependencies": {
-    "@payloadcms/db-mongodb": "alpha",
-    "@payloadcms/db-postgres": "alpha",
-    "@payloadcms/next": "alpha",
-    "@payloadcms/richtext-lexical": "alpha",
-    "@payloadcms/richtext-slate": "alpha",
+    "@payloadcms/db-mongodb": "3.0.0-alpha.42",
+    "@payloadcms/db-postgres": "3.0.0-alpha.42",
+    "@payloadcms/next": "3.0.0-alpha.42",
+    "@payloadcms/richtext-lexical": "3.0.0-alpha.42",
+    "@payloadcms/richtext-slate": "3.0.0-alpha.42",
     "next": "14.2.0-canary.10",
-    "payload": "alpha",
+    "payload": "3.0.0-alpha.42",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sharp": "0.32.6"
