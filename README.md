@@ -53,6 +53,12 @@ To try out this repo yourself, follow the steps below:
 1. Fire it up (`yarn dev`, `npm run dev`, `pnpm dev`, etc.)
 1. Visit https://localhost:3000 and log in with the user created within the config's `onInit` method
 
+### Follow along with breaking changes
+
+There is a possibility that we will make breaking changes before releasing the beta, and then the full stable version of Payload 3.0.
+
+**To follow along with breaking changes in advance of the full, stable release,** you can keep an eye on the [CHANGELOG.md](https://github.com/payloadcms/payload-3.0-alpha-demo/blob/main/CHANGELOG.md).
+
 ### Technical details
 
 **The app folder**
