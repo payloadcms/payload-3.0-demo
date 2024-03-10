@@ -4,12 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "devsafe": "rm -rf .next && next dev",
-    "build": "next build",
-    "payload": "payload",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "NODE_OPTIONS=--no-deprecation next dev",
+    "devsafe": "rm -rf .next && NODE_OPTIONS=--no-deprecation next dev",
+    "build": "NODE_OPTIONS=--no-deprecation next build",
+    "payload": "NODE_OPTIONS=--no-deprecation payload",
+    "start": "NODE_OPTIONS=--no-deprecation next start",
+    "lint": "NODE_OPTIONS=--no-deprecation next lint"
   },
   "engines": {
     "node": ">=18.17.0"
