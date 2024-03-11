@@ -12,16 +12,16 @@
     "lint": "NODE_OPTIONS=--no-deprecation next lint"
   },
   "engines": {
-    "node": ">=18.17.0"
+    "node": ">=18.19.0"
   },
   "dependencies": {
-    "@payloadcms/db-mongodb": "3.0.0-alpha.42",
-    "@payloadcms/db-postgres": "3.0.0-alpha.42",
-    "@payloadcms/next": "3.0.0-alpha.42",
-    "@payloadcms/richtext-lexical": "3.0.0-alpha.42",
-    "@payloadcms/richtext-slate": "3.0.0-alpha.42",
+    "@payloadcms/db-mongodb": "3.0.0-alpha.44",
+    "@payloadcms/db-postgres": "3.0.0-alpha.44",
+    "@payloadcms/next": "3.0.0-alpha.44",
+    "@payloadcms/richtext-lexical": "3.0.0-alpha.44",
+    "@payloadcms/richtext-slate": "3.0.0-alpha.44",
     "next": "14.2.0-canary.10",
-    "payload": "3.0.0-alpha.42",
+    "payload": "3.0.0-alpha.44",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sharp": "0.32.6"
