@@ -4,24 +4,25 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "NODE_OPTIONS=--no-deprecation next dev",
-    "devsafe": "rm -rf .next && NODE_OPTIONS=--no-deprecation next dev",
-    "build": "NODE_OPTIONS=--no-deprecation next build",
-    "payload": "NODE_OPTIONS=--no-deprecation payload",
-    "start": "NODE_OPTIONS=--no-deprecation next start",
-    "lint": "NODE_OPTIONS=--no-deprecation next lint"
+    "dev": "cross-env NODE_OPTIONS=--no-deprecation next dev",
+    "devsafe": "rm -rf .next && cross-env NODE_OPTIONS=--no-deprecation next dev",
+    "build": "cross-env NODE_OPTIONS=--no-deprecation next build",
+    "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
+    "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
+    "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint"
   },
   "engines": {
     "node": ">=18.19.0"
   },
   "dependencies": {
-    "@payloadcms/db-mongodb": "3.0.0-alpha.45",
-    "@payloadcms/db-postgres": "3.0.0-alpha.45",
-    "@payloadcms/next": "3.0.0-alpha.45",
-    "@payloadcms/richtext-lexical": "3.0.0-alpha.45",
-    "@payloadcms/richtext-slate": "3.0.0-alpha.45",
+    "@payloadcms/db-mongodb": "3.0.0-alpha.46",
+    "@payloadcms/db-postgres": "3.0.0-alpha.46",
+    "@payloadcms/next": "3.0.0-alpha.46",
+    "@payloadcms/richtext-lexical": "3.0.0-alpha.46",
+    "@payloadcms/richtext-slate": "3.0.0-alpha.46",
+    "cross-env": "^7.0.3",
     "next": "14.2.0-canary.10",
-    "payload": "3.0.0-alpha.45",
+    "payload": "3.0.0-alpha.46",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sharp": "0.32.6"
