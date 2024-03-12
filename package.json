@@ -9,7 +9,9 @@
     "build": "cross-env NODE_OPTIONS=--no-deprecation next build",
     "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
-    "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint"
+    "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint",
+    "seedtestdoesntwork": "cross-env NODE_OPTIONS=--no-deprecation node src/seed/index.mjs",
+    "seedtest": "cross-env NODE_OPTIONS=--no-deprecation tsx src/seed/index.mjs"
   },
   "engines": {
     "node": ">=18.19.0"
