@@ -36,8 +36,7 @@ const Page = () => {
         contains an example of a custom route running the Local API.
       </p>
 
-      {/* Commented out for now due to bug */}
-      {/* <Example /> */}
+      <Example />
 
       <p>You can use the Local API in your server components like this:</p>
       <pre>
