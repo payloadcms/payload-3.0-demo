@@ -77,4 +77,4 @@ In the `tsconfig.json` within this repo, you'll see that we have `paths` set up 
 
 ### Find a bug?
 
-Open an issue at `https://github.com/payloadcms/payload` with as much detail as you can provide and we will tackle them as fast as we can. Let's get stable!
+Open an issue on this repo at `https://github.com/payloadcms/payload-3.0-alpha-demo` with as much detail as you can provide and we will tackle them as fast as we can. Let's get stable!
