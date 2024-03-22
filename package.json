@@ -15,14 +15,15 @@
     "node": ">=18.19.0"
   },
   "dependencies": {
-    "@payloadcms/db-mongodb": "3.0.0-alpha.48",
-    "@payloadcms/db-postgres": "3.0.0-alpha.48",
-    "@payloadcms/next": "3.0.0-alpha.48",
-    "@payloadcms/richtext-lexical": "3.0.0-alpha.48",
-    "@payloadcms/richtext-slate": "3.0.0-alpha.48",
+    "@payloadcms/db-mongodb": "3.0.0-alpha.49",
+    "@payloadcms/db-postgres": "3.0.0-alpha.49",
+    "@payloadcms/next": "3.0.0-alpha.49",
+    "@payloadcms/richtext-lexical": "3.0.0-alpha.49",
+    "@payloadcms/richtext-slate": "3.0.0-alpha.49",
+    "@payloadcms/ui": "3.0.0-alpha.49",
     "cross-env": "^7.0.3",
-    "next": "14.2.0-canary.7",
-    "payload": "3.0.0-alpha.48",
+    "next": "14.2.0-canary.23",
+    "payload": "3.0.0-alpha.49",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sharp": "0.32.6"
