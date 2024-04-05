@@ -6,23 +6,23 @@ settings:
 
 dependencies:
   '@payloadcms/db-mongodb':
-    specifier: 3.0.0-alpha.49
-    version: 3.0.0-alpha.49(payload@3.0.0-alpha.49)
+    specifier: 3.0.0-alpha.51
+    version: 3.0.0-alpha.51(payload@3.0.0-alpha.51)
   '@payloadcms/db-postgres':
-    specifier: 3.0.0-alpha.49
-    version: 3.0.0-alpha.49(@types/react@18.2.64)(payload@3.0.0-alpha.49)(react@18.2.0)
+    specifier: 3.0.0-alpha.51
+    version: 3.0.0-alpha.51(@types/react@18.2.64)(payload@3.0.0-alpha.51)(react@18.2.0)
   '@payloadcms/next':
-    specifier: 3.0.0-alpha.49
-    version: 3.0.0-alpha.49(@types/react@18.2.64)(http-status@1.6.2)(monaco-editor@0.47.0)(next@14.2.0-canary.23)(payload@3.0.0-alpha.49)(react-dom@18.2.0)(react@18.2.0)(scheduler@0.23.0)
+    specifier: 3.0.0-alpha.51
+    version: 3.0.0-alpha.51(@types/react@18.2.64)(http-status@1.6.2)(monaco-editor@0.47.0)(next@14.2.0-canary.23)(payload@3.0.0-alpha.51)(react-dom@18.2.0)(react@18.2.0)(scheduler@0.23.0)
   '@payloadcms/richtext-lexical':
-    specifier: 3.0.0-alpha.49
-    version: 3.0.0-alpha.49(@lexical/clipboard@0.13.1)(@payloadcms/next@3.0.0-alpha.49)(@payloadcms/translations@3.0.0-alpha.49)(@payloadcms/ui@3.0.0-alpha.49)(payload@3.0.0-alpha.49)(typescript@5.4.2)(yjs@13.6.14)
+    specifier: 3.0.0-alpha.51
+    version: 3.0.0-alpha.51(@lexical/clipboard@0.13.1)(@payloadcms/next@3.0.0-alpha.51)(@payloadcms/translations@3.0.0-alpha.51)(@payloadcms/ui@3.0.0-alpha.51)(payload@3.0.0-alpha.51)(typescript@5.4.2)(yjs@13.6.14)
   '@payloadcms/richtext-slate':
-    specifier: 3.0.0-alpha.49
-    version: 3.0.0-alpha.49(@payloadcms/translations@3.0.0-alpha.49)(@payloadcms/ui@3.0.0-alpha.49)(payload@3.0.0-alpha.49)(react-dom@18.2.0)
+    specifier: 3.0.0-alpha.51
+    version: 3.0.0-alpha.51(@payloadcms/translations@3.0.0-alpha.51)(@payloadcms/ui@3.0.0-alpha.51)(payload@3.0.0-alpha.51)(react-dom@18.2.0)
   '@payloadcms/ui':
-    specifier: 3.0.0-alpha.49
-    version: 3.0.0-alpha.49(@types/react@18.2.64)(monaco-editor@0.47.0)(next@14.2.0-canary.23)(payload@3.0.0-alpha.49)(react-dom@18.2.0)(react@18.2.0)(scheduler@0.23.0)
+    specifier: 3.0.0-alpha.51
+    version: 3.0.0-alpha.51(@types/react@18.2.64)(monaco-editor@0.47.0)(next@14.2.0-canary.23)(payload@3.0.0-alpha.51)(react-dom@18.2.0)(react@18.2.0)(scheduler@0.23.0)
   cross-env:
     specifier: ^7.0.3
     version: 7.0.3
@@ -30,8 +30,8 @@ dependencies:
     specifier: 14.2.0-canary.23
     version: 14.2.0-canary.23(react-dom@18.2.0)(react@18.2.0)
   payload:
-    specifier: 3.0.0-alpha.49
-    version: 3.0.0-alpha.49(@swc/core@1.4.6)(@swc/types@0.1.5)
+    specifier: 3.0.0-alpha.51
+    version: 3.0.0-alpha.51(@swc/core@1.4.6)(@swc/types@0.1.5)
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -1909,10 +1909,10 @@ packages:
       fastq: 1.17.1
     dev: true
 
-  /@payloadcms/db-mongodb@3.0.0-alpha.49(payload@3.0.0-alpha.49):
-    resolution: {integrity: sha512-lfom8S9hSpgHblqfqCik6vpa4KJjMR0f48Nr7aORdD4sxuE80lrl3DDDapW+w3j3yvmVb+jbfxVcpqSXvUTsTg==}
+  /@payloadcms/db-mongodb@3.0.0-alpha.51(payload@3.0.0-alpha.51):
+    resolution: {integrity: sha512-P/kEZk1Jes0kPr+vryS658j4UHxipqqNGN7dhe8kdn5mLnEaiqIiC5e6EWk7CSRdINAXZ5rtNjQZ58lple+l+w==}
     peerDependencies:
-      payload: 3.0.0-alpha.49
+      payload: 3.0.0-alpha.51
     dependencies:
       bson-objectid: 2.0.4
       deepmerge: 4.3.1
@@ -1921,7 +1921,7 @@ packages:
       mongoose: 6.12.3
       mongoose-aggregate-paginate-v2: 1.0.6
       mongoose-paginate-v2: 1.7.22
-      payload: 3.0.0-alpha.49(@swc/core@1.4.6)(@swc/types@0.1.5)
+      payload: 3.0.0-alpha.51(@swc/core@1.4.6)(@swc/types@0.1.5)
       prompts: 2.4.2
       uuid: 9.0.0
     transitivePeerDependencies:
@@ -1929,16 +1929,16 @@ packages:
       - supports-color
     dev: false
 
-  /@payloadcms/db-postgres@3.0.0-alpha.49(@types/react@18.2.64)(payload@3.0.0-alpha.49)(react@18.2.0):
-    resolution: {integrity: sha512-f4iQ1K0Z5x+Xn9EOAk5TXwb5tFlNQn7WF9zwIzl3Xl1+V59rulxiNxk1UDuwz3f/2+12ItOF/LCdUyBqu84FRA==}
+  /@payloadcms/db-postgres@3.0.0-alpha.51(@types/react@18.2.64)(payload@3.0.0-alpha.51)(react@18.2.0):
+    resolution: {integrity: sha512-cl9mH5jD3wubhyyfIOlW2K4K3tYi3iUaYR+2A6mON4KCTbz69lMAYbakEXhv++xqFL1xhNDV/0RDD51oz+7P5g==}
     peerDependencies:
-      payload: 3.0.0-alpha.49
+      payload: 3.0.0-alpha.51
     dependencies:
       '@libsql/client': 0.5.3
       console-table-printer: 2.11.2
       drizzle-kit: 0.20.14-1f2c838
       drizzle-orm: 0.29.4(@libsql/client@0.5.3)(@types/react@18.2.64)(pg@8.11.3)(react@18.2.0)
-      payload: 3.0.0-alpha.49(@swc/core@1.4.6)(@swc/types@0.1.5)
+      payload: 3.0.0-alpha.51(@swc/core@1.4.6)(@swc/types@0.1.5)
       pg: 8.11.3
       prompts: 2.4.2
       to-snake-case: 1.0.0
@@ -1971,10 +1971,10 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@payloadcms/graphql@3.0.0-alpha.49(payload@3.0.0-alpha.49):
-    resolution: {integrity: sha512-NecrgoYtKwJxXKBOeFwRTuvC6B3y5xliX3+44XTIXya/q6SE22hQ9rzeKvRQ82cBY6p+pByoMn72AZycrxZ6yw==}
+  /@payloadcms/graphql@3.0.0-alpha.51(payload@3.0.0-alpha.51):
+    resolution: {integrity: sha512-Mbz5vapfiCiMl0IuBFwBtp3mBO5LnbcTicrrYTtV63Ap4wQrHTCAkJfN92Vha98fUAZso7W/Yo2w8hzc2P5PfQ==}
     peerDependencies:
-      payload: 3.0.0-alpha.49
+      payload: 3.0.0-alpha.51
     dependencies:
       graphql: 16.8.1
       graphql-http: 1.22.0(graphql@16.8.1)
@@ -1982,23 +1982,23 @@ packages:
       graphql-query-complexity: 0.12.0(graphql@16.8.1)
       graphql-scalars: 1.22.2(graphql@16.8.1)
       graphql-type-json: 0.3.2(graphql@16.8.1)
-      payload: 3.0.0-alpha.49(@swc/core@1.4.6)(@swc/types@0.1.5)
+      payload: 3.0.0-alpha.51(@swc/core@1.4.6)(@swc/types@0.1.5)
       pluralize: 8.0.0
     dev: false
 
-  /@payloadcms/next@3.0.0-alpha.49(@types/react@18.2.64)(http-status@1.6.2)(monaco-editor@0.47.0)(next@14.2.0-canary.23)(payload@3.0.0-alpha.49)(react-dom@18.2.0)(react@18.2.0)(scheduler@0.23.0):
-    resolution: {integrity: sha512-FgYpBBYN5v0BI/vOlIpdEB5NVoJb7Kn198qB6sXJEzFTgENnwRXbKkOQDVp/K0d8h04nwbHZ6g7DP0WXTTxXVw==}
+  /@payloadcms/next@3.0.0-alpha.51(@types/react@18.2.64)(http-status@1.6.2)(monaco-editor@0.47.0)(next@14.2.0-canary.23)(payload@3.0.0-alpha.51)(react-dom@18.2.0)(react@18.2.0)(scheduler@0.23.0):
+    resolution: {integrity: sha512-BAcKqr9i4uYOVZUUwkos6A5n5iVuvTaL8xGXCm9DQ5uSxRXMCV69nq+UnOItr7oufL24hZRBfmbPo39OhjS+mw==}
     engines: {node: '>=18.17.0'}
     hasBin: true
     peerDependencies:
       http-status: 1.6.2
       next: 14.2.0-canary.23
-      payload: 3.0.0-alpha.49
+      payload: 3.0.0-alpha.51
     dependencies:
       '@dnd-kit/core': 6.0.8(react-dom@18.2.0)(react@18.2.0)
-      '@payloadcms/graphql': 3.0.0-alpha.49(payload@3.0.0-alpha.49)
-      '@payloadcms/translations': 3.0.0-alpha.49
-      '@payloadcms/ui': 3.0.0-alpha.49(@types/react@18.2.64)(monaco-editor@0.47.0)(next@14.2.0-canary.23)(payload@3.0.0-alpha.49)(react-dom@18.2.0)(react@18.2.0)(scheduler@0.23.0)
+      '@payloadcms/graphql': 3.0.0-alpha.51(payload@3.0.0-alpha.51)
+      '@payloadcms/translations': 3.0.0-alpha.51
+      '@payloadcms/ui': 3.0.0-alpha.51(@types/react@18.2.64)(monaco-editor@0.47.0)(next@14.2.0-canary.23)(payload@3.0.0-alpha.51)(react-dom@18.2.0)(react@18.2.0)(scheduler@0.23.0)
       '@types/busboy': 1.5.3
       busboy: 1.6.0
       deep-equal: 2.2.2
@@ -2008,7 +2008,7 @@ packages:
       http-status: 1.6.2
       next: 14.2.0-canary.23(react-dom@18.2.0)(react@18.2.0)
       path-to-regexp: 6.2.1
-      payload: 3.0.0-alpha.49(@swc/core@1.4.6)(@swc/types@0.1.5)
+      payload: 3.0.0-alpha.51(@swc/core@1.4.6)(@swc/types@0.1.5)
       qs: 6.11.2
       react-diff-viewer-continued: 3.2.6(react-dom@18.2.0)(react@18.2.0)
       react-toastify: 8.2.0(react-dom@18.2.0)(react@18.2.0)
@@ -2025,14 +2025,14 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@payloadcms/richtext-lexical@3.0.0-alpha.49(@lexical/clipboard@0.13.1)(@payloadcms/next@3.0.0-alpha.49)(@payloadcms/translations@3.0.0-alpha.49)(@payloadcms/ui@3.0.0-alpha.49)(payload@3.0.0-alpha.49)(typescript@5.4.2)(yjs@13.6.14):
-    resolution: {integrity: sha512-gbrBorSW0CzZR9Bz/WfV/1If9M5KUouPYcryRxLzcUeqoaFC1kUWxF75duOzb9SUKf0SiILJ5c+s2vfeefenlQ==}
+  /@payloadcms/richtext-lexical@3.0.0-alpha.51(@lexical/clipboard@0.13.1)(@payloadcms/next@3.0.0-alpha.51)(@payloadcms/translations@3.0.0-alpha.51)(@payloadcms/ui@3.0.0-alpha.51)(payload@3.0.0-alpha.51)(typescript@5.4.2)(yjs@13.6.14):
+    resolution: {integrity: sha512-67tAsvZfIaQ1BR20NpAGHERCXLK45qyZtXS/V31ZhtkpeDF56wzhycLM6vtFkZV5aaGvAOs3/9NXTFSlmxCLkQ==}
     engines: {node: '>=18.17.0'}
     peerDependencies:
-      '@payloadcms/next': 3.0.0-alpha.49
-      '@payloadcms/translations': 3.0.0-alpha.49
-      '@payloadcms/ui': 3.0.0-alpha.49
-      payload: 3.0.0-alpha.49
+      '@payloadcms/next': 3.0.0-alpha.51
+      '@payloadcms/translations': 3.0.0-alpha.51
+      '@payloadcms/ui': 3.0.0-alpha.51
+      payload: 3.0.0-alpha.51
     dependencies:
       '@faceless-ui/modal': 2.0.2(react-dom@18.2.0)(react@18.2.0)
       '@lexical/headless': 0.13.1(lexical@0.13.1)
@@ -2044,16 +2044,16 @@ packages:
       '@lexical/rich-text': 0.13.1(@lexical/clipboard@0.13.1)(@lexical/selection@0.13.1)(@lexical/utils@0.13.1)(lexical@0.13.1)
       '@lexical/selection': 0.13.1(lexical@0.13.1)
       '@lexical/utils': 0.13.1(lexical@0.13.1)
-      '@payloadcms/next': 3.0.0-alpha.49(@types/react@18.2.64)(http-status@1.6.2)(monaco-editor@0.47.0)(next@14.2.0-canary.23)(payload@3.0.0-alpha.49)(react-dom@18.2.0)(react@18.2.0)(scheduler@0.23.0)
-      '@payloadcms/translations': 3.0.0-alpha.49
-      '@payloadcms/ui': 3.0.0-alpha.49(@types/react@18.2.64)(monaco-editor@0.47.0)(next@14.2.0-canary.23)(payload@3.0.0-alpha.49)(react-dom@18.2.0)(react@18.2.0)(scheduler@0.23.0)
+      '@payloadcms/next': 3.0.0-alpha.51(@types/react@18.2.64)(http-status@1.6.2)(monaco-editor@0.47.0)(next@14.2.0-canary.23)(payload@3.0.0-alpha.51)(react-dom@18.2.0)(react@18.2.0)(scheduler@0.23.0)
+      '@payloadcms/translations': 3.0.0-alpha.51
+      '@payloadcms/ui': 3.0.0-alpha.51(@types/react@18.2.64)(monaco-editor@0.47.0)(next@14.2.0-canary.23)(payload@3.0.0-alpha.51)(react-dom@18.2.0)(react@18.2.0)(scheduler@0.23.0)
       bson-objectid: 2.0.4
       classnames: 2.5.1
       deep-equal: 2.2.3
       json-schema: 0.4.0
       lexical: 0.13.1
       lodash: 4.17.21
-      payload: 3.0.0-alpha.49(@swc/core@1.4.6)(@swc/types@0.1.5)
+      payload: 3.0.0-alpha.51(@swc/core@1.4.6)(@swc/types@0.1.5)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-error-boundary: 4.0.12(react@18.2.0)
@@ -2064,19 +2064,19 @@ packages:
       - yjs
     dev: false
 
-  /@payloadcms/richtext-slate@3.0.0-alpha.49(@payloadcms/translations@3.0.0-alpha.49)(@payloadcms/ui@3.0.0-alpha.49)(payload@3.0.0-alpha.49)(react-dom@18.2.0):
-    resolution: {integrity: sha512-rkpcjNoJYTJ6BVqmKR+c6mpORXxdcLblzyOqpCqIMFUeD+UCE2diJHBLrvWP+Nn16m+JYbGSb0d8JrI3V7Xf7w==}
+  /@payloadcms/richtext-slate@3.0.0-alpha.51(@payloadcms/translations@3.0.0-alpha.51)(@payloadcms/ui@3.0.0-alpha.51)(payload@3.0.0-alpha.51)(react-dom@18.2.0):
+    resolution: {integrity: sha512-mHwXkVH38vAHlAyseEMG6/lIS5O4FSCrN0MCVYhn1lta5MGLNIuD0kBSwueGxdBIdfVOB1E3o8BpHhflH/TdqA==}
     engines: {node: '>=18.17.0'}
     peerDependencies:
-      '@payloadcms/translations': 3.0.0-alpha.49
-      '@payloadcms/ui': 3.0.0-alpha.49
-      payload: 3.0.0-alpha.49
+      '@payloadcms/translations': 3.0.0-alpha.51
+      '@payloadcms/ui': 3.0.0-alpha.51
+      payload: 3.0.0-alpha.51
     dependencies:
       '@faceless-ui/modal': 2.0.2(react-dom@18.2.0)(react@18.2.0)
-      '@payloadcms/translations': 3.0.0-alpha.49
-      '@payloadcms/ui': 3.0.0-alpha.49(@types/react@18.2.64)(monaco-editor@0.47.0)(next@14.2.0-canary.23)(payload@3.0.0-alpha.49)(react-dom@18.2.0)(react@18.2.0)(scheduler@0.23.0)
+      '@payloadcms/translations': 3.0.0-alpha.51
+      '@payloadcms/ui': 3.0.0-alpha.51(@types/react@18.2.64)(monaco-editor@0.47.0)(next@14.2.0-canary.23)(payload@3.0.0-alpha.51)(react-dom@18.2.0)(react@18.2.0)(scheduler@0.23.0)
       is-hotkey: 0.2.0
-      payload: 3.0.0-alpha.49(@swc/core@1.4.6)(@swc/types@0.1.5)
+      payload: 3.0.0-alpha.51(@swc/core@1.4.6)(@swc/types@0.1.5)
       react: 18.2.0
       slate: 0.91.4
       slate-history: 0.86.0(slate@0.91.4)
@@ -2086,16 +2086,16 @@ packages:
       - react-dom
     dev: false
 
-  /@payloadcms/translations@3.0.0-alpha.49:
-    resolution: {integrity: sha512-5LF2LGNDgPw5itXdEM7HQEYyqBq7oonufX/4tkOdtp7W5vUscNZdODU6BKgQleQhPGWrnK8HU3wcOGbL15P4MQ==}
+  /@payloadcms/translations@3.0.0-alpha.51:
+    resolution: {integrity: sha512-9NcvDhFszvexCeO2n6xhpFMs5PA+tPIgJ8sVhGD72DBZh7PtyLtyrvlpuvPopFQ0uL0Qway4OAJ/GaOfh4EEIQ==}
     dev: false
 
-  /@payloadcms/ui@3.0.0-alpha.49(@types/react@18.2.64)(monaco-editor@0.47.0)(next@14.2.0-canary.23)(payload@3.0.0-alpha.49)(react-dom@18.2.0)(react@18.2.0)(scheduler@0.23.0):
-    resolution: {integrity: sha512-qtObjJqOg3gnrZ7bwSz7j4OJ4bsi+ffK3MS5Vf47zY9LBt+2Z9eAuup6mT53923QqXo/NuDp7r8nZZeeCbDR1w==}
+  /@payloadcms/ui@3.0.0-alpha.51(@types/react@18.2.64)(monaco-editor@0.47.0)(next@14.2.0-canary.23)(payload@3.0.0-alpha.51)(react-dom@18.2.0)(react@18.2.0)(scheduler@0.23.0):
+    resolution: {integrity: sha512-dImhGWk2zv/hnJzS5Y4I+Muyn1E5bvbKltnnIyphTgyFM+2ewPhXmvn0M4mMqmIEpcilUn9uAUZjBfnW6VRZlQ==}
     engines: {node: '>=18.17.0'}
     peerDependencies:
       next: 14.2.0-canary.23
-      payload: 3.0.0-alpha.49
+      payload: 3.0.0-alpha.51
       react: ^18.0.0
     dependencies:
       '@dnd-kit/core': 6.0.8(react-dom@18.2.0)(react@18.2.0)
@@ -2104,7 +2104,7 @@ packages:
       '@faceless-ui/scroll-info': 1.3.0(react-dom@18.2.0)(react@18.2.0)
       '@faceless-ui/window-info': 2.1.2(react-dom@18.2.0)(react@18.2.0)
       '@monaco-editor/react': 4.5.1(monaco-editor@0.47.0)(react-dom@18.2.0)(react@18.2.0)
-      '@payloadcms/translations': 3.0.0-alpha.49
+      '@payloadcms/translations': 3.0.0-alpha.51
       body-scroll-lock: 4.0.0-beta.0
       bson-objectid: 2.0.4
       date-fns: 3.3.1
@@ -2113,7 +2113,7 @@ packages:
       md5: 2.3.0
       next: 14.2.0-canary.23(react-dom@18.2.0)(react@18.2.0)
       object-to-formdata: 4.5.1
-      payload: 3.0.0-alpha.49(@swc/core@1.4.6)(@swc/types@0.1.5)
+      payload: 3.0.0-alpha.51(@swc/core@1.4.6)(@swc/types@0.1.5)
       qs: 6.11.2
       react: 18.2.0
       react-animate-height: 2.1.2(react-dom@18.2.0)(react@18.2.0)
@@ -2794,6 +2794,12 @@ packages:
     resolution: {integrity: sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==}
     dev: false
 
+  /@types/needle@3.3.0:
+    resolution: {integrity: sha512-UFIuc1gdyzAqeVUYpSL+cliw2MmU/ZUhVZKE7Zo4wPbgc8hbljeKSnn6ls6iG8r5jpegPXLUIhJ+Wb2kLVs8cg==}
+    dependencies:
+      '@types/node': 20.11.25
+    dev: false
+
   /@types/node-fetch@2.6.11:
     resolution: {integrity: sha512-24xFj9R5+rfQJLRyM56qh+wnVSYhyXC2tkoBndtY0U+vubqNsYXGjufB2nn8Q6gt0LrARwL6UBtMCSVCwl4B1g==}
     dependencies:
@@ -2812,6 +2818,13 @@ packages:
 
   /@types/prettier@2.7.3:
     resolution: {integrity: sha512-+68kP9yzs4LMp7VNh8gdzMSPZFL44MLGqiHWvttYJe+6qnuVr4Ek9wSBQoveqY/r+LwjCcU29kNVkidwim+kYA==}
+    dev: false
+
+  /@types/probe-image-size@7.2.4:
+    resolution: {integrity: sha512-HVqYj3L+D+S/6qpQRv5qMxrD/5pglzZuhP7ZIqgVSZ+Ck4z1TCFkNIRG8WesFueQTqWFTSgkkAl6f8lwxFPQSw==}
+    dependencies:
+      '@types/needle': 3.3.0
+      '@types/node': 20.11.25
     dev: false
 
   /@types/prop-types@15.7.11:
@@ -3583,6 +3596,17 @@ packages:
       mimic-fn: 3.1.0
     dev: false
 
+  /debug@2.6.9:
+    resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+    dependencies:
+      ms: 2.0.0
+    dev: false
+
   /debug@3.2.7:
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
     peerDependencies:
@@ -3592,7 +3616,6 @@ packages:
         optional: true
     dependencies:
       ms: 2.1.3
-    dev: true
 
   /debug@4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
@@ -4911,6 +4934,13 @@ packages:
     engines: {node: '>= 0.4.0'}
     dev: false
 
+  /iconv-lite@0.4.24:
+    resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      safer-buffer: 2.1.2
+    dev: false
+
   /ieee754@1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
     dev: false
@@ -4919,14 +4949,6 @@ packages:
     resolution: {integrity: sha512-5Fytz/IraMjqpwfd34ke28PTVMjZjJG2MPn5t7OE4eUCUNf8BAa7b5WUS9/Qvr6mwOQS7Mk6vdsMno5he+T8Xw==}
     engines: {node: '>= 4'}
     dev: true
-
-  /image-size@1.1.1:
-    resolution: {integrity: sha512-541xKlUw6jr/6gGuk92F+mYM5zaFAc5ahphvkqvNe2bQ6gVBkd6bfrmVJ2t4KDAfikAYZyIqTnktX3i6/aQDrQ==}
-    engines: {node: '>=16.x'}
-    hasBin: true
-    dependencies:
-      queue: 6.0.2
-    dev: false
 
   /immer@9.0.21:
     resolution: {integrity: sha512-bc4NBHqOqSfRW7POMkHd51LvClaeMXpm8dx0e8oE2GORbq5aRK7Bxl4FyzVLdGtLmvLKL7BTDBG5ACQm4HWjTA==}
@@ -5434,7 +5456,6 @@ packages:
 
   /lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
-    dev: true
 
   /lodash.throttle@4.1.1:
     resolution: {integrity: sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==}
@@ -5651,6 +5672,10 @@ packages:
       - supports-color
     dev: false
 
+  /ms@2.0.0:
+    resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}
+    dev: false
+
   /ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
 
@@ -5678,6 +5703,18 @@ packages:
   /natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
+
+  /needle@2.9.1:
+    resolution: {integrity: sha512-6R9fqJ5Zcmf+uYaFgdIHmLwNldn5HbK8L5ybn7Uz+ylX/rnOsSp1AHcvQSrCaFN+qNM1wpymHqD7mVasEOlHGQ==}
+    engines: {node: '>= 4.4.x'}
+    hasBin: true
+    dependencies:
+      debug: 3.2.7
+      iconv-lite: 0.4.24
+      sax: 1.3.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
 
   /next-tick@1.1.0:
     resolution: {integrity: sha512-CXdUiJembsNjuToQvxayPZF9Vqht7hewsvy2sOWafLvi2awflj9mOC6bHIg50orX8IJvWKY9wYQ/zB2kogPslQ==}
@@ -5970,14 +6007,15 @@ packages:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==}
     engines: {node: '>=8'}
 
-  /payload@3.0.0-alpha.49(@swc/core@1.4.6)(@swc/types@0.1.5):
-    resolution: {integrity: sha512-Ft4xzRJZk/P91RSuEN92S1bOhHcog7QR7OTqI58B+vl5A5FIry41C845YSh3yaroj6pPW7TnWhl84efYxEqG5g==}
+  /payload@3.0.0-alpha.51(@swc/core@1.4.6)(@swc/types@0.1.5):
+    resolution: {integrity: sha512-pDPylaCMQ+72kvtAJH3nd6kfbL9MnkN6NIUf/r5RanXhp1pfh2rYJcFXF/oe1xnNnu6lL18CClfDYGsRNoK4rg==}
     engines: {node: '>=18.17.0'}
     hasBin: true
     dependencies:
-      '@payloadcms/translations': 3.0.0-alpha.49
+      '@payloadcms/translations': 3.0.0-alpha.51
       '@swc-node/core': 1.13.0(@swc/core@1.4.6)(@swc/types@0.1.5)
       '@swc-node/sourcemap-support': 0.5.0
+      '@types/probe-image-size': 7.2.4
       bson-objectid: 2.0.4
       conf: 10.2.0
       console-table-printer: 2.11.2
@@ -5988,7 +6026,6 @@ packages:
       find-up: 4.1.0
       get-tsconfig: 4.7.3
       http-status: 1.6.2
-      image-size: 1.1.1
       joi: 17.12.2
       json-schema-to-typescript: 11.0.3
       jsonwebtoken: 9.0.1
@@ -6000,12 +6037,14 @@ packages:
       pino-pretty: 10.2.0
       pirates: 4.0.6
       pluralize: 8.0.0
+      probe-image-size: 7.2.3
       sanitize-filename: 1.6.3
       scheduler: 0.23.0
       scmp: 2.1.0
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/types'
+      - supports-color
     dev: false
 
   /peek-readable@4.1.0:
@@ -6227,6 +6266,16 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
+  /probe-image-size@7.2.3:
+    resolution: {integrity: sha512-HubhG4Rb2UH8YtV4ba0Vp5bQ7L78RTONYu/ujmCu5nBI8wGv24s4E9xSKBi0N1MowRpxk76pFCpJtW0KPzOK0w==}
+    dependencies:
+      lodash.merge: 4.6.2
+      needle: 2.9.1
+      stream-parser: 0.3.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /process-warning@2.3.2:
     resolution: {integrity: sha512-n9wh8tvBe5sFmsqlg+XQhaQLumwpqoAUruLwjCopgTmUBjJ/fjtBsJzKleCaIGBOMXYEhp1YfKl4d7rJ5ZKJGA==}
     dev: false
@@ -6283,12 +6332,6 @@ packages:
   /queue-tick@1.0.1:
     resolution: {integrity: sha512-kJt5qhMxoszgU/62PLP1CJytzd2NKetjSRnyuj31fDd3Rlcz3fzlFdFLD1SItunPwyqEOkca6GbV612BWfaBag==}
     requiresBuild: true
-    dev: false
-
-  /queue@6.0.2:
-    resolution: {integrity: sha512-iHZWu+q3IdFZFX36ro/lKBkSvfkztY5Y7HMiPlOUjhupPcG2JMfst2KKEpu5XndviX/3UhFbRngUPNKtgvtZiA==}
-    dependencies:
-      inherits: 2.0.4
     dev: false
 
   /quick-format-unescaped@4.0.4:
@@ -6602,6 +6645,10 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
+  /safer-buffer@2.1.2:
+    resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
+    dev: false
+
   /sanitize-filename@1.6.3:
     resolution: {integrity: sha512-y/52Mcy7aw3gRm7IrcGDFx/bCk4AhRh2eI9luHOQM86nZsqwiRkkq2GekHXBBD+SmPidc8i2PqtYZl+pWJ8Oeg==}
     dependencies:
@@ -6616,6 +6663,10 @@ packages:
       chokidar: 3.6.0
       immutable: 4.3.5
       source-map-js: 1.0.2
+    dev: false
+
+  /sax@1.3.0:
+    resolution: {integrity: sha512-0s+oAmw9zLl1V1cS9BtZN7JAd0cW5e0QH4W3LWEK6a4LaLEA2OTpGYWDY+6XasBLtz6wkm3u1xRw95mRuJ59WA==}
     dev: false
 
   /scheduler@0.23.0:
@@ -6858,6 +6909,14 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       internal-slot: 1.0.7
+    dev: false
+
+  /stream-parser@0.3.1:
+    resolution: {integrity: sha512-bJ/HgKq41nlKvlhccD5kaCr/P+Hu0wPNKPJOH7en+YrJu/9EgqUF+88w5Jb6KNcjOFMhfX4B2asfeAtIGuHObQ==}
+    dependencies:
+      debug: 2.6.9
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /streamsearch@1.1.0:
