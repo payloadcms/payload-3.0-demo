@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/bin/register/clientExtensions.ts"],"sourcesContent":["export const CLIENT_EXTENSIONS = [\n  '.scss',\n  '.css',\n  '.svg',\n  '.png',\n  '.jpg',\n  '.eot',\n  '.ttf',\n  '.woff',\n  '.woff2',\n]\n"],"names":["CLIENT_EXTENSIONS"],"mappings":"AAAA,OAAO,MAAMA,oBAAoB;IAC/B;IACA;IACA;IACA;IACA;IACA;IACA;IACA;IACA;CACD,CAAA"}

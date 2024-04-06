@@ -9,7 +9,8 @@
     "build": "cross-env NODE_OPTIONS=--no-deprecation next build",
     "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
-    "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint"
+    "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint",
+    "hey": "tsx src/script.ts"
   },
   "engines": {
     "node": ">=18.19.0"
@@ -21,20 +22,27 @@
     "@payloadcms/richtext-lexical": "3.0.0-alpha.54",
     "@payloadcms/richtext-slate": "3.0.0-alpha.54",
     "@payloadcms/ui": "3.0.0-alpha.54",
+    "@swc-node/core": "^1.13.0",
+    "@swc-node/sourcemap-support": "^0.5.0",
     "cross-env": "^7.0.3",
+    "get-tsconfig": "^4.7.3",
+    "lodash": "^4.17.21",
     "next": "14.2.0-canary.23",
     "payload": "3.0.0-alpha.54",
+    "pirates": "^4.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sharp": "0.32.6"
   },
   "devDependencies": {
+    "@swc-node/register": "^1.9.0",
     "@types/node": "^20.11.25",
     "@types/react": "^18.2.64",
     "@types/react-dom": "^18.2.21",
     "dotenv": "^16.4.5",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.1.0",
+    "ts-node": "^10.9.2",
     "tsx": "^4.7.1",
     "typescript": "^5.4.2"
   },
