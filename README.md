@@ -50,6 +50,7 @@ To try out this repo yourself, follow the steps below:
 1. `cd` into the new folder by running `cd ./payload-3.0-alpha-demo`
 1. Copy the `.env.example` by running `cp .env.example .env` in the repo, then fill out the values including the connection string to your DB
 1. Install dependencies with whatever package manager you use (`yarn`, `npm install`, `pnpm i`, etc.)
+1. Start your database. For local postgresql use `.\start-database.sh` to start it in docker container.
 1. Fire it up (`yarn dev`, `npm run dev`, `pnpm dev`, etc.)
 1. Visit https://localhost:3000 and log in with the user created within the config's `onInit` method
 
