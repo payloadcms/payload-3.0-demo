@@ -6,11 +6,11 @@ const Page = () => {
   return (
     <article className={['container'].filter(Boolean).join(' ')}>
       <h1>
-        Payload 3.0 <span className="rainbow">ALPHA</span>!
+        Payload 3.0 <span className="rainbow">BETA</span>!
       </h1>
       <p>
-        This alpha is rapidly evolving, you can report any bugs against{' '}
-        <a href="https://github.com/payloadcms/payload-3.0-alpha-demo/issues" target="_blank">
+        This BETA is rapidly evolving, you can report any bugs against{' '}
+        <a href="https://github.com/payloadcms/payload-3.0-demo/issues" target="_blank">
           the repo
         </a>{' '}
         or in the{' '}
