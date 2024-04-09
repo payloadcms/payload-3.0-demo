@@ -1,11 +1,11 @@
-# Payload 3.0 Demo
+# Payload 3.0 Beta Demo
 
-This repo showcases a demo of Payload 3.0 running completely within Next.js.
+This repo showcases a demo of the Payload 3.0 Beta running completely within Next.js.
 
 > [!IMPORTANT]
 > It's extremely important to note that as of now, this demo contains BETA software and you are 100% guaranteed to run into bugs / weird stuff.
 >
-> We're actively working toward a beta release, and then a full stable release as fast as we possibly can.
+> We're actively working toward a stable release as fast as we possibly can.
 
 ### Highlights
 
