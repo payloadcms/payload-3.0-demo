@@ -1,9 +1,9 @@
-# Payload 3.0 Alpha Demo
+# Payload 3.0 Demo
 
 This repo showcases a demo of Payload 3.0 running completely within Next.js.
 
 > [!IMPORTANT]
-> It's extremely important to note that as of now, this demo contains ALPHA software and you are 100% guaranteed to run into bugs / weird stuff.
+> It's extremely important to note that as of now, this demo contains BETA software and you are 100% guaranteed to run into bugs / weird stuff.
 >
 > We're actively working toward a beta release, and then a full stable release as fast as we possibly can.
 
@@ -46,19 +46,19 @@ We are making this available to our community so that we can gather your feedbac
 
 To try out this repo yourself, follow the steps below:
 
-1. Clone the repo to your computer (`git clone git@github.com:payloadcms/payload-3.0-alpha-demo.git`)
-1. `cd` into the new folder by running `cd ./payload-3.0-alpha-demo`
-1. Copy the `.env.example` by running `cp .env.example .env` in the repo, then fill out the values including the connection string to your DB
-1. Install dependencies with whatever package manager you use (`yarn`, `npm install`, `pnpm i`, etc.)
-1. Start your database. For local postgresql use `.\start-database.sh` to start it in docker container.
-1. Fire it up (`yarn dev`, `npm run dev`, `pnpm dev`, etc.)
-1. Visit https://localhost:3000 and log in with the user created within the config's `onInit` method
+1. Clone the repo to your computer (`git clone git@github.com:payloadcms/payload-3.0-demo.git`)
+2. `cd` into the new folder by running `cd ./payload-3.0-demo`
+3. Copy the `.env.example` by running `cp .env.example .env` in the repo, then fill out the values including the connection string to your DB
+4. Install dependencies with whatever package manager you use (`yarn`, `npm install`, `pnpm i`, etc.)
+5. Start your database. For local postgresql use `.\start-database.sh` to start it in docker container.
+6. Fire it up (`yarn dev`, `npm run dev`, `pnpm dev`, etc.)
+7. Visit https://localhost:3000 and log in with the user created within the config's `onInit` method
 
 ### Follow along with breaking changes
 
 There is a possibility that we will make breaking changes before releasing the beta, and then the full stable version of Payload 3.0.
 
-**To follow along with breaking changes in advance of the full, stable release,** you can keep an eye on the [CHANGELOG.md](https://github.com/payloadcms/payload-3.0-alpha-demo/blob/main/CHANGELOG.md).
+**To follow along with breaking changes in advance of the full, stable release,** you can keep an eye on the [CHANGELOG.md](https://github.com/payloadcms/payload-3.0-demo/blob/main/CHANGELOG.md).
 
 ### Technical details
 
@@ -78,4 +78,4 @@ In the `tsconfig.json` within this repo, you'll see that we have `paths` set up 
 
 ### Find a bug?
 
-Open an issue on this repo at `https://github.com/payloadcms/payload-3.0-alpha-demo` with as much detail as you can provide and we will tackle them as fast as we can. Let's get stable!
+Open an issue on this repo at `https://github.com/payloadcms/payload-3.0-demo` with as much detail as you can provide and we will tackle them as fast as we can. Let's get stable!
