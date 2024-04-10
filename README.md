@@ -29,16 +29,12 @@ This repo showcases a demo of the Payload 3.0 Beta running completely within Nex
 
 We are making this available to our community so that we can gather your feedback and test the new approach that Payload is taking. Don't expect it to be fully functional yet. There are some things that we are aware of that are not yet completed, but we're going to keep blazing through the remaining items as fast as we can to reach stable 3.0 as quickly and efficiently as possible. Here are a few of the items that we are still working on (not a full list):
 
-1. `beforeDuplicate` hooks
-1. The config `preview` function
-1. Document Duplication
 1. Documentation
 1. Vercel Blob Storage adapter
 1. Lots of bugs for sure
 1. 100% of tests passing
 1. Compiler speed improvements (turbo is beta still, it is slower than it should be. it will get faster)
 1. Overall speed improvements
-1. Support for all official plugins
 1. An install script to be able to install Payload easily into any existing Next.js app
 1. A full list of breaking changes for 2.0 -> 3.0, including an in-depth migration guide
 
@@ -56,7 +52,7 @@ To try out this repo yourself, follow the steps below:
 
 ### Follow along with breaking changes
 
-There is a possibility that we will make breaking changes before releasing the beta, and then the full stable version of Payload 3.0.
+There is a possibility that we will make breaking changes before releasing the full stable version of Payload 3.0.
 
 **To follow along with breaking changes in advance of the full, stable release,** you can keep an eye on the [CHANGELOG.md](https://github.com/payloadcms/payload-3.0-demo/blob/main/CHANGELOG.md).
 
