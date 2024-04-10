@@ -1,5 +1,6 @@
 import path from 'path'
 // import { postgresAdapter } from '@payloadcms/db-postgres'
+import { en } from '@payloadcms/translations/languages/en'
 import {
   AlignFeature,
   BlockQuoteFeature,
@@ -70,6 +71,15 @@ export default buildConfig({
   db: mongooseAdapter({
     url: process.env.MONGODB_URI || '',
   }),
+
+  /**
+   * Payload can now accept specific translations from the @payloadcms/translations package.
+   * This is an optional feature.
+   */
+  i18n: {
+    supportedLanguages: { en },
+  },
+
   admin: {
     autoLogin: {
       email: 'dev@payloadcms.com',
