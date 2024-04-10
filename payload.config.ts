@@ -1,6 +1,6 @@
 import path from 'path'
 // import { postgresAdapter } from '@payloadcms/db-postgres'
-import { en } from '@payloadcms/translations/languages/en'
+import { en } from 'payload/i18n/en'
 import {
   AlignFeature,
   BlockQuoteFeature,
