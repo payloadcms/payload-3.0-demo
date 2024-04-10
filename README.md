@@ -38,6 +38,14 @@ We are making this available to our community so that we can gather your feedbac
 1. An install script to be able to install Payload easily into any existing Next.js app
 1. A full list of breaking changes for 2.0 -> 3.0, including an in-depth migration guide
 
+### Existing Nextjs project
+
+You can install Payload into your existing Nextjs project using this command:
+```
+npx create-payload-app@beta
+```
+Contents from `src/app` will have to be moved into a new directory `src/app/(app)` so that Payload's root layout and routes can remain isolated from the rest of your app.
+
 ### Using this repo
 
 To try out this repo yourself, follow the steps below:
