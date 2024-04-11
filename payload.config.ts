@@ -33,6 +33,15 @@ export default buildConfig({
   editor: lexicalEditor(),
   collections: [
     {
+      slug: 'users',
+      auth: true,
+      access: {
+        delete: () => false,
+        update: () => false,
+      },
+      fields: [],
+    },
+    {
       slug: 'pages',
       admin: {
         useAsTitle: 'title',
