@@ -20,9 +20,6 @@ dependencies:
   '@payloadcms/richtext-slate':
     specifier: 3.0.0-beta.2
     version: 3.0.0-beta.2(@payloadcms/translations@3.0.0-beta.2)(@payloadcms/ui@3.0.0-beta.2)(payload@3.0.0-beta.2)(react-dom@18.2.0)
-  '@payloadcms/translations':
-    specifier: 3.0.0-beta.2
-    version: 3.0.0-beta.2
   '@payloadcms/ui':
     specifier: 3.0.0-beta.2
     version: 3.0.0-beta.2(@types/react@18.2.74)(monaco-editor@0.47.0)(next@14.2.0-canary.23)(payload@3.0.0-beta.2)(react-dom@18.2.0)(react@18.2.0)(scheduler@0.23.0)
