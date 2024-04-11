@@ -22,7 +22,6 @@
     "@payloadcms/next": "3.0.0-beta.2",
     "@payloadcms/richtext-lexical": "3.0.0-beta.2",
     "@payloadcms/richtext-slate": "3.0.0-beta.2",
-    "@payloadcms/translations": "3.0.0-beta.2",
     "@payloadcms/ui": "3.0.0-beta.2",
     "cross-env": "^7.0.3",
     "next": "14.2.0-canary.23",

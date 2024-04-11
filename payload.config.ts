@@ -82,8 +82,8 @@ export default buildConfig({
   }),
 
   /**
-   * Payload can now accept specific translations from the @payloadcms/translations package.
-   * This is an optional feature.
+   * Payload can now accept specific translations from 'payload/i18n/en'
+   * This is completely optional and will default to English if not provided
    */
   i18n: {
     supportedLanguages: { en },
