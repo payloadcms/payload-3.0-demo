@@ -27,7 +27,7 @@ dependencies:
     specifier: ^7.0.3
     version: 7.0.3
   next:
-    specifier: 14.2.0
+    specifier: ^14.2.0
     version: 14.2.0(react-dom@18.2.0)(react@18.2.0)
   payload:
     specifier: 3.0.0-beta.9
