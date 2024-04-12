@@ -24,7 +24,7 @@
     "@payloadcms/richtext-slate": "3.0.0-beta.9",
     "@payloadcms/ui": "3.0.0-beta.9",
     "cross-env": "^7.0.3",
-    "next": "^14.2.0",
+    "next": "14.2.0-canary.33",
     "payload": "3.0.0-beta.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
