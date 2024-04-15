@@ -28,7 +28,9 @@ main {
   max-width: 800px;
   margin: 0 auto;
   padding-block: 80px;
-  border-inline: 1px solid rgba(255, 255, 255, 0.1);
+  border-inline-width: 1px;
+  border-inline-style: solid;
+  border-image: linear-gradient(180deg, #ffffff00, #ffffff00, #ffffff1a, #ffffff00) 1;
 
   @media screen and (max-width: 600px) {
     padding-block: 20px;
@@ -44,28 +46,6 @@ article {
 
   @media screen and (max-width: 600px) {
     padding: 40px 40px;
-  }
-
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: calc(50% - 50vw);
-    width: 100vw;
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.1);
-    z-index: 1;
-  }
-
-  &::after {
-    content: url('/crosshair.svg');
-    display: block;
-    height: 19px;
-    width: 19px;
-    position: absolute;
-    top: -9px;
-    left: -10px;
   }
 }
 
@@ -117,15 +97,36 @@ a {
   background-color: #00000066;
   margin: 0;
   padding: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
 
   pre {
     margin: 0;
     padding: 60px 80px;
-    overflow-x: auto;
+    overflow-x: scroll;
 
     @media screen and (max-width: 600px) {
       padding: 40px 40px;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: calc(50% - 50vw);
+      width: 100vw;
+      height: 1px;
+      background: linear-gradient(90deg, #ffffff00, #ffffff1a, #ffffff1a, #ffffff00);
+      z-index: 1;
+    }
+
+    &::after {
+      content: url('/crosshair.svg');
+      display: block;
+      height: 19px;
+      width: 19px;
+      position: absolute;
+      top: -9px;
+      left: -10px;
     }
   }
 
@@ -142,7 +143,7 @@ a {
     left: calc(50% - 50vw);
     width: 100vw;
     height: 1px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(90deg, #ffffff00, #ffffff1a, #ffffff1a, #ffffff00);
     z-index: 1;
   }
 
