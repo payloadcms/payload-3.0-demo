@@ -122,7 +122,7 @@ a {
   pre {
     margin: 0;
     padding: 60px 80px;
-    overflow-x: scroll;
+    overflow-x: auto;
 
     @media screen and (max-width: 600px) {
       padding: 40px 40px;
