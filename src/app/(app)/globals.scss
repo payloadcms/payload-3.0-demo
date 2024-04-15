@@ -27,7 +27,7 @@ main {
   min-height: 100vh;
   max-width: 800px;
   margin: 0 auto;
-  padding-top: 80px;
+  padding-block: 80px;
   border-inline: 1px solid rgba(255, 255, 255, 0.1);
 
   @media screen and (max-width: 600px) {
@@ -184,6 +184,7 @@ a {
     height: 100%;
     background: url('/gradient.webp');
     background-size: cover;
+    background-position: center;
     z-index: -2;
   }
 }
