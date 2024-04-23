@@ -10,6 +10,7 @@
     "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
     "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint",
+    "ci": "payload migrate && pnpm build",
     "generate:types": "payload generate:types",
     "standalone-script": "tsx ./src/scripts/standalone-script.ts"
   },
@@ -17,15 +18,17 @@
     "node": ">=18.19.0"
   },
   "dependencies": {
-    "@payloadcms/db-mongodb": "3.0.0-beta.9",
-    "@payloadcms/db-postgres": "3.0.0-beta.9",
-    "@payloadcms/next": "3.0.0-beta.9",
-    "@payloadcms/richtext-lexical": "3.0.0-beta.9",
-    "@payloadcms/richtext-slate": "3.0.0-beta.9",
-    "@payloadcms/ui": "3.0.0-beta.9",
+    "@payloadcms/db-mongodb": "3.0.0-beta.12",
+    "@payloadcms/db-postgres": "3.0.0-beta.12",
+    "@payloadcms/email-nodemailer": "3.0.0-beta.12",
+    "@payloadcms/next": "3.0.0-beta.12",
+    "@payloadcms/plugin-cloud-storage": "3.0.0-beta.12",
+    "@payloadcms/richtext-lexical": "3.0.0-beta.12",
+    "@payloadcms/richtext-slate": "3.0.0-beta.12",
+    "@payloadcms/ui": "3.0.0-beta.12",
     "cross-env": "^7.0.3",
     "next": "14.3.0-canary.7",
-    "payload": "3.0.0-beta.9",
+    "payload": "3.0.0-beta.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sharp": "0.32.6"
@@ -39,6 +42,5 @@
     "eslint-config-next": "14.1.0",
     "tsx": "^4.7.1",
     "typescript": "^5.4.2"
-  },
-  "packageManager": "pnpm@8.15.4+sha256.cea6d0bdf2de3a0549582da3983c70c92ffc577ff4410cbf190817ddc35137c2"
+  }
 }
