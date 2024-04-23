@@ -1,3 +1,8 @@
+/**
+ * This is an example of a standalone script that loads in the Payload config
+ * and uses the Payload Local API to query the database.
+ */
+
 import { getPayload } from 'payload'
 import { importConfig } from 'payload/node'
 import 'dotenv/config'
