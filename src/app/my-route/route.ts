@@ -1,5 +1,6 @@
-import { getPayload } from 'payload'
 import configPromise from '@payload-config'
+import { NextResponse } from 'next/server'
+import { getPayload } from 'payload'
 
 export const GET = async () => {
   const payload = await getPayload({
@@ -10,5 +11,5 @@ export const GET = async () => {
     collection: 'users',
   })
 
-  return Response.json(data)
+  return NextResponse.json(data)
 }
