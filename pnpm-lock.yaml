@@ -26,6 +26,9 @@ dependencies:
   cross-env:
     specifier: ^7.0.3
     version: 7.0.3
+  graphql:
+    specifier: ^16.8.1
+    version: 16.8.1
   next:
     specifier: 14.3.0-canary.7
     version: 14.3.0-canary.7(react-dom@18.3.0)(react@18.3.0)
@@ -2725,6 +2728,7 @@ packages:
   /@swc/core@1.5.0:
     resolution: {integrity: sha512-fjADAC5gOOX54Rpcr1lF9DHLD+nPD5H/zXLtEgK2Ez3esmogT+LfHzCZtUxqetjvaMChKhQ0Pp0ZB6Hpz/tCbw==}
     engines: {node: '>=10'}
+    deprecated: Mac OS installation is broken
     requiresBuild: true
     peerDependencies:
       '@swc/helpers': ^0.5.0
