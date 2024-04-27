@@ -26,7 +26,7 @@
     "@payloadcms/ui": "3.0.0-beta.18",
     "cross-env": "^7.0.3",
     "graphql": "^16.8.1",
-    "next": "14.3.0-canary.7",
+    "next": "14.3.0-canary.28",
     "payload": "3.0.0-beta.18",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
