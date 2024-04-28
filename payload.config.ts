@@ -7,10 +7,12 @@ import {
   BlocksFeature,
   BoldFeature,
   CheckListFeature,
+  FeatureProviderServer,
   HeadingFeature,
   IndentFeature,
   InlineCodeFeature,
   ItalicFeature,
+  LexicalBlock,
   lexicalEditor,
   LinkFeature,
   OrderedListFeature,
@@ -24,13 +26,44 @@ import { mongooseAdapter } from '@payloadcms/db-mongodb'
 import { buildConfig } from 'payload/config'
 import sharp from 'sharp'
 import { fileURLToPath } from 'url'
+import { Block } from 'payload/types'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
+/**
+ * must include editor field, or the world will end
+ */
+export const LoginModule: Block = {
+  slug: 'login-module',
+  fields: [
+    {
+      name: 'subtitle',
+      type: 'richText',
+      localized: true,
+      editor: lexicalEditor(),
+    },
+  ],
+}
+
+export const Module: LexicalBlock = {
+  slug: 'module',
+  interfaceName: 'Module',
+  fields: [
+    {
+      name: 'module',
+      type: 'blocks',
+      maxRows: 1,
+      blocks: [LoginModule],
+    },
+  ],
+}
+
 export default buildConfig({
   //editor: slateEditor({}),
-  editor: lexicalEditor(),
+  editor: lexicalEditor({
+    features: ({ defaultFeatures }) => [...defaultFeatures],
+  }),
   collections: [
     {
       slug: 'users',
@@ -54,6 +87,15 @@ export default buildConfig({
         {
           name: 'content',
           type: 'richText',
+          localized: true,
+          editor: lexicalEditor({
+            features: ({ defaultFeatures }) => [
+              BlocksFeature({
+                blocks: [Module],
+              }) as FeatureProviderServer<unknown, unknown>, //must type this, way, or "features" has type error
+              ...defaultFeatures,
+            ],
+          }),
         },
       ],
     },
