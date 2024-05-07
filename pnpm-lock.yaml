@@ -10,19 +10,19 @@ dependencies:
     version: 3.0.0-beta.24(payload@3.0.0-beta.24)
   '@payloadcms/db-postgres':
     specifier: 3.0.0-beta.24
-    version: 3.0.0-beta.24(@types/react@18.2.79)(payload@3.0.0-beta.24)(react@18.3.0)
+    version: 3.0.0-beta.24(payload@3.0.0-beta.24)(react@path+to+next.js+node_modules+react)
   '@payloadcms/next':
     specifier: 3.0.0-beta.24
-    version: 3.0.0-beta.24(@types/react@18.2.79)(graphql@16.8.1)(monaco-editor@0.48.0)(next@14.3.0-canary.28)(payload@3.0.0-beta.24)(react-dom@18.3.0)(react@18.3.0)(scheduler@0.23.1)(typescript@5.4.5)
+    version: 3.0.0-beta.24(graphql@16.8.1)(monaco-editor@0.48.0)(next@path+to+next.js+packages+next)(payload@3.0.0-beta.24)(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)(scheduler@0.23.1)(typescript@5.4.5)
   '@payloadcms/richtext-lexical':
     specifier: 3.0.0-beta.24
-    version: 3.0.0-beta.24(@payloadcms/next@3.0.0-beta.24)(@payloadcms/translations@3.0.0-beta.24)(@payloadcms/ui@3.0.0-beta.24)(payload@3.0.0-beta.24)(react-dom@18.3.0)(react@18.3.0)(yjs@13.6.14)
+    version: 3.0.0-beta.24(@payloadcms/next@3.0.0-beta.24)(@payloadcms/translations@3.0.0-beta.24)(@payloadcms/ui@3.0.0-beta.24)(payload@3.0.0-beta.24)(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)(yjs@13.6.14)
   '@payloadcms/richtext-slate':
     specifier: 3.0.0-beta.24
-    version: 3.0.0-beta.24(@payloadcms/translations@3.0.0-beta.24)(@payloadcms/ui@3.0.0-beta.24)(payload@3.0.0-beta.24)(react-dom@18.3.0)(react@18.3.0)
+    version: 3.0.0-beta.24(@payloadcms/translations@3.0.0-beta.24)(@payloadcms/ui@3.0.0-beta.24)(payload@3.0.0-beta.24)(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)
   '@payloadcms/ui':
     specifier: 3.0.0-beta.24
-    version: 3.0.0-beta.24(@types/react@18.2.79)(monaco-editor@0.48.0)(next@14.3.0-canary.28)(payload@3.0.0-beta.24)(react-dom@18.3.0)(react@18.3.0)(scheduler@0.23.1)
+    version: 3.0.0-beta.24(monaco-editor@0.48.0)(next@path+to+next.js+packages+next)(payload@3.0.0-beta.24)(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)(scheduler@0.23.1)
   cross-env:
     specifier: ^7.0.3
     version: 7.0.3
@@ -30,31 +30,31 @@ dependencies:
     specifier: ^16.8.1
     version: 16.8.1
   next:
-    specifier: 14.3.0-canary.28
-    version: 14.3.0-canary.28(react-dom@18.3.0)(react@18.3.0)
+    specifier: link:path/to/next.js/packages/next
+    version: link:path/to/next.js/packages/next
   payload:
     specifier: 3.0.0-beta.24
     version: 3.0.0-beta.24(@swc/core@1.5.0)(@swc/types@0.1.6)(graphql@16.8.1)(typescript@5.4.5)
   react:
-    specifier: ^18.2.0
-    version: 18.3.0
+    specifier: link:path/to/next.js/node_modules/react
+    version: link:path/to/next.js/node_modules/react
   react-dom:
-    specifier: ^18.2.0
-    version: 18.3.0(react@18.3.0)
+    specifier: link:path/to/next.js/node_modules/react-dom
+    version: link:path/to/next.js/node_modules/react-dom
   sharp:
     specifier: 0.32.6
     version: 0.32.6
 
 devDependencies:
   '@types/node':
-    specifier: ^20.11.25
+    specifier: ^20.12.7
     version: 20.12.7
   '@types/react':
-    specifier: ^18.2.64
-    version: 18.2.79
+    specifier: link:/Users/alessio/Documents/GitHub/next.js/node_modules/@types/react
+    version: link:../next.js/node_modules/@types/react
   '@types/react-dom':
-    specifier: ^18.2.21
-    version: 18.2.25
+    specifier: link:/Users/alessio/Documents/GitHub/next.js/node_modules/@types/react-dom
+    version: link:../next.js/node_modules/@types/react-dom
   dotenv:
     specifier: ^16.4.5
     version: 16.4.5
@@ -711,46 +711,46 @@ packages:
       js-yaml: 4.1.0
     dev: false
 
-  /@dnd-kit/accessibility@3.1.0(react@18.3.0):
+  /@dnd-kit/accessibility@3.1.0(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-ea7IkhKvlJUv9iSHJOnxinBcoOI3ppGnnL+VDJ75O45Nss6HtZd8IdN8touXPDtASfeI2T2LImb8VOZcL47wjQ==}
     peerDependencies:
       react: '>=16.8.0'
     dependencies:
-      react: 18.3.0
+      react: link:path/to/next.js/node_modules/react
       tslib: 2.6.2
     dev: false
 
-  /@dnd-kit/core@6.0.8(react-dom@18.3.0)(react@18.3.0):
+  /@dnd-kit/core@6.0.8(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-lYaoP8yHTQSLlZe6Rr9qogouGUz9oRUj4AHhDQGQzq/hqaJRpFo65X+JKsdHf8oUFBzx5A+SJPUvxAwTF2OabA==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
     dependencies:
-      '@dnd-kit/accessibility': 3.1.0(react@18.3.0)
-      '@dnd-kit/utilities': 3.2.2(react@18.3.0)
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      '@dnd-kit/accessibility': 3.1.0(react@path+to+next.js+node_modules+react)
+      '@dnd-kit/utilities': 3.2.2(react@path+to+next.js+node_modules+react)
+      react: link:path/to/next.js/node_modules/react
+      react-dom: link:path/to/next.js/node_modules/react-dom
       tslib: 2.6.2
     dev: false
 
-  /@dnd-kit/sortable@7.0.2(@dnd-kit/core@6.0.8)(react@18.3.0):
+  /@dnd-kit/sortable@7.0.2(@dnd-kit/core@6.0.8)(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-wDkBHHf9iCi1veM834Gbk1429bd4lHX4RpAwT0y2cHLf246GAvU2sVw/oxWNpPKQNQRQaeGXhAVgrOl1IT+iyA==}
     peerDependencies:
       '@dnd-kit/core': ^6.0.7
       react: '>=16.8.0'
     dependencies:
-      '@dnd-kit/core': 6.0.8(react-dom@18.3.0)(react@18.3.0)
-      '@dnd-kit/utilities': 3.2.2(react@18.3.0)
-      react: 18.3.0
+      '@dnd-kit/core': 6.0.8(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)
+      '@dnd-kit/utilities': 3.2.2(react@path+to+next.js+node_modules+react)
+      react: link:path/to/next.js/node_modules/react
       tslib: 2.6.2
     dev: false
 
-  /@dnd-kit/utilities@3.2.2(react@18.3.0):
+  /@dnd-kit/utilities@3.2.2(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-+MKAJEOfaBe5SmV6t34p80MMKhjvUz0vRrvVJbPT0WElzaOJ/1xs+D+KDv+tD/NE5ujfrChEcshd4fLn0wpiqg==}
     peerDependencies:
       react: '>=16.8.0'
     dependencies:
-      react: 18.3.0
+      react: link:path/to/next.js/node_modules/react
       tslib: 2.6.2
     dev: false
 
@@ -759,14 +759,6 @@ packages:
     dependencies:
       superjson: 2.2.1
     dev: false
-
-  /@emnapi/runtime@1.1.1:
-    resolution: {integrity: sha512-3bfqkzuR1KLx57nZfjr2NLnFOobvyS0aTszaEGCGqmYMVDRaGvgIZbjGSV/MHSSmLgQ/b9JFHQ5xm5WRZYd+XQ==}
-    requiresBuild: true
-    dependencies:
-      tslib: 2.6.2
-    dev: false
-    optional: true
 
   /@emotion/babel-plugin@11.11.0:
     resolution: {integrity: sha512-m4HEDZleaaCH+XgDDsPF15Ht6wTLsgDTeR3WYj9Q/k76JtWhrJjcP4+/XlG8LGT/Rol9qUfOIztXeA84ATpqPQ==}
@@ -812,7 +804,7 @@ packages:
     resolution: {integrity: sha512-W2P2c/VRW1/1tLox0mVUalvnWXxavmv/Oum2aPsRcoDJuob75FC3Y8FbpfLwUegRcxINtGUMPq0tFCvYNTBXNA==}
     dev: false
 
-  /@emotion/react@11.11.4(@types/react@18.2.79)(react@18.3.0):
+  /@emotion/react@11.11.4(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-t8AjMlF0gHpvvxk5mAtCqR4vmxiGHCeJBaQO6gncUSdklELOgtwjerNY2yuJNfwnc6vi16U/+uMF+afIawJ9iw==}
     peerDependencies:
       '@types/react': '*'
@@ -825,12 +817,11 @@ packages:
       '@emotion/babel-plugin': 11.11.0
       '@emotion/cache': 11.11.0
       '@emotion/serialize': 1.1.4
-      '@emotion/use-insertion-effect-with-fallbacks': 1.0.1(react@18.3.0)
+      '@emotion/use-insertion-effect-with-fallbacks': 1.0.1(react@path+to+next.js+node_modules+react)
       '@emotion/utils': 1.2.1
       '@emotion/weak-memoize': 0.3.1
-      '@types/react': 18.2.79
       hoist-non-react-statics: 3.3.2
-      react: 18.3.0
+      react: link:path/to/next.js/node_modules/react
     dev: false
 
   /@emotion/serialize@1.1.4:
@@ -851,12 +842,12 @@ packages:
     resolution: {integrity: sha512-KOEGMu6dmJZtpadb476IsZBclKvILjopjUii3V+7MnXIQCYh8W3NgNcgwo21n9LXZX6EDIKvqfjYxXebDwxKmQ==}
     dev: false
 
-  /@emotion/use-insertion-effect-with-fallbacks@1.0.1(react@18.3.0):
+  /@emotion/use-insertion-effect-with-fallbacks@1.0.1(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-jT/qyKZ9rzLErtrjGgdkMBn2OP8wl0G3sQlBb3YPryvKHsjvINUhVaPFfP+fpBcOkmrVOVEEHQFJ7nbj2TH2gw==}
     peerDependencies:
       react: '>=16.8.0'
     dependencies:
-      react: 18.3.0
+      react: link:path/to/next.js/node_modules/react
     dev: false
 
   /@emotion/utils@1.2.1:
@@ -1300,7 +1291,7 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@faceless-ui/modal@2.0.2(react-dom@18.3.0)(react@18.3.0):
+  /@faceless-ui/modal@2.0.2(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-CtwUn+hHEaoYUjREzQKGRbEp55VzUx7sC+hxIxmCPwg7Yd5KXkQzSfoUfRAHqT/1MFfE1B2QCHVVbhtSnFL9BA==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -1309,29 +1300,29 @@ packages:
       body-scroll-lock: 3.1.5
       focus-trap: 6.9.4
       qs: 6.12.1
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
-      react-transition-group: 4.4.5(react-dom@18.3.0)(react@18.3.0)
+      react: link:path/to/next.js/node_modules/react
+      react-dom: link:path/to/next.js/node_modules/react-dom
+      react-transition-group: 4.4.5(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)
     dev: false
 
-  /@faceless-ui/scroll-info@1.3.0(react-dom@18.3.0)(react@18.3.0):
+  /@faceless-ui/scroll-info@1.3.0(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-X+doJMzQqyVGpwV/YgXUAalNWepP2W8ThgZspKZLFG43zTYLVTU17BYCjjY+ggKuA3b0W3JyXZ2M8f247AdmHw==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      react: link:path/to/next.js/node_modules/react
+      react-dom: link:path/to/next.js/node_modules/react-dom
     dev: false
 
-  /@faceless-ui/window-info@2.1.2(react-dom@18.3.0)(react@18.3.0):
+  /@faceless-ui/window-info@2.1.2(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-IvZM6mLWFRin904180115Y6BgsvAN9M5uCMJEHhiQgTgzDMiYVtUww7GlWRsvemubMRF6c9Q+j79qW7uPPuMBg==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      react: link:path/to/next.js/node_modules/react
+      react-dom: link:path/to/next.js/node_modules/react-dom
     dev: false
 
   /@floating-ui/core@1.6.0:
@@ -1347,27 +1338,27 @@ packages:
       '@floating-ui/utils': 0.2.1
     dev: false
 
-  /@floating-ui/react-dom@2.0.8(react-dom@18.3.0)(react@18.3.0):
+  /@floating-ui/react-dom@2.0.8(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-HOdqOt3R3OGeTKidaLvJKcgg75S6tibQ3Tif4eyd91QnIJWr0NLvoXFpJA/j8HqkFSL68GDca9AuyWEHlhyClw==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
     dependencies:
       '@floating-ui/dom': 1.6.3
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      react: link:path/to/next.js/node_modules/react
+      react-dom: link:path/to/next.js/node_modules/react-dom
     dev: false
 
-  /@floating-ui/react@0.26.12(react-dom@18.3.0)(react@18.3.0):
+  /@floating-ui/react@0.26.12(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-D09o62HrWdIkstF2kGekIKAC0/N/Dl6wo3CQsnLcOmO3LkW6Ik8uIb3kw8JYkwxNCcg+uJ2bpWUiIijTBep05w==}
     peerDependencies:
       react: '>=16.8.0'
       react-dom: '>=16.8.0'
     dependencies:
-      '@floating-ui/react-dom': 2.0.8(react-dom@18.3.0)(react@18.3.0)
+      '@floating-ui/react-dom': 2.0.8(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)
       '@floating-ui/utils': 0.2.1
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      react: link:path/to/next.js/node_modules/react
+      react-dom: link:path/to/next.js/node_modules/react-dom
       tabbable: 6.2.0
     dev: false
 
@@ -1404,194 +1395,6 @@ packages:
   /@humanwhocodes/object-schema@2.0.3:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     dev: true
-
-  /@img/sharp-darwin-arm64@0.33.3:
-    resolution: {integrity: sha512-FaNiGX1MrOuJ3hxuNzWgsT/mg5OHG/Izh59WW2mk1UwYHUwtfbhk5QNKYZgxf0pLOhx9ctGiGa2OykD71vOnSw==}
-    engines: {glibc: '>=2.26', node: ^18.17.0 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
-    cpu: [arm64]
-    os: [darwin]
-    requiresBuild: true
-    optionalDependencies:
-      '@img/sharp-libvips-darwin-arm64': 1.0.2
-    dev: false
-    optional: true
-
-  /@img/sharp-darwin-x64@0.33.3:
-    resolution: {integrity: sha512-2QeSl7QDK9ru//YBT4sQkoq7L0EAJZA3rtV+v9p8xTKl4U1bUqTIaCnoC7Ctx2kCjQgwFXDasOtPTCT8eCTXvw==}
-    engines: {glibc: '>=2.26', node: ^18.17.0 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
-    cpu: [x64]
-    os: [darwin]
-    requiresBuild: true
-    optionalDependencies:
-      '@img/sharp-libvips-darwin-x64': 1.0.2
-    dev: false
-    optional: true
-
-  /@img/sharp-libvips-darwin-arm64@1.0.2:
-    resolution: {integrity: sha512-tcK/41Rq8IKlSaKRCCAuuY3lDJjQnYIW1UXU1kxcEKrfL8WR7N6+rzNoOxoQRJWTAECuKwgAHnPvqXGN8XfkHA==}
-    engines: {macos: '>=11', npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
-    cpu: [arm64]
-    os: [darwin]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@img/sharp-libvips-darwin-x64@1.0.2:
-    resolution: {integrity: sha512-Ofw+7oaWa0HiiMiKWqqaZbaYV3/UGL2wAPeLuJTx+9cXpCRdvQhCLG0IH8YGwM0yGWGLpsF4Su9vM1o6aer+Fw==}
-    engines: {macos: '>=10.13', npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
-    cpu: [x64]
-    os: [darwin]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@img/sharp-libvips-linux-arm64@1.0.2:
-    resolution: {integrity: sha512-x7kCt3N00ofFmmkkdshwj3vGPCnmiDh7Gwnd4nUwZln2YjqPxV1NlTyZOvoDWdKQVDL911487HOueBvrpflagw==}
-    engines: {glibc: '>=2.26', npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
-    cpu: [arm64]
-    os: [linux]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@img/sharp-libvips-linux-arm@1.0.2:
-    resolution: {integrity: sha512-iLWCvrKgeFoglQxdEwzu1eQV04o8YeYGFXtfWU26Zr2wWT3q3MTzC+QTCO3ZQfWd3doKHT4Pm2kRmLbupT+sZw==}
-    engines: {glibc: '>=2.28', npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
-    cpu: [arm]
-    os: [linux]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@img/sharp-libvips-linux-s390x@1.0.2:
-    resolution: {integrity: sha512-cmhQ1J4qVhfmS6szYW7RT+gLJq9dH2i4maq+qyXayUSn9/3iY2ZeWpbAgSpSVbV2E1JUL2Gg7pwnYQ1h8rQIog==}
-    engines: {glibc: '>=2.28', npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
-    cpu: [s390x]
-    os: [linux]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@img/sharp-libvips-linux-x64@1.0.2:
-    resolution: {integrity: sha512-E441q4Qdb+7yuyiADVi5J+44x8ctlrqn8XgkDTwr4qPJzWkaHwD489iZ4nGDgcuya4iMN3ULV6NwbhRZJ9Z7SQ==}
-    engines: {glibc: '>=2.26', npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
-    cpu: [x64]
-    os: [linux]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@img/sharp-libvips-linuxmusl-arm64@1.0.2:
-    resolution: {integrity: sha512-3CAkndNpYUrlDqkCM5qhksfE+qSIREVpyoeHIU6jd48SJZViAmznoQQLAv4hVXF7xyUB9zf+G++e2v1ABjCbEQ==}
-    engines: {musl: '>=1.2.2', npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
-    cpu: [arm64]
-    os: [linux]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@img/sharp-libvips-linuxmusl-x64@1.0.2:
-    resolution: {integrity: sha512-VI94Q6khIHqHWNOh6LLdm9s2Ry4zdjWJwH56WoiJU7NTeDwyApdZZ8c+SADC8OH98KWNQXnE01UdJ9CSfZvwZw==}
-    engines: {musl: '>=1.2.2', npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
-    cpu: [x64]
-    os: [linux]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@img/sharp-linux-arm64@0.33.3:
-    resolution: {integrity: sha512-Zf+sF1jHZJKA6Gor9hoYG2ljr4wo9cY4twaxgFDvlG0Xz9V7sinsPp8pFd1XtlhTzYo0IhDbl3rK7P6MzHpnYA==}
-    engines: {glibc: '>=2.26', node: ^18.17.0 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
-    cpu: [arm64]
-    os: [linux]
-    requiresBuild: true
-    optionalDependencies:
-      '@img/sharp-libvips-linux-arm64': 1.0.2
-    dev: false
-    optional: true
-
-  /@img/sharp-linux-arm@0.33.3:
-    resolution: {integrity: sha512-Q7Ee3fFSC9P7vUSqVEF0zccJsZ8GiiCJYGWDdhEjdlOeS9/jdkyJ6sUSPj+bL8VuOYFSbofrW0t/86ceVhx32w==}
-    engines: {glibc: '>=2.28', node: ^18.17.0 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
-    cpu: [arm]
-    os: [linux]
-    requiresBuild: true
-    optionalDependencies:
-      '@img/sharp-libvips-linux-arm': 1.0.2
-    dev: false
-    optional: true
-
-  /@img/sharp-linux-s390x@0.33.3:
-    resolution: {integrity: sha512-vFk441DKRFepjhTEH20oBlFrHcLjPfI8B0pMIxGm3+yilKyYeHEVvrZhYFdqIseSclIqbQ3SnZMwEMWonY5XFA==}
-    engines: {glibc: '>=2.28', node: ^18.17.0 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
-    cpu: [s390x]
-    os: [linux]
-    requiresBuild: true
-    optionalDependencies:
-      '@img/sharp-libvips-linux-s390x': 1.0.2
-    dev: false
-    optional: true
-
-  /@img/sharp-linux-x64@0.33.3:
-    resolution: {integrity: sha512-Q4I++herIJxJi+qmbySd072oDPRkCg/SClLEIDh5IL9h1zjhqjv82H0Seupd+q2m0yOfD+/fJnjSoDFtKiHu2g==}
-    engines: {glibc: '>=2.26', node: ^18.17.0 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
-    cpu: [x64]
-    os: [linux]
-    requiresBuild: true
-    optionalDependencies:
-      '@img/sharp-libvips-linux-x64': 1.0.2
-    dev: false
-    optional: true
-
-  /@img/sharp-linuxmusl-arm64@0.33.3:
-    resolution: {integrity: sha512-qnDccehRDXadhM9PM5hLvcPRYqyFCBN31kq+ErBSZtZlsAc1U4Z85xf/RXv1qolkdu+ibw64fUDaRdktxTNP9A==}
-    engines: {musl: '>=1.2.2', node: ^18.17.0 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
-    cpu: [arm64]
-    os: [linux]
-    requiresBuild: true
-    optionalDependencies:
-      '@img/sharp-libvips-linuxmusl-arm64': 1.0.2
-    dev: false
-    optional: true
-
-  /@img/sharp-linuxmusl-x64@0.33.3:
-    resolution: {integrity: sha512-Jhchim8kHWIU/GZ+9poHMWRcefeaxFIs9EBqf9KtcC14Ojk6qua7ghKiPs0sbeLbLj/2IGBtDcxHyjCdYWkk2w==}
-    engines: {musl: '>=1.2.2', node: ^18.17.0 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
-    cpu: [x64]
-    os: [linux]
-    requiresBuild: true
-    optionalDependencies:
-      '@img/sharp-libvips-linuxmusl-x64': 1.0.2
-    dev: false
-    optional: true
-
-  /@img/sharp-wasm32@0.33.3:
-    resolution: {integrity: sha512-68zivsdJ0koE96stdUfM+gmyaK/NcoSZK5dV5CAjES0FUXS9lchYt8LAB5rTbM7nlWtxaU/2GON0HVN6/ZYJAQ==}
-    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
-    cpu: [wasm32]
-    requiresBuild: true
-    dependencies:
-      '@emnapi/runtime': 1.1.1
-    dev: false
-    optional: true
-
-  /@img/sharp-win32-ia32@0.33.3:
-    resolution: {integrity: sha512-CyimAduT2whQD8ER4Ux7exKrtfoaUiVr7HG0zZvO0XTFn2idUWljjxv58GxNTkFb8/J9Ub9AqITGkJD6ZginxQ==}
-    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
-    cpu: [ia32]
-    os: [win32]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@img/sharp-win32-x64@0.33.3:
-    resolution: {integrity: sha512-viT4fUIDKnli3IfOephGnolMzhz5VaTvDRkYqtZxOMIoMQ4MrAziO7pT1nVnOt2FAm7qW5aa+CCc13aEY6Le0g==}
-    engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0', yarn: '>=3.2.0'}
-    cpu: [x64]
-    os: [win32]
-    requiresBuild: true
-    dev: false
-    optional: true
 
   /@isaacs/cliui@8.0.2:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -1631,7 +1434,7 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@lexical/devtools-core@0.14.5(react-dom@18.3.0)(react@18.3.0):
+  /@lexical/devtools-core@0.14.5(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-4yTZ8Q9sDkvA5n96wEstru2NonAJ6T/zuSTcYizddwDJr56tzanSdJUFbEIG6G3ankqbKMRYNetupD/Ks3sXEg==}
     peerDependencies:
       react: '>=17.x'
@@ -1643,8 +1446,8 @@ packages:
       '@lexical/table': 0.14.5
       '@lexical/utils': 0.14.5
       lexical: 0.14.5
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      react: link:path/to/next.js/node_modules/react
+      react-dom: link:path/to/next.js/node_modules/react-dom
     dev: false
 
   /@lexical/dragon@0.14.5:
@@ -1735,7 +1538,7 @@ packages:
       lexical: 0.14.5
     dev: false
 
-  /@lexical/react@0.14.5(react-dom@18.3.0)(react@18.3.0)(yjs@13.6.14):
+  /@lexical/react@0.14.5(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)(yjs@13.6.14):
     resolution: {integrity: sha512-dn7J07nxG6CZqm5jhLjhkQlJWMQrdm4BGTEF6/MYog5uUUwqDwBdVnZ3hwadibupAmNT7+Xia+4vrp0oJWM1lQ==}
     peerDependencies:
       react: '>=17.x'
@@ -1743,7 +1546,7 @@ packages:
     dependencies:
       '@lexical/clipboard': 0.14.5
       '@lexical/code': 0.14.5
-      '@lexical/devtools-core': 0.14.5(react-dom@18.3.0)(react@18.3.0)
+      '@lexical/devtools-core': 0.14.5(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)
       '@lexical/dragon': 0.14.5
       '@lexical/hashtag': 0.14.5
       '@lexical/history': 0.14.5
@@ -1760,9 +1563,9 @@ packages:
       '@lexical/utils': 0.14.5
       '@lexical/yjs': 0.14.5(yjs@13.6.14)
       lexical: 0.14.5
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
-      react-error-boundary: 3.1.4(react@18.3.0)
+      react: link:path/to/next.js/node_modules/react
+      react-dom: link:path/to/next.js/node_modules/react-dom
+      react-error-boundary: 3.1.4(react@path+to+next.js+node_modules+react)
     transitivePeerDependencies:
       - yjs
     dev: false
@@ -1930,7 +1733,7 @@ packages:
       state-local: 1.0.7
     dev: false
 
-  /@monaco-editor/react@4.5.1(monaco-editor@0.48.0)(react-dom@18.3.0)(react@18.3.0):
+  /@monaco-editor/react@4.5.1(monaco-editor@0.48.0)(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-NNDFdP+2HojtNhCkRfE6/D6ro6pBNihaOzMbGK84lNWzRu+CfBjwzGt4jmnqimLuqp5yE5viHS2vi+QOAnD5FQ==}
     peerDependencies:
       monaco-editor: '>= 0.25.0 < 1'
@@ -1939,8 +1742,8 @@ packages:
     dependencies:
       '@monaco-editor/loader': 1.4.0(monaco-editor@0.48.0)
       monaco-editor: 0.48.0
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      react: link:path/to/next.js/node_modules/react
+      react-dom: link:path/to/next.js/node_modules/react-dom
     dev: false
 
   /@mongodb-js/saslprep@1.1.5:
@@ -1955,96 +1758,11 @@ packages:
     resolution: {integrity: sha512-kTPhdZyTQxB+2wpiRcFWrDcejc4JI6tkPuS7UZCG4l6Zvc5kU/gGQ/ozvHTh1XR5tS+UlfAfGuPajjzQjCiHCw==}
     dev: false
 
-  /@next/env@14.3.0-canary.28:
-    resolution: {integrity: sha512-pq8MtYZnPW7BL0nhMMwCRzQ48QYPiNj6yOYfEJmQ+Egv+rU76Lg+k7FT/kHK2soNX7dbk+K58Ywf7LD+PPTNEA==}
-    dev: false
-
   /@next/eslint-plugin-next@14.1.0:
     resolution: {integrity: sha512-x4FavbNEeXx/baD/zC/SdrvkjSby8nBn8KcCREqk6UuwvwoAPZmaV8TFCAuo/cpovBRTIY67mHhe86MQQm/68Q==}
     dependencies:
       glob: 10.3.10
     dev: true
-
-  /@next/swc-darwin-arm64@14.3.0-canary.28:
-    resolution: {integrity: sha512-jrdaB9s2p0D2vGaqze/gRTM/CWcxFKDIJrARQd/gfbtzP3orYPODfpbs3BxLxPBR+iKWYVHWYFkiRE9r876uVA==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [darwin]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@next/swc-darwin-x64@14.3.0-canary.28:
-    resolution: {integrity: sha512-qf82UMWsw52XK9H0XYrt4sKBnYxNGPRZVyTVIMFFeEUVGZBE5irUdWK7qJ9ej278jmDfGwtkyU09ptAfa9nt0A==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [darwin]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@next/swc-linux-arm64-gnu@14.3.0-canary.28:
-    resolution: {integrity: sha512-UigFFnzhzgev/qpWmvneaJOwKK2mwynU4lg04iJFv0xrIqCZry+R/63c7H1gjs/eX0R9ZusOov7A5QEzPnJHoQ==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [linux]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@next/swc-linux-arm64-musl@14.3.0-canary.28:
-    resolution: {integrity: sha512-y6Dhsfw8qKQDuM5gQRCApZG0hEGFs2yu6GDUDqr3j8QbnHontJwtzhLwspq2CbYY4KsXJiw5sTRwhITAJDeibA==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [linux]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@next/swc-linux-x64-gnu@14.3.0-canary.28:
-    resolution: {integrity: sha512-9UxI4iPjF8mJJ64WM7ngEe80S8AIs2G+5dGMNdeo37pmaVM9CjvAK3qfmLuS0kbWkuOQXtk5tveVKjvDggEv/Q==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [linux]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@next/swc-linux-x64-musl@14.3.0-canary.28:
-    resolution: {integrity: sha512-ouhg8s/IBhdr3sa2p3Ps3fxeyzjIhoy+xo9yzP5y9yKeU2pvPPBW2EthOP9HK+hVBRKRE/haTimr4dkhn97XGQ==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [linux]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@next/swc-win32-arm64-msvc@14.3.0-canary.28:
-    resolution: {integrity: sha512-pGC6y7aHPVyEeD6iDbVnG8Wn3UmkWoRRlEdMzWx/8GpEBpXg10IiGnoa6K6v1lw9uowhvBJ7ciGGH3sYLoIKRw==}
-    engines: {node: '>= 10'}
-    cpu: [arm64]
-    os: [win32]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@next/swc-win32-ia32-msvc@14.3.0-canary.28:
-    resolution: {integrity: sha512-RFUFCotHnl13z4vdKBCA3T9RQuhQs3+axEdqWAURKt4fpbH5IPPR5ds4GzSmWYZQQO2FAj5EZTlwT0bL9IWqRA==}
-    engines: {node: '>= 10'}
-    cpu: [ia32]
-    os: [win32]
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /@next/swc-win32-x64-msvc@14.3.0-canary.28:
-    resolution: {integrity: sha512-gaf0/jxRNsXiEj+4yC9Wbj/M4Waz/kB7fbhQhsIdN60edSjCcyN8MbTnRhrN37gkfKAAI5xqnsg+eEczco0VBQ==}
-    engines: {node: '>= 10'}
-    cpu: [x64]
-    os: [win32]
-    requiresBuild: true
-    dev: false
-    optional: true
 
   /@nodelib/fs.scandir@2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -2086,7 +1804,7 @@ packages:
       - supports-color
     dev: false
 
-  /@payloadcms/db-postgres@3.0.0-beta.24(@types/react@18.2.79)(payload@3.0.0-beta.24)(react@18.3.0):
+  /@payloadcms/db-postgres@3.0.0-beta.24(payload@3.0.0-beta.24)(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-QWP8+qOkN5LE2J9EywZqKjMLbbiC6GvFwFepdNXZLlhyE0yujR4wgfMTQCykFRQ6QTXqPMxdBqF9DubQbWhDug==}
     peerDependencies:
       payload: 3.0.0-beta.24
@@ -2094,7 +1812,7 @@ packages:
       '@libsql/client': 0.5.6
       console-table-printer: 2.11.2
       drizzle-kit: 0.20.14-1f2c838
-      drizzle-orm: 0.29.4(@libsql/client@0.5.6)(@types/react@18.2.79)(pg@8.11.3)(react@18.3.0)
+      drizzle-orm: 0.29.4(@libsql/client@0.5.6)(pg@8.11.3)(react@path+to+next.js+node_modules+react)
       payload: 3.0.0-beta.24(@swc/core@1.5.0)(@swc/types@0.1.6)(graphql@16.8.1)(typescript@5.4.5)
       pg: 8.11.3
       prompts: 2.4.2
@@ -2108,7 +1826,6 @@ packages:
       - '@planetscale/database'
       - '@types/better-sqlite3'
       - '@types/pg'
-      - '@types/react'
       - '@types/sql.js'
       - '@vercel/postgres'
       - better-sqlite3
@@ -2143,7 +1860,7 @@ packages:
       - typescript
     dev: false
 
-  /@payloadcms/next@3.0.0-beta.24(@types/react@18.2.79)(graphql@16.8.1)(monaco-editor@0.48.0)(next@14.3.0-canary.28)(payload@3.0.0-beta.24)(react-dom@18.3.0)(react@18.3.0)(scheduler@0.23.1)(typescript@5.4.5):
+  /@payloadcms/next@3.0.0-beta.24(graphql@16.8.1)(monaco-editor@0.48.0)(next@path+to+next.js+packages+next)(payload@3.0.0-beta.24)(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)(scheduler@0.23.1)(typescript@5.4.5):
     resolution: {integrity: sha512-E6PZz87FjiQ3O44e7oMbzT+/ZKpXtdKFEU4Cg7WKXsf45AzMhgBc7GprZfq+WrYxHVXm6wSeSnTxvuhP4SD1Pw==}
     engines: {node: '>=18.20.2'}
     peerDependencies:
@@ -2151,10 +1868,10 @@ packages:
       next: ^14.3.0-canary.7
       payload: 3.0.0-beta.24
     dependencies:
-      '@dnd-kit/core': 6.0.8(react-dom@18.3.0)(react@18.3.0)
+      '@dnd-kit/core': 6.0.8(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)
       '@payloadcms/graphql': 3.0.0-beta.24(graphql@16.8.1)(payload@3.0.0-beta.24)(typescript@5.4.5)
       '@payloadcms/translations': 3.0.0-beta.24
-      '@payloadcms/ui': 3.0.0-beta.24(@types/react@18.2.79)(monaco-editor@0.48.0)(next@14.3.0-canary.28)(payload@3.0.0-beta.24)(react-dom@18.3.0)(react@18.3.0)(scheduler@0.23.1)
+      '@payloadcms/ui': 3.0.0-beta.24(monaco-editor@0.48.0)(next@path+to+next.js+packages+next)(payload@3.0.0-beta.24)(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)(scheduler@0.23.1)
       '@types/busboy': 1.5.3
       busboy: 1.6.0
       deep-equal: 2.2.2
@@ -2163,16 +1880,15 @@ packages:
       graphql-http: 1.22.1(graphql@16.8.1)
       graphql-playground-html: 1.6.30
       http-status: 1.6.2
-      next: 14.3.0-canary.28(react-dom@18.3.0)(react@18.3.0)
+      next: link:path/to/next.js/packages/next
       path-to-regexp: 6.2.2
       payload: 3.0.0-beta.24(@swc/core@1.5.0)(@swc/types@0.1.6)(graphql@16.8.1)(typescript@5.4.5)
       qs: 6.11.2
-      react-diff-viewer-continued: 3.2.6(react-dom@18.3.0)(react@18.3.0)
-      react-toastify: 8.2.0(react-dom@18.3.0)(react@18.3.0)
+      react-diff-viewer-continued: 3.2.6(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)
+      react-toastify: 8.2.0(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)
       sass: 1.75.0
       ws: 8.16.0
     transitivePeerDependencies:
-      - '@types/react'
       - bufferutil
       - monaco-editor
       - react
@@ -2183,7 +1899,7 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@payloadcms/richtext-lexical@3.0.0-beta.24(@payloadcms/next@3.0.0-beta.24)(@payloadcms/translations@3.0.0-beta.24)(@payloadcms/ui@3.0.0-beta.24)(payload@3.0.0-beta.24)(react-dom@18.3.0)(react@18.3.0)(yjs@13.6.14):
+  /@payloadcms/richtext-lexical@3.0.0-beta.24(@payloadcms/next@3.0.0-beta.24)(@payloadcms/translations@3.0.0-beta.24)(@payloadcms/ui@3.0.0-beta.24)(payload@3.0.0-beta.24)(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)(yjs@13.6.14):
     resolution: {integrity: sha512-9Slni/ywWu4b/DmKxF8tuI61YHrUKJodR9e7fxYHh1PzRToSlLbyEurcLsSaQcmAVS1nLnIJ6lKOkHF3+t4dFA==}
     engines: {node: '>=18.20.2'}
     peerDependencies:
@@ -2194,19 +1910,19 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@faceless-ui/modal': 2.0.2(react-dom@18.3.0)(react@18.3.0)
+      '@faceless-ui/modal': 2.0.2(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)
       '@lexical/headless': 0.14.5
       '@lexical/link': 0.14.5
       '@lexical/list': 0.14.5
       '@lexical/mark': 0.14.5
       '@lexical/markdown': 0.14.5
-      '@lexical/react': 0.14.5(react-dom@18.3.0)(react@18.3.0)(yjs@13.6.14)
+      '@lexical/react': 0.14.5(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)(yjs@13.6.14)
       '@lexical/rich-text': 0.14.5
       '@lexical/selection': 0.14.5
       '@lexical/utils': 0.14.5
-      '@payloadcms/next': 3.0.0-beta.24(@types/react@18.2.79)(graphql@16.8.1)(monaco-editor@0.48.0)(next@14.3.0-canary.28)(payload@3.0.0-beta.24)(react-dom@18.3.0)(react@18.3.0)(scheduler@0.23.1)(typescript@5.4.5)
+      '@payloadcms/next': 3.0.0-beta.24(graphql@16.8.1)(monaco-editor@0.48.0)(next@path+to+next.js+packages+next)(payload@3.0.0-beta.24)(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)(scheduler@0.23.1)(typescript@5.4.5)
       '@payloadcms/translations': 3.0.0-beta.24
-      '@payloadcms/ui': 3.0.0-beta.24(@types/react@18.2.79)(monaco-editor@0.48.0)(next@14.3.0-canary.28)(payload@3.0.0-beta.24)(react-dom@18.3.0)(react@18.3.0)(scheduler@0.23.1)
+      '@payloadcms/ui': 3.0.0-beta.24(monaco-editor@0.48.0)(next@path+to+next.js+packages+next)(payload@3.0.0-beta.24)(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)(scheduler@0.23.1)
       '@types/uuid': 9.0.8
       bson-objectid: 2.0.4
       classnames: 2.5.1
@@ -2215,15 +1931,15 @@ packages:
       lexical: 0.14.5
       lodash: 4.17.21
       payload: 3.0.0-beta.24(@swc/core@1.5.0)(@swc/types@0.1.6)(graphql@16.8.1)(typescript@5.4.5)
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
-      react-error-boundary: 4.0.13(react@18.3.0)
+      react: link:path/to/next.js/node_modules/react
+      react-dom: link:path/to/next.js/node_modules/react-dom
+      react-error-boundary: 4.0.13(react@path+to+next.js+node_modules+react)
       uuid: 9.0.1
     transitivePeerDependencies:
       - yjs
     dev: false
 
-  /@payloadcms/richtext-slate@3.0.0-beta.24(@payloadcms/translations@3.0.0-beta.24)(@payloadcms/ui@3.0.0-beta.24)(payload@3.0.0-beta.24)(react-dom@18.3.0)(react@18.3.0):
+  /@payloadcms/richtext-slate@3.0.0-beta.24(@payloadcms/translations@3.0.0-beta.24)(@payloadcms/ui@3.0.0-beta.24)(payload@3.0.0-beta.24)(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-RdTMG5hH0+JWhRDIBtf4/OHCpSFQrqz5AdIvagsrI3uA6vgnSRp6Ah9Yl7vRpwEQp1nrA13QObUSCJ5qlr+q4Q==}
     engines: {node: '>=18.20.2'}
     peerDependencies:
@@ -2232,16 +1948,16 @@ packages:
       payload: 3.0.0-beta.24
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@faceless-ui/modal': 2.0.2(react-dom@18.3.0)(react@18.3.0)
+      '@faceless-ui/modal': 2.0.2(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)
       '@payloadcms/translations': 3.0.0-beta.24
-      '@payloadcms/ui': 3.0.0-beta.24(@types/react@18.2.79)(monaco-editor@0.48.0)(next@14.3.0-canary.28)(payload@3.0.0-beta.24)(react-dom@18.3.0)(react@18.3.0)(scheduler@0.23.1)
+      '@payloadcms/ui': 3.0.0-beta.24(monaco-editor@0.48.0)(next@path+to+next.js+packages+next)(payload@3.0.0-beta.24)(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)(scheduler@0.23.1)
       is-hotkey: 0.2.0
       payload: 3.0.0-beta.24(@swc/core@1.5.0)(@swc/types@0.1.6)(graphql@16.8.1)(typescript@5.4.5)
-      react: 18.3.0
+      react: link:path/to/next.js/node_modules/react
       slate: 0.91.4
       slate-history: 0.86.0(slate@0.91.4)
       slate-hyperscript: 0.81.3(slate@0.91.4)
-      slate-react: 0.92.0(react-dom@18.3.0)(react@18.3.0)(slate@0.91.4)
+      slate-react: 0.92.0(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)(slate@0.91.4)
     transitivePeerDependencies:
       - react-dom
     dev: false
@@ -2250,7 +1966,7 @@ packages:
     resolution: {integrity: sha512-OCckgf4LTYrQdqpMCHrS8T6AkbF2UYAaQJpj7SyMIZTLOb5DSoN88bk+jHDkfjJ3AUWqePZSH887Af6/pdP+hQ==}
     dev: false
 
-  /@payloadcms/ui@3.0.0-beta.24(@types/react@18.2.79)(monaco-editor@0.48.0)(next@14.3.0-canary.28)(payload@3.0.0-beta.24)(react-dom@18.3.0)(react@18.3.0)(scheduler@0.23.1):
+  /@payloadcms/ui@3.0.0-beta.24(monaco-editor@0.48.0)(next@path+to+next.js+packages+next)(payload@3.0.0-beta.24)(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)(scheduler@0.23.1):
     resolution: {integrity: sha512-9Y3L5zkefGDwcy1uOb0KYrvQWThzPuFe2NpNuqarzWkD/zUra9vYii4qyrX+dTo/Yhqx99uFdJ2XHwUYYt1HVQ==}
     engines: {node: '>=18.20.2'}
     peerDependencies:
@@ -2259,12 +1975,12 @@ packages:
       react: ^18.0.0
       react-dom: ^18.0.0
     dependencies:
-      '@dnd-kit/core': 6.0.8(react-dom@18.3.0)(react@18.3.0)
-      '@dnd-kit/sortable': 7.0.2(@dnd-kit/core@6.0.8)(react@18.3.0)
-      '@faceless-ui/modal': 2.0.2(react-dom@18.3.0)(react@18.3.0)
-      '@faceless-ui/scroll-info': 1.3.0(react-dom@18.3.0)(react@18.3.0)
-      '@faceless-ui/window-info': 2.1.2(react-dom@18.3.0)(react@18.3.0)
-      '@monaco-editor/react': 4.5.1(monaco-editor@0.48.0)(react-dom@18.3.0)(react@18.3.0)
+      '@dnd-kit/core': 6.0.8(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)
+      '@dnd-kit/sortable': 7.0.2(@dnd-kit/core@6.0.8)(react@path+to+next.js+node_modules+react)
+      '@faceless-ui/modal': 2.0.2(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)
+      '@faceless-ui/scroll-info': 1.3.0(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)
+      '@faceless-ui/window-info': 2.1.2(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)
+      '@monaco-editor/react': 4.5.1(monaco-editor@0.48.0)(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)
       '@payloadcms/translations': 3.0.0-beta.24
       body-scroll-lock: 4.0.0-beta.0
       bson-objectid: 2.0.4
@@ -2272,21 +1988,20 @@ packages:
       deep-equal: 2.2.2
       flatley: 5.2.0
       md5: 2.3.0
-      next: 14.3.0-canary.28(react-dom@18.3.0)(react@18.3.0)
+      next: link:path/to/next.js/packages/next
       object-to-formdata: 4.5.1
       payload: 3.0.0-beta.24(@swc/core@1.5.0)(@swc/types@0.1.6)(graphql@16.8.1)(typescript@5.4.5)
       qs: 6.11.2
-      react: 18.3.0
-      react-animate-height: 2.1.2(react-dom@18.3.0)(react@18.3.0)
-      react-datepicker: 6.2.0(react-dom@18.3.0)(react@18.3.0)
-      react-dom: 18.3.0(react@18.3.0)
-      react-image-crop: 10.1.8(react@18.3.0)
-      react-select: 5.7.4(@types/react@18.2.79)(react-dom@18.3.0)(react@18.3.0)
-      react-toastify: 10.0.4(react-dom@18.3.0)(react@18.3.0)
-      use-context-selector: 1.4.1(react-dom@18.3.0)(react@18.3.0)(scheduler@0.23.1)
+      react: link:path/to/next.js/node_modules/react
+      react-animate-height: 2.1.2(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)
+      react-datepicker: 6.2.0(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)
+      react-dom: link:path/to/next.js/node_modules/react-dom
+      react-image-crop: 10.1.8(react@path+to+next.js+node_modules+react)
+      react-select: 5.7.4(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)
+      react-toastify: 10.0.4(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)
+      use-context-selector: 1.4.1(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)(scheduler@0.23.1)
       uuid: 9.0.1
     transitivePeerDependencies:
-      - '@types/react'
       - monaco-editor
       - react-native
       - scheduler
@@ -2896,12 +2611,6 @@ packages:
     resolution: {integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==}
     dev: false
 
-  /@swc/helpers@0.5.11:
-    resolution: {integrity: sha512-YNlnKRWF2sVojTpIyzwou9XoTNbzbzONwRhOoniEioF1AtaitTvVZblaQRrAzChWQ1bLYyYSWzM18y4WwgzJ+A==}
-    dependencies:
-      tslib: 2.6.2
-    dev: false
-
   /@swc/types@0.1.6:
     resolution: {integrity: sha512-/JLo/l2JsT/LRd80C3HfbmVpxOAJ11FO2RCEslFrgzLltoP9j8XIbsyDcfCt2WWyX+CM96rBoNM+IToAkFOugg==}
     dependencies:
@@ -2980,12 +2689,7 @@ packages:
 
   /@types/prop-types@15.7.12:
     resolution: {integrity: sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==}
-
-  /@types/react-dom@18.2.25:
-    resolution: {integrity: sha512-o/V48vf4MQh7juIKZU2QGDfli6p1+OOi5oXx36Hffpc9adsHeXjVp8rHuPkjd8VT8sOJ2Zp05HR7CdpGTIUFUA==}
-    dependencies:
-      '@types/react': 18.2.79
-    dev: true
+    dev: false
 
   /@types/react-transition-group@4.4.10:
     resolution: {integrity: sha512-hT/+s0VQs2ojCX823m60m5f0sL5idt9SO6Tj6Dg+rdphGPIeJbJ6CxvBYkgkGKrYeDjvIpKTR38UzmtHJOGW3Q==}
@@ -2998,6 +2702,7 @@ packages:
     dependencies:
       '@types/prop-types': 15.7.12
       csstype: 3.1.3
+    dev: false
 
   /@types/uuid@9.0.8:
     resolution: {integrity: sha512-jg+97EGIcY9AGHJJRaaPVgetKDsrTgbRjQ5Msgjh/DQKEFl0DtyRr/VCOyD1T2R1MNeWPK/u7JoGhlDZnKBAfA==}
@@ -3494,10 +3199,6 @@ packages:
     engines: {node: '>=14.16'}
     dev: false
 
-  /caniuse-lite@1.0.30001612:
-    resolution: {integrity: sha512-lFgnZ07UhaCcsSZgWW0K5j4e69dK1u/ltrL9lTUiFOwNHs12S3UMIEYgBV0Z6C6hRDev7iRnMzzYmKabYdXF9g==}
-    dev: false
-
   /chalk@2.4.2:
     resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}
     engines: {node: '>=4'}
@@ -3561,10 +3262,6 @@ packages:
       es6-iterator: 2.0.3
       memoizee: 0.4.15
       timers-ext: 0.1.7
-    dev: false
-
-  /client-only@0.0.1:
-    resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}
     dev: false
 
   /clsx@1.2.1:
@@ -3708,6 +3405,7 @@ packages:
 
   /csstype@3.1.3:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
+    dev: false
 
   /d@1.0.2:
     resolution: {integrity: sha512-MOqHvMWF9/9MX6nza0KgvFH4HpMU0EF5uUDXqX/BtxtU8NfB0QzRtJ8Oe/6SuS4kbhyzVJwjd97EA4PKrzJ8bw==}
@@ -3988,7 +3686,7 @@ packages:
       - supports-color
     dev: false
 
-  /drizzle-orm@0.29.4(@libsql/client@0.5.6)(@types/react@18.2.79)(pg@8.11.3)(react@18.3.0):
+  /drizzle-orm@0.29.4(@libsql/client@0.5.6)(pg@8.11.3)(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-ZnSM8TAxFhzH7p1s3+w3pRE/eKaOeNkH9SKitm717pubDVVcV2I0BCDBPGKV+pe02+wMfw37ntlTcCyo2rA3IA==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
@@ -4060,9 +3758,8 @@ packages:
         optional: true
     dependencies:
       '@libsql/client': 0.5.6
-      '@types/react': 18.2.79
       pg: 8.11.3
-      react: 18.3.0
+      react: link:path/to/next.js/node_modules/react
     dev: false
 
   /eastasianwidth@0.2.0:
@@ -5002,6 +4699,7 @@ packages:
 
   /graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
+    dev: true
 
   /graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
@@ -5863,12 +5561,6 @@ packages:
       thenify-all: 1.6.0
     dev: false
 
-  /nanoid@3.3.7:
-    resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-    dev: false
-
   /napi-build-utils@1.0.2:
     resolution: {integrity: sha512-ONmRUqK7zj7DWX0D9ADe03wbwOBZxNAfF20PlGfCWQcD3+/MakShIHrMqx9YwPTfxDdF1zLeL+RGZiR9kGMLdg==}
     dev: false
@@ -5879,49 +5571,6 @@ packages:
 
   /next-tick@1.1.0:
     resolution: {integrity: sha512-CXdUiJembsNjuToQvxayPZF9Vqht7hewsvy2sOWafLvi2awflj9mOC6bHIg50orX8IJvWKY9wYQ/zB2kogPslQ==}
-    dev: false
-
-  /next@14.3.0-canary.28(react-dom@18.3.0)(react@18.3.0):
-    resolution: {integrity: sha512-nl4uVgqz1nH+CnlqQlLSd8LBClY2HKQlonA+s/A+Nl4kZnOupR9ovKoewteQsarQiLkNsFzUKTeHgnbdVUXwag==}
-    engines: {node: '>=18.17.0'}
-    hasBin: true
-    peerDependencies:
-      '@opentelemetry/api': ^1.1.0
-      '@playwright/test': ^1.41.2
-      react: ^18.2.0
-      react-dom: ^18.2.0
-      sass: ^1.3.0
-    peerDependenciesMeta:
-      '@opentelemetry/api':
-        optional: true
-      '@playwright/test':
-        optional: true
-      sass:
-        optional: true
-    dependencies:
-      '@next/env': 14.3.0-canary.28
-      '@swc/helpers': 0.5.11
-      busboy: 1.6.0
-      caniuse-lite: 1.0.30001612
-      graceful-fs: 4.2.11
-      postcss: 8.4.31
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
-      styled-jsx: 5.1.1(react@18.3.0)
-    optionalDependencies:
-      '@next/swc-darwin-arm64': 14.3.0-canary.28
-      '@next/swc-darwin-x64': 14.3.0-canary.28
-      '@next/swc-linux-arm64-gnu': 14.3.0-canary.28
-      '@next/swc-linux-arm64-musl': 14.3.0-canary.28
-      '@next/swc-linux-x64-gnu': 14.3.0-canary.28
-      '@next/swc-linux-x64-musl': 14.3.0-canary.28
-      '@next/swc-win32-arm64-msvc': 14.3.0-canary.28
-      '@next/swc-win32-ia32-msvc': 14.3.0-canary.28
-      '@next/swc-win32-x64-msvc': 14.3.0-canary.28
-      sharp: 0.33.3
-    transitivePeerDependencies:
-      - '@babel/core'
-      - babel-plugin-macros
     dev: false
 
   /node-abi@3.62.0:
@@ -6371,15 +6020,6 @@ packages:
     resolution: {integrity: sha512-d7Uw+eZoloe0EHDIYoe+bQ5WXnGMOpmiZFTuMWCwpjzzkL2nTjcKiAk4hh8TjnGye2TwWOk3UXucZ+3rbmBa8Q==}
     engines: {node: '>= 0.4'}
 
-  /postcss@8.4.31:
-    resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
-    engines: {node: ^10 || ^12 || >=14}
-    dependencies:
-      nanoid: 3.3.7
-      picocolors: 1.0.0
-      source-map-js: 1.2.0
-    dev: false
-
   /postgres-array@2.0.0:
     resolution: {integrity: sha512-VpZrUqU5A69eQyW2c5CA1jtLecCsN2U/bD6VilrFDWq5+5UIEVO7nazS3TEcHf1zuPYO/sqGvUvW62g86RXZuA==}
     engines: {node: '>=4'}
@@ -6514,7 +6154,7 @@ packages:
       strip-json-comments: 2.0.1
     dev: false
 
-  /react-animate-height@2.1.2(react-dom@18.3.0)(react@18.3.0):
+  /react-animate-height@2.1.2(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-A9jfz/4CTdsIsE7WCQtO9UkOpMBcBRh8LxyHl2eoZz1ki02jpyUL5xt58gabd0CyeLQ8fRyQ+s2lyV2Ufu8Owg==}
     engines: {node: '>= 6.0.0'}
     peerDependencies:
@@ -6523,26 +6163,26 @@ packages:
     dependencies:
       classnames: 2.5.1
       prop-types: 15.8.1
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      react: link:path/to/next.js/node_modules/react
+      react-dom: link:path/to/next.js/node_modules/react-dom
     dev: false
 
-  /react-datepicker@6.2.0(react-dom@18.3.0)(react@18.3.0):
+  /react-datepicker@6.2.0(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-GzEOiE6yLfp9P6XNkOhXuYtZHzoAx3tirbi7/dj2WHlGM+NGE1lefceqGR0ZrYsYaqsNJhIJFTgwUpzVzA+mjw==}
     peerDependencies:
       react: ^16.9.0 || ^17 || ^18
       react-dom: ^16.9.0 || ^17 || ^18
     dependencies:
-      '@floating-ui/react': 0.26.12(react-dom@18.3.0)(react@18.3.0)
+      '@floating-ui/react': 0.26.12(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)
       classnames: 2.5.1
       date-fns: 3.3.1
       prop-types: 15.8.1
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
-      react-onclickoutside: 6.13.0(react-dom@18.3.0)(react@18.3.0)
+      react: link:path/to/next.js/node_modules/react
+      react-dom: link:path/to/next.js/node_modules/react-dom
+      react-onclickoutside: 6.13.0(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)
     dev: false
 
-  /react-diff-viewer-continued@3.2.6(react-dom@18.3.0)(react@18.3.0):
+  /react-diff-viewer-continued@3.2.6(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-GrzyqQnjIMoej+jMjWvtVSsQqhXgzEGqpXlJ2dAGfOk7Q26qcm8Gu6xtI430PBUyZsERe8BJSQf+7VZZo8IBNQ==}
     engines: {node: '>= 8'}
     peerDependencies:
@@ -6554,61 +6194,51 @@ packages:
       diff: 5.2.0
       memoize-one: 6.0.0
       prop-types: 15.8.1
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      react: link:path/to/next.js/node_modules/react
+      react-dom: link:path/to/next.js/node_modules/react-dom
     dev: false
 
-  /react-dom@18.3.0(react@18.3.0):
-    resolution: {integrity: sha512-zaKdLBftQJnvb7FtDIpZtsAIb2MZU087RM8bRDZU8LVCCFYjPTsDZJNFUWPcVz3HFSN1n/caxi0ca4B/aaVQGQ==}
-    peerDependencies:
-      react: ^18.3.0
-    dependencies:
-      loose-envify: 1.4.0
-      react: 18.3.0
-      scheduler: 0.23.1
-    dev: false
-
-  /react-error-boundary@3.1.4(react@18.3.0):
+  /react-error-boundary@3.1.4(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-uM9uPzZJTF6wRQORmSrvOIgt4lJ9MC1sNgEOj2XGsDTRE4kmpWxg7ENK9EWNKJRMAOY9z0MuF4yIfl6gp4sotA==}
     engines: {node: '>=10', npm: '>=6'}
     peerDependencies:
       react: '>=16.13.1'
     dependencies:
       '@babel/runtime': 7.24.4
-      react: 18.3.0
+      react: link:path/to/next.js/node_modules/react
     dev: false
 
-  /react-error-boundary@4.0.13(react@18.3.0):
+  /react-error-boundary@4.0.13(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-b6PwbdSv8XeOSYvjt8LpgpKrZ0yGdtZokYwkwV2wlcZbxgopHX/hgPl5VgpnoVOWd868n1hktM8Qm4b+02MiLQ==}
     peerDependencies:
       react: '>=16.13.1'
     dependencies:
       '@babel/runtime': 7.24.4
-      react: 18.3.0
+      react: link:path/to/next.js/node_modules/react
     dev: false
 
-  /react-image-crop@10.1.8(react@18.3.0):
+  /react-image-crop@10.1.8(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-4rb8XtXNx7ZaOZarKKnckgz4xLMvds/YrU6mpJfGhGAsy2Mg4mIw1x+DCCGngVGq2soTBVVOxx2s/C6mTX9+pA==}
     peerDependencies:
       react: '>=16.13.1'
     dependencies:
-      react: 18.3.0
+      react: link:path/to/next.js/node_modules/react
     dev: false
 
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
-  /react-onclickoutside@6.13.0(react-dom@18.3.0)(react@18.3.0):
+  /react-onclickoutside@6.13.0(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-ty8So6tcUpIb+ZE+1HAhbLROvAIJYyJe/1vRrrcmW+jLsaM+/powDRqxzo6hSh9CuRZGSL1Q8mvcF5WRD93a0A==}
     peerDependencies:
       react: ^15.5.x || ^16.x || ^17.x || ^18.x
       react-dom: ^15.5.x || ^16.x || ^17.x || ^18.x
     dependencies:
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      react: link:path/to/next.js/node_modules/react
+      react-dom: link:path/to/next.js/node_modules/react-dom
     dev: false
 
-  /react-select@5.7.4(@types/react@18.2.79)(react-dom@18.3.0)(react@18.3.0):
+  /react-select@5.7.4(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-NhuE56X+p9QDFh4BgeygHFIvJJszO1i1KSkg/JPcIJrbovyRtI+GuOEa4XzFCEpZRAEoEI8u/cAHK+jG/PgUzQ==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -6616,42 +6246,40 @@ packages:
     dependencies:
       '@babel/runtime': 7.24.4
       '@emotion/cache': 11.11.0
-      '@emotion/react': 11.11.4(@types/react@18.2.79)(react@18.3.0)
+      '@emotion/react': 11.11.4(react@path+to+next.js+node_modules+react)
       '@floating-ui/dom': 1.6.3
       '@types/react-transition-group': 4.4.10
       memoize-one: 6.0.0
       prop-types: 15.8.1
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
-      react-transition-group: 4.4.5(react-dom@18.3.0)(react@18.3.0)
-      use-isomorphic-layout-effect: 1.1.2(@types/react@18.2.79)(react@18.3.0)
-    transitivePeerDependencies:
-      - '@types/react'
+      react: link:path/to/next.js/node_modules/react
+      react-dom: link:path/to/next.js/node_modules/react-dom
+      react-transition-group: 4.4.5(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)
+      use-isomorphic-layout-effect: 1.1.2(react@path+to+next.js+node_modules+react)
     dev: false
 
-  /react-toastify@10.0.4(react-dom@18.3.0)(react@18.3.0):
+  /react-toastify@10.0.4(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-etR3RgueY8pe88SA67wLm8rJmL1h+CLqUGHuAoNsseW35oTGJEri6eBTyaXnFKNQ80v/eO10hBYLgz036XRGgA==}
     peerDependencies:
       react: '>=16'
       react-dom: '>=16'
     dependencies:
       clsx: 2.1.1
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      react: link:path/to/next.js/node_modules/react
+      react-dom: link:path/to/next.js/node_modules/react-dom
     dev: false
 
-  /react-toastify@8.2.0(react-dom@18.3.0)(react@18.3.0):
+  /react-toastify@8.2.0(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-Pg2Ju7NngAamarFvLwqrFomJ57u/Ay6i6zfLurt/qPynWkAkOthu6vxfqYpJCyNhHRhR4hu7+bySSeWWJu6PAg==}
     peerDependencies:
       react: '>=16'
       react-dom: '>=16'
     dependencies:
       clsx: 1.2.1
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      react: link:path/to/next.js/node_modules/react
+      react-dom: link:path/to/next.js/node_modules/react-dom
     dev: false
 
-  /react-transition-group@4.4.5(react-dom@18.3.0)(react@18.3.0):
+  /react-transition-group@4.4.5(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==}
     peerDependencies:
       react: '>=16.6.0'
@@ -6661,15 +6289,8 @@ packages:
       dom-helpers: 5.2.1
       loose-envify: 1.4.0
       prop-types: 15.8.1
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
-    dev: false
-
-  /react@18.3.0:
-    resolution: {integrity: sha512-RPutkJftSAldDibyrjuku7q11d3oy6wKOyPe5K1HA/HwwrXcEqBdHsLypkC2FFYjP7bPUa6gbzSBhw4sY2JcDg==}
-    engines: {node: '>=0.10.0'}
-    dependencies:
-      loose-envify: 1.4.0
+      react: link:path/to/next.js/node_modules/react
+      react-dom: link:path/to/next.js/node_modules/react-dom
     dev: false
 
   /readable-stream@3.6.2:
@@ -6900,37 +6521,6 @@ packages:
       tunnel-agent: 0.6.0
     dev: false
 
-  /sharp@0.33.3:
-    resolution: {integrity: sha512-vHUeXJU1UvlO/BNwTpT0x/r53WkLUVxrmb5JTgW92fdFCFk0ispLMAeu/jPO2vjkXM1fYUi3K7/qcLF47pwM1A==}
-    engines: {libvips: '>=8.15.2', node: ^18.17.0 || ^20.3.0 || >=21.0.0}
-    requiresBuild: true
-    dependencies:
-      color: 4.2.3
-      detect-libc: 2.0.3
-      semver: 7.6.0
-    optionalDependencies:
-      '@img/sharp-darwin-arm64': 0.33.3
-      '@img/sharp-darwin-x64': 0.33.3
-      '@img/sharp-libvips-darwin-arm64': 1.0.2
-      '@img/sharp-libvips-darwin-x64': 1.0.2
-      '@img/sharp-libvips-linux-arm': 1.0.2
-      '@img/sharp-libvips-linux-arm64': 1.0.2
-      '@img/sharp-libvips-linux-s390x': 1.0.2
-      '@img/sharp-libvips-linux-x64': 1.0.2
-      '@img/sharp-libvips-linuxmusl-arm64': 1.0.2
-      '@img/sharp-libvips-linuxmusl-x64': 1.0.2
-      '@img/sharp-linux-arm': 0.33.3
-      '@img/sharp-linux-arm64': 0.33.3
-      '@img/sharp-linux-s390x': 0.33.3
-      '@img/sharp-linux-x64': 0.33.3
-      '@img/sharp-linuxmusl-arm64': 0.33.3
-      '@img/sharp-linuxmusl-x64': 0.33.3
-      '@img/sharp-wasm32': 0.33.3
-      '@img/sharp-win32-ia32': 0.33.3
-      '@img/sharp-win32-x64': 0.33.3
-    dev: false
-    optional: true
-
   /shebang-command@2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
     engines: {node: '>=8'}
@@ -7008,7 +6598,7 @@ packages:
       slate: 0.91.4
     dev: false
 
-  /slate-react@0.92.0(react-dom@18.3.0)(react@18.3.0)(slate@0.91.4):
+  /slate-react@0.92.0(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)(slate@0.91.4):
     resolution: {integrity: sha512-xEDKu5RKw5f0N95l1UeNQnrB0Pxh4JPjpIZR/BVsMo0ININnLAknR99gLo46bl/Ffql4mr7LeaxQRoXxbFtJOQ==}
     peerDependencies:
       react: '>=16.8.0'
@@ -7022,8 +6612,8 @@ packages:
       is-hotkey: 0.1.8
       is-plain-object: 5.0.0
       lodash: 4.17.21
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      react: link:path/to/next.js/node_modules/react
+      react-dom: link:path/to/next.js/node_modules/react-dom
       scroll-into-view-if-needed: 2.2.31
       slate: 0.91.4
       tiny-invariant: 1.0.6
@@ -7237,23 +6827,6 @@ packages:
     dependencies:
       '@tokenizer/token': 0.3.0
       peek-readable: 5.0.0
-    dev: false
-
-  /styled-jsx@5.1.1(react@18.3.0):
-    resolution: {integrity: sha512-pW7uC1l4mBZ8ugbiZrcIsiIvVx1UmTfw7UkC3Um2tmfUq9Bhk8IiyEIPl6F8agHgjzku6j0xQEZbfA5uSgSaCw==}
-    engines: {node: '>= 12.0.0'}
-    peerDependencies:
-      '@babel/core': '*'
-      babel-plugin-macros: '*'
-      react: '>= 16.8.0 || 17.x.x || ^18.0.0-0'
-    peerDependenciesMeta:
-      '@babel/core':
-        optional: true
-      babel-plugin-macros:
-        optional: true
-    dependencies:
-      client-only: 0.0.1
-      react: 18.3.0
     dev: false
 
   /stylis@4.2.0:
@@ -7569,7 +7142,7 @@ packages:
     dependencies:
       punycode: 2.3.1
 
-  /use-context-selector@1.4.1(react-dom@18.3.0)(react@18.3.0)(scheduler@0.23.1):
+  /use-context-selector@1.4.1(react-dom@path+to+next.js+node_modules+react-dom)(react@path+to+next.js+node_modules+react)(scheduler@0.23.1):
     resolution: {integrity: sha512-Io2ArvcRO+6MWIhkdfMFt+WKQX+Vb++W8DS2l03z/Vw/rz3BclKpM0ynr4LYGyU85Eke+Yx5oIhTY++QR0ZDoA==}
     peerDependencies:
       react: '>=16.8.0'
@@ -7582,12 +7155,12 @@ packages:
       react-native:
         optional: true
     dependencies:
-      react: 18.3.0
-      react-dom: 18.3.0(react@18.3.0)
+      react: link:path/to/next.js/node_modules/react
+      react-dom: link:path/to/next.js/node_modules/react-dom
       scheduler: 0.23.1
     dev: false
 
-  /use-isomorphic-layout-effect@1.1.2(@types/react@18.2.79)(react@18.3.0):
+  /use-isomorphic-layout-effect@1.1.2(react@path+to+next.js+node_modules+react):
     resolution: {integrity: sha512-49L8yCO3iGT/ZF9QttjwLF/ZD9Iwto5LnH5LmEdk/6cFmXddqi2ulF0edxTwjj+7mqvpVVGQWvbXZdn32wRSHA==}
     peerDependencies:
       '@types/react': '*'
@@ -7596,8 +7169,7 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@types/react': 18.2.79
-      react: 18.3.0
+      react: link:path/to/next.js/node_modules/react
     dev: false
 
   /utf8-byte-length@1.0.4:

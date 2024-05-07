@@ -8,10 +8,11 @@ const inter = Inter({
 })
 
 /* Our app sits here to not cause any conflicts with payload's root layout  */
-const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+const Layout: React.FC<{ children: React.ReactNode }> = ({ children: children }) => {
+  const children2 = children as any
   return (
     <html className={inter.className}>
-      <body>{children}</body>
+      <body>{children2}</body>
     </html>
   )
 }
