@@ -18,16 +18,16 @@
     "node": "^18.20.2 || >=20.6.0"
   },
   "dependencies": {
-    "@payloadcms/db-mongodb": "3.0.0-beta.22",
-    "@payloadcms/db-postgres": "3.0.0-beta.22",
-    "@payloadcms/next": "3.0.0-beta.22",
-    "@payloadcms/richtext-lexical": "3.0.0-beta.22",
-    "@payloadcms/richtext-slate": "3.0.0-beta.22",
-    "@payloadcms/ui": "3.0.0-beta.22",
+    "@payloadcms/db-mongodb": "3.0.0-beta.24",
+    "@payloadcms/db-postgres": "3.0.0-beta.24",
+    "@payloadcms/next": "3.0.0-beta.24",
+    "@payloadcms/richtext-lexical": "3.0.0-beta.24",
+    "@payloadcms/richtext-slate": "3.0.0-beta.24",
+    "@payloadcms/ui": "3.0.0-beta.24",
     "cross-env": "^7.0.3",
     "graphql": "^16.8.1",
     "next": "14.3.0-canary.28",
-    "payload": "3.0.0-beta.22",
+    "payload": "3.0.0-beta.24",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sharp": "0.32.6"
