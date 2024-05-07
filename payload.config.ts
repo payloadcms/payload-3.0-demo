@@ -6,7 +6,7 @@ import {
   BlockQuoteFeature,
   BlocksFeature,
   BoldFeature,
-  CheckListFeature,
+  ChecklistFeature,
   HeadingFeature,
   IndentFeature,
   InlineCodeFeature,
