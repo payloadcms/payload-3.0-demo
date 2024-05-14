@@ -30,9 +30,9 @@ const Page = () => {
         <div className="codeBlock">
           <pre>
             <code>
-              {`import { getPayload } from 'payload'
+              {`import { getPayloadHMR } from '@payloadcms/next/utilities'
 import configPromise from '@payload-config'
-const payload = await getPayload({ config: configPromise })
+const payload = await getPayloadHMR({ config: configPromise })
 
 const data = await payload.find({
   collection: 'posts',
