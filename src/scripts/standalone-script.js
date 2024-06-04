@@ -5,7 +5,6 @@
 
 import { getPayload } from 'payload'
 import { importConfig } from 'payload/node'
-import 'dotenv/config'
 
 async function run() {
   const awaitedConfig = await importConfig('../../payload.config.ts')
