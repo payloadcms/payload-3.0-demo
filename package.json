@@ -21,18 +21,15 @@
   "dependencies": {
     "@payloadcms/db-mongodb": "3.0.0-beta.40",
     "@payloadcms/db-postgres": "3.0.0-beta.40",
-    "@payloadcms/next": "3.0.0-beta.40",
-    "@payloadcms/richtext-lexical": "3.0.0-beta.40",
-    "@payloadcms/richtext-slate": "3.0.0-beta.40",
-    "@payloadcms/ui": "3.0.0-beta.40",
+    "@payloadcms/next": "file:next.tgz",
+    "@payloadcms/ui": "file:ui.tgz",
+    "babel-plugin-react-compiler": "^0.0.0-experimental-592953e-20240517",
     "cross-env": "^7.0.3",
     "graphql": "^16.8.1",
     "next": "15.0.0-rc.0",
     "payload": "3.0.0-beta.40",
     "react": "19.0.0-rc-f994737d14-20240522",
-    "react-dom": "19.0.0-rc-f994737d14-20240522",
-    "sharp": "0.32.6",
-    "babel-plugin-react-compiler": "^0.0.0-experimental-592953e-20240517"
+    "react-dom": "19.0.0-rc-f994737d14-20240522"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
@@ -45,11 +42,15 @@
   "pnpm": {
     "overrides": {
       "@types/react": "npm:types-react@19.0.0-beta.2",
-      "@types/react-dom": "npm:types-react-dom@19.0.0-beta.2"
+      "@types/react-dom": "npm:types-react-dom@19.0.0-beta.2",
+      "@payloadcms/next": "file:next.tgz",
+      "@payloadcms/ui": "file:ui.tgz"
     }
   },
   "overrides": {
     "@types/react": "npm:types-react@19.0.0-beta.2",
-    "@types/react-dom": "npm:types-react-dom@19.0.0-beta.2"
+    "@types/react-dom": "npm:types-react-dom@19.0.0-beta.2",
+    "@payloadcms/next": "file:next.tgz",
+    "@payloadcms/ui": "file:ui.tgz"
   }
 }
