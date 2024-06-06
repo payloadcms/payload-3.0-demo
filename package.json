@@ -13,7 +13,9 @@
     "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint",
     "ci": "payload migrate && pnpm build",
     "generate:types": "payload generate:types",
-    "standalone-script": "node ./src/scripts/standalone-script.js"
+    "standalone-script": "node ./src/scripts/standalone-script.js",
+    "devtrace": "NEXT_TURBOPACK_TRACING=1 pnpm devturbo",
+    "viewtrace": "next internal turbo-trace-server .next/trace.log"
   },
   "engines": {
     "node": "^18.20.2 || >=20.6.0"
