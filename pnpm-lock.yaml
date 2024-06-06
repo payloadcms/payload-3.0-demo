@@ -6366,8 +6366,8 @@ packages:
   /react-datepicker@6.9.0(react-dom@19.0.0-rc-f994737d14-20240522)(react@19.0.0-rc-f994737d14-20240522):
     resolution: {integrity: sha512-QTxuzeem7BUfVFWv+g5WuvzT0c5BPo+XTCNbMTZKSZQLU+cMMwSUHwspaxuIcDlwNcOH0tiJ+bh1fJ2yxOGYWA==}
     peerDependencies:
-      react: ^16.9.0 || ^17 || ^18
-      react-dom: ^16.9.0 || ^17 || ^18
+      react: ^19.0.0-beta-04b058868c-20240508
+      react-dom: ^19.0.0-beta-04b058868c-20240508
     dependencies:
       '@floating-ui/react': 0.26.16(react-dom@19.0.0-rc-f994737d14-20240522)(react@19.0.0-rc-f994737d14-20240522)
       clsx: 2.1.1
@@ -6399,7 +6399,7 @@ packages:
   /react-dom@19.0.0-rc-f994737d14-20240522(react@19.0.0-rc-f994737d14-20240522):
     resolution: {integrity: sha512-J4CsfTSptPKkhaPbaR6n/KohQiHZTrRZ8GL4H8rbAqN/Qpy69g2MIoLBr5/PUX21ye6JxC1ZRWJFna7Xdg1pdA==}
     peerDependencies:
-      react: 19.0.0-rc-f994737d14-20240522
+      react: ^19.0.0-rc-f994737d14-20240522
     dependencies:
       react: 19.0.0-rc-f994737d14-20240522
       scheduler: 0.25.0-rc-f994737d14-20240522
@@ -7737,7 +7737,7 @@ packages:
     dev: false
 
   file:payloadcms-ui-3.0.0-beta.39.tgz(monaco-editor@0.49.0)(next@15.0.0-rc.0)(payload@3.0.0-beta.39)(react-dom@19.0.0-rc-f994737d14-20240522)(react@19.0.0-rc-f994737d14-20240522)(types-react@19.0.0-beta.2):
-    resolution: {integrity: sha512-TJ2Rk/TjjR0LLuKnD1zX+4C1MldWYQLtM7qGKaBtDk4DIewX3TLZUO9+ViTvLuvZNqMaonuMCSjDuLa8CAy23g==, tarball: file:payloadcms-ui-3.0.0-beta.39.tgz}
+    resolution: {integrity: sha512-+MHAfRUh0nqJAyaA93ZZxXeiPmzl5VQUZVy2zqhK2O/VdCuIGVdzCLkrOarwNYFKXOmTN7slECSZOydCzWzS9w==, tarball: file:payloadcms-ui-3.0.0-beta.39.tgz}
     id: file:payloadcms-ui-3.0.0-beta.39.tgz
     name: '@payloadcms/ui'
     version: 3.0.0-beta.39
