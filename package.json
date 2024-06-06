@@ -16,7 +16,7 @@
     "standalone-script": "node ./src/scripts/standalone-script.js"
   },
   "engines": {
-    "node": "^18.20.2 || >=20.6.0"
+    "node": "^18.20.2 || >=20.9.0"
   },
   "dependencies": {
     "@payloadcms/db-mongodb": "3.0.0-beta.40",
