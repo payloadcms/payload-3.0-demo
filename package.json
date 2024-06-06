@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "cross-env NODE_OPTIONS=--no-deprecation next dev",
+    "dev": "cross-env NODE_OPTIONS=--no-deprecation next dev --turbo",
     "devturbo": "cross-env NODE_OPTIONS=--no-deprecation next dev --turbo",
     "devsafe": "rm -rf .next && cross-env NODE_OPTIONS=--no-deprecation next dev",
     "build": "cross-env NODE_OPTIONS=--no-deprecation next build",
@@ -20,14 +20,15 @@
   },
   "dependencies": {
     "@payloadcms/db-mongodb": "3.0.0-beta.40",
-    "@payloadcms/db-postgres": "3.0.0-beta.40",
-    "@payloadcms/next": "file:next.tgz",
-    "@payloadcms/ui": "file:ui.tgz",
+    "@payloadcms/db-postgres": "file:payloadcms-db-postgres-3.0.0-beta.39.tgz",
+    "@payloadcms/next": "file:payloadcms-next-3.0.0-beta.39.tgz",
+    "@payloadcms/richtext-lexical": "file:payloadcms-richtext-lexical-3.0.0-beta.39.tgz",
+    "@payloadcms/ui": "file:payloadcms-ui-3.0.0-beta.39.tgz",
+    "payload": "file:payload-3.0.0-beta.39.tgz",
     "babel-plugin-react-compiler": "^0.0.0-experimental-592953e-20240517",
     "cross-env": "^7.0.3",
     "graphql": "^16.8.1",
     "next": "15.0.0-rc.0",
-    "payload": "3.0.0-beta.40",
     "react": "19.0.0-rc-f994737d14-20240522",
     "react-dom": "19.0.0-rc-f994737d14-20240522"
   },
@@ -43,14 +44,20 @@
     "overrides": {
       "@types/react": "npm:types-react@19.0.0-beta.2",
       "@types/react-dom": "npm:types-react-dom@19.0.0-beta.2",
-      "@payloadcms/next": "file:next.tgz",
-      "@payloadcms/ui": "file:ui.tgz"
+      "@payloadcms/db-postgres": "file:payloadcms-db-postgres-3.0.0-beta.39.tgz",
+      "@payloadcms/next": "file:payloadcms-next-3.0.0-beta.39.tgz",
+      "@payloadcms/richtext-lexical": "file:payloadcms-richtext-lexical-3.0.0-beta.39.tgz",
+      "@payloadcms/ui": "file:payloadcms-ui-3.0.0-beta.39.tgz",
+      "payload": "file:payload-3.0.0-beta.39.tgz"
     }
   },
   "overrides": {
     "@types/react": "npm:types-react@19.0.0-beta.2",
     "@types/react-dom": "npm:types-react-dom@19.0.0-beta.2",
-    "@payloadcms/next": "file:next.tgz",
-    "@payloadcms/ui": "file:ui.tgz"
+    "@payloadcms/db-postgres": "file:payloadcms-db-postgres-3.0.0-beta.39.tgz",
+    "@payloadcms/next": "file:payloadcms-next-3.0.0-beta.39.tgz",
+    "@payloadcms/richtext-lexical": "file:payloadcms-richtext-lexical-3.0.0-beta.39.tgz",
+    "@payloadcms/ui": "file:payloadcms-ui-3.0.0-beta.39.tgz",
+    "payload": "file:payload-3.0.0-beta.39.tgz"
   }
 }

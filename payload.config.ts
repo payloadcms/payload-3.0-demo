@@ -6,20 +6,22 @@ import { en } from 'payload/i18n/en'
 import { buildConfig } from 'payload/config'
 import { fileURLToPath } from 'url'
 import Example from '@/components/Example'
+import { lexicalEditor } from '@payloadcms/richtext-lexical'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
 export default buildConfig({
   //editor: slateEditor({}),
-  editor: () => ({
+  editor: lexicalEditor(),
+  /*editor: () => ({
     CellComponent: Example,
     FieldComponent: Example,
     generateComponentMap: ({}) => new Map(),
     generateSchemaMap: () => new Map(),
 
     validate: () => true,
-  }),
+  }),*/
   collections: [
     {
       slug: 'users',
