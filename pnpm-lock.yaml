@@ -7737,7 +7737,7 @@ packages:
     dev: false
 
   file:payloadcms-ui-3.0.0-beta.39.tgz(monaco-editor@0.49.0)(next@15.0.0-rc.0)(payload@3.0.0-beta.39)(react-dom@19.0.0-rc-f994737d14-20240522)(react@19.0.0-rc-f994737d14-20240522)(types-react@19.0.0-beta.2):
-    resolution: {integrity: sha512-+MHAfRUh0nqJAyaA93ZZxXeiPmzl5VQUZVy2zqhK2O/VdCuIGVdzCLkrOarwNYFKXOmTN7slECSZOydCzWzS9w==, tarball: file:payloadcms-ui-3.0.0-beta.39.tgz}
+    resolution: {integrity: sha512-6VfVHtaCsaKO3L989yujsLciPn10rJHGcilXvtRzCYksH3ixXcIYXSF69sXQLQZn8VVwS9DyGXF9EdvKV4lrkA==, tarball: file:payloadcms-ui-3.0.0-beta.39.tgz}
     id: file:payloadcms-ui-3.0.0-beta.39.tgz
     name: '@payloadcms/ui'
     version: 3.0.0-beta.39
