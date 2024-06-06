@@ -13,15 +13,15 @@ const dirname = path.dirname(filename)
 
 export default buildConfig({
   //editor: slateEditor({}),
-  editor: lexicalEditor(),
-  /*editor: () => ({
+  //editor: lexicalEditor(),
+  editor: () => ({
     CellComponent: Example,
     FieldComponent: Example,
     generateComponentMap: ({}) => new Map(),
     generateSchemaMap: () => new Map(),
 
     validate: () => true,
-  }),*/
+  }),
   collections: [
     {
       slug: 'users',
