@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "rm -rf .next && cross-env NODE_OPTIONS=--no-deprecation next dev",
+    "dev": "cross-env NODE_OPTIONS=--no-deprecation next dev",
     "devturbo": "rm -rf .next &&cross-env NODE_OPTIONS=--no-deprecation next dev --turbo",
     "devsafe": "rm -rf .next && cross-env NODE_OPTIONS=--no-deprecation next dev",
     "build": "cross-env NODE_OPTIONS=--no-deprecation next build",
@@ -13,18 +13,19 @@
     "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint",
     "ci": "payload migrate && pnpm build",
     "generate:types": "payload generate:types",
-    "standalone-script": "node ./src/scripts/standalone-script.js"
+    "standalone-script": "node ./src/scripts/standalone-script.js",
+    "devtrace": "NEXT_TURBOPACK_TRACING=1 pnpm devturbo",
+    "viewtrace": "next internal turbo-trace-server .next/trace.log"
   },
   "engines": {
     "node": "^18.20.2 || >=20.9.0"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^15.0.0-rc.0",
-    "@payloadcms/db-mongodb": "3.0.0-beta.45",
+    "@payloadcms/db-mongodb": "file:payloadcms-db-postgres-3.0.0-beta.45.tgz",
     "@payloadcms/db-postgres": "file:payloadcms-db-postgres-3.0.0-beta.45.tgz",
     "@payloadcms/next": "file:payloadcms-next-3.0.0-beta.45.tgpnpm z",
     "@payloadcms/richtext-lexical": "file:payloadcms-richtext-lexical-3.0.0-beta.45.tgz",
-    "@payloadcms/richtext-slate": "3.0.0-beta.45",
     "@payloadcms/ui": "file:payloadcms-ui-3.0.0-beta.45.tgz",
     "babel-plugin-react-compiler": "^0.0.0-experimental-592953e-20240517",
     "cross-env": "^7.0.3",
@@ -51,7 +52,9 @@
       "@payloadcms/next": "file:payloadcms-next-3.0.0-beta.45.tgz",
       "@payloadcms/richtext-lexical": "file:payloadcms-richtext-lexical-3.0.0-beta.45.tgz",
       "@payloadcms/ui": "file:payloadcms-ui-3.0.0-beta.45.tgz",
-      "payload": "file:payload-3.0.0-beta.45.tgz"
+      "payload": "file:payload-3.0.0-beta.45.tgz",
+      "@payloadcms/db-mongodb": "file:payloadcms-db-postgres-3.0.0-beta.45.tgz",
+      "@payloadcms/translations": "file:payloadcms-translations-3.0.0-beta.45.tgz"
     }
   },
   "overrides": {
@@ -61,6 +64,9 @@
     "@payloadcms/next": "file:payloadcms-next-3.0.0-beta.45.tgz",
     "@payloadcms/richtext-lexical": "file:payloadcms-richtext-lexical-3.0.0-beta.45.tgz",
     "@payloadcms/ui": "file:payloadcms-ui-3.0.0-beta.45.tgz",
-    "payload": "file:payload-3.0.0-beta.45.tgz"
+    "payload": "file:payload-3.0.0-beta.45.tgz",
+    "@payloadcms/db-mongodb": "file:payloadcms-db-postgres-3.0.0-beta.45.tgz",
+    "@payloadcms/translations": "file:payloadcms-translations-3.0.0-beta.45.tgz"
+
   }
 }
