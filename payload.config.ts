@@ -1,8 +1,7 @@
 import path from 'path'
 import { en } from 'payload/i18n/en'
 
-import { buildConfig } from 'payload/config'
-import sharp from 'sharp'
+import { buildConfig } from 'payload/server'
 import { fileURLToPath } from 'url'
 import { postgresAdapter } from '@payloadcms/db-postgres'
 

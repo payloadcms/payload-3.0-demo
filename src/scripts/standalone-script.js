@@ -4,7 +4,7 @@
  */
 
 import { getPayload } from 'payload'
-import { importConfig } from 'payload/node'
+import { importConfig } from 'payload/server'
 
 async function run() {
   const awaitedConfig = await importConfig('../../payload.config.ts')
