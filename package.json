@@ -15,7 +15,8 @@
     "generate:types": "payload generate:types",
     "standalone-script": "node ./src/scripts/standalone-script.js",
     "devtrace": "NEXT_TURBOPACK_TRACING=1 pnpm devturbo",
-    "viewtrace": "next internal turbo-trace-server .next/trace.log"
+    "viewtrace": "next internal turbo-trace-server .next/trace.log",
+    "nuke": "rm -rf node_modules && rm -rf .next && rm -rf payload*.tgz"
   },
   "engines": {
     "node": "^18.20.2 || >=20.9.0"

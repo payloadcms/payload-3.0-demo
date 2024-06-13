@@ -3,8 +3,7 @@
  * and uses the Payload Local API to query the database.
  */
 
-import { getPayload } from 'payload'
-import { importConfig } from 'payload/server'
+import { getPayload, importConfig } from 'payload'
 
 async function run() {
   const awaitedConfig = await importConfig('../../payload.config.ts')
