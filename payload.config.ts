@@ -4,11 +4,13 @@ import { en } from 'payload/i18n/en'
 import { buildConfig } from 'payload'
 import { fileURLToPath } from 'url'
 import { postgresAdapter } from '@payloadcms/db-postgres'
+import { lexicalEditor } from '@payloadcms/richtext-lexical'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
 export default buildConfig({
+  editor: lexicalEditor(),
   collections: [
     {
       slug: 'users',
@@ -59,7 +61,10 @@ export default buildConfig({
   i18n: {
     supportedLanguages: { en },
   },
-
+  localization: {
+    locales: ['en', 'de'],
+    defaultLocale: 'en',
+  },
   admin: {
     autoLogin: {
       email: 'dev@payloadcms.com',

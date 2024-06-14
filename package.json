@@ -23,16 +23,16 @@
   },
   "dependencies": {
     "@next/bundle-analyzer": "15.0.0-canary.28",
-    "@payloadcms/db-mongodb": "file:payloadcms-db-postgres-3.0.0-beta.45.tgz",
-    "@payloadcms/db-postgres": "file:payloadcms-db-postgres-3.0.0-beta.45.tgz",
-    "@payloadcms/next": "file:payloadcms-next-3.0.0-beta.45.tgpnpm z",
-    "@payloadcms/richtext-lexical": "file:payloadcms-richtext-lexical-3.0.0-beta.45.tgz",
-    "@payloadcms/ui": "file:payloadcms-ui-3.0.0-beta.45.tgz",
+    "@payloadcms/db-mongodb": "file:payloadcms-db-postgres-3.0.0-beta.47.tgz",
+    "@payloadcms/db-postgres": "file:payloadcms-db-postgres-3.0.0-beta.47.tgz",
+    "@payloadcms/next": "file:payloadcms-next-3.0.0-beta.47.tgpnpm z",
+    "@payloadcms/richtext-lexical": "file:payloadcms-richtext-lexical-3.0.0-beta.47.tgz",
+    "@payloadcms/ui": "file:payloadcms-ui-3.0.0-beta.47.tgz",
     "babel-plugin-react-compiler": "^0.0.0-experimental-592953e-20240517",
     "cross-env": "^7.0.3",
     "graphql": "^16.8.1",
-    "next": "15.0.0-canary.28",
-    "payload": "file:payload-3.0.0-beta.45.tgz",
+    "next": "15.0.0-canary.29",
+    "payload": "file:payload-3.0.0-beta.47.tgz",
     "react": "19.0.0-rc-f994737d14-20240522",
     "react-dom": "19.0.0-rc-f994737d14-20240522",
     "sharp": "0.32.6"
@@ -42,33 +42,33 @@
     "@types/react": "npm:types-react@19.0.0-beta.2",
     "@types/react-dom": "npm:types-react-dom@19.0.0-beta.2",
     "eslint": "^8.57.0",
-    "eslint-config-next": "14.2.3",
+    "eslint-config-next": "15.0.0-canary.29",
     "typescript": "^5.4.5"
   },
   "pnpm": {
     "overrides": {
       "@types/react": "npm:types-react@19.0.0-beta.2",
       "@types/react-dom": "npm:types-react-dom@19.0.0-beta.2",
-      "@payloadcms/db-postgres": "file:payloadcms-db-postgres-3.0.0-beta.45.tgz",
-      "@payloadcms/next": "file:payloadcms-next-3.0.0-beta.45.tgz",
-      "@payloadcms/richtext-lexical": "file:payloadcms-richtext-lexical-3.0.0-beta.45.tgz",
-      "@payloadcms/ui": "file:payloadcms-ui-3.0.0-beta.45.tgz",
-      "payload": "file:payload-3.0.0-beta.45.tgz",
-      "@payloadcms/db-mongodb": "file:payloadcms-db-postgres-3.0.0-beta.45.tgz",
-      "@payloadcms/translations": "file:payloadcms-translations-3.0.0-beta.45.tgz",
-      "@payloadcms/graphql": "file:payloadcms-graphql-3.0.0-beta.45.tgz"
+      "@payloadcms/db-postgres": "file:payloadcms-db-postgres-3.0.0-beta.47.tgz",
+      "@payloadcms/next": "file:payloadcms-next-3.0.0-beta.47.tgz",
+      "@payloadcms/richtext-lexical": "file:payloadcms-richtext-lexical-3.0.0-beta.47.tgz",
+      "@payloadcms/ui": "file:payloadcms-ui-3.0.0-beta.47.tgz",
+      "payload": "file:payload-3.0.0-beta.47.tgz",
+      "@payloadcms/db-mongodb": "file:payloadcms-db-postgres-3.0.0-beta.47.tgz",
+      "@payloadcms/translations": "file:payloadcms-translations-3.0.0-beta.47.tgz",
+      "@payloadcms/graphql": "file:payloadcms-graphql-3.0.0-beta.47.tgz"
     }
   },
   "overrides": {
     "@types/react": "npm:types-react@19.0.0-beta.2",
     "@types/react-dom": "npm:types-react-dom@19.0.0-beta.2",
-    "@payloadcms/db-postgres": "file:payloadcms-db-postgres-3.0.0-beta.45.tgz",
-    "@payloadcms/next": "file:payloadcms-next-3.0.0-beta.45.tgz",
-    "@payloadcms/richtext-lexical": "file:payloadcms-richtext-lexical-3.0.0-beta.45.tgz",
-    "@payloadcms/ui": "file:payloadcms-ui-3.0.0-beta.45.tgz",
-    "payload": "file:payload-3.0.0-beta.45.tgz",
-    "@payloadcms/db-mongodb": "file:payloadcms-db-postgres-3.0.0-beta.45.tgz",
-    "@payloadcms/translations": "file:payloadcms-translations-3.0.0-beta.45.tgz",
-    "@payloadcms/graphql": "file:payloadcms-graphql-3.0.0-beta.45.tgz"
+    "@payloadcms/db-postgres": "file:payloadcms-db-postgres-3.0.0-beta.47.tgz",
+    "@payloadcms/next": "file:payloadcms-next-3.0.0-beta.47.tgz",
+    "@payloadcms/richtext-lexical": "file:payloadcms-richtext-lexical-3.0.0-beta.47.tgz",
+    "@payloadcms/ui": "file:payloadcms-ui-3.0.0-beta.47.tgz",
+    "payload": "file:payload-3.0.0-beta.47.tgz",
+    "@payloadcms/db-mongodb": "file:payloadcms-db-postgres-3.0.0-beta.47.tgz",
+    "@payloadcms/translations": "file:payloadcms-translations-3.0.0-beta.47.tgz",
+    "@payloadcms/graphql": "file:payloadcms-graphql-3.0.0-beta.47.tgz"
   }
 }
