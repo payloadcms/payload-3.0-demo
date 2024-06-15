@@ -8,6 +8,7 @@
 
 export interface Config {
   collections: {
+    endUsers2: EndUsers2;
     users: User;
     pages: Page;
     media: Media;
@@ -16,9 +17,32 @@ export interface Config {
   };
   globals: {};
   locale: null;
-  user: User & {
-    collection: 'users';
-  };
+  user:
+    | (EndUsers2 & {
+        collection: 'endUsers2';
+      })
+    | (User & {
+        collection: 'users';
+      });
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "endUsers2".
+ */
+export interface EndUsers2 {
+  id: string;
+  updatedAt: string;
+  createdAt: string;
+  email: string;
+  resetPasswordToken?: string | null;
+  resetPasswordExpiration?: string | null;
+  salt?: string | null;
+  hash?: string | null;
+  _verified?: boolean | null;
+  _verificationToken?: string | null;
+  loginAttempts?: number | null;
+  lockUntil?: string | null;
+  password?: string | null;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -87,10 +111,15 @@ export interface Media {
  */
 export interface PayloadPreference {
   id: string;
-  user: {
-    relationTo: 'users';
-    value: string | User;
-  };
+  user:
+    | {
+        relationTo: 'endUsers2';
+        value: string | EndUsers2;
+      }
+    | {
+        relationTo: 'users';
+        value: string | User;
+      };
   key?: string | null;
   value?:
     | {
