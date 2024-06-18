@@ -9,7 +9,9 @@
 export interface Config {
   collections: {
     users: User;
-    pages: Page;
+    products: Product;
+    workflows: Workflow;
+    steps: Step;
     media: Media;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
@@ -39,26 +41,33 @@ export interface User {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
- * via the `definition` "pages".
+ * via the `definition` "products".
  */
-export interface Page {
+export interface Product {
   id: string;
   title?: string | null;
-  content?: {
-    root: {
-      type: string;
-      children: {
-        type: string;
-        version: number;
-        [k: string]: unknown;
-      }[];
-      direction: ('ltr' | 'rtl') | null;
-      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
-      indent: number;
-      version: number;
-    };
-    [k: string]: unknown;
-  } | null;
+  workflows?: (string | Workflow)[] | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "workflows".
+ */
+export interface Workflow {
+  id: string;
+  title?: string | null;
+  steps?: (string | Step)[] | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "steps".
+ */
+export interface Step {
+  id: string;
+  title?: string | null;
   updatedAt: string;
   createdAt: string;
 }
