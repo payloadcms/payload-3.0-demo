@@ -55,6 +55,11 @@ export default buildConfig({
           name: 'content',
           type: 'richText',
         },
+        {
+          name: 'image',
+          type: 'upload',
+          relationTo: 'media'
+        }
       ],
     },
     {
