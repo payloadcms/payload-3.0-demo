@@ -97,6 +97,8 @@ export default buildConfig({
     },
   },
   async onInit(payload) {
+    console.log('INITIALIZING')
+
     const existingUsers = await payload.find({
       collection: 'users',
       limit: 1,

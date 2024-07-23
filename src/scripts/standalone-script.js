@@ -10,11 +10,15 @@ async function run() {
   const awaitedConfig = await importConfig('../../payload.config.ts')
   const payload = await getPayload({ config: awaitedConfig })
 
-  const pages = await payload.find({
-    collection: 'pages',
-  })
+  for (let i = 0; i < 100; i++) {
+    await payload.create({
+      collection: 'pages',
+      data: {
+        title: `title ${i}`,
+      },
+    })
+  }
 
-  console.log(pages)
   process.exit(0)
 }
 
