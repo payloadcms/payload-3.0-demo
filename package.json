@@ -13,6 +13,7 @@
     "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint",
     "ci": "payload migrate && pnpm build",
     "generate:types": "payload generate:types",
+    "generate:cm": "payload generate:componentimportmap",
     "generate:schema": "payload-graphql generate:schema",
     "standalone-script": "node ./src/scripts/standalone-script.js"
   },
@@ -20,17 +21,17 @@
     "node": "^18.20.2 || >=20.9.0"
   },
   "dependencies": {
-    "@payloadcms/db-mongodb": "3.0.0-beta.67",
-    "@payloadcms/db-postgres": "3.0.0-beta.67",
-    "@payloadcms/next": "3.0.0-beta.67",
-    "@payloadcms/richtext-lexical": "3.0.0-beta.67",
-    "@payloadcms/richtext-slate": "3.0.0-beta.67",
-    "@payloadcms/ui": "3.0.0-beta.67",
+    "@payloadcms/db-mongodb": "file:./payloadcms-db-mongodb-3.0.0-beta.67.tgz",
+    "@payloadcms/db-postgres": "file:./payloadcms-db-postgres-3.0.0-beta.67.tgz",
+    "@payloadcms/next": "file:./payloadcms-next-3.0.0-beta.67.tgz",
+    "@payloadcms/richtext-lexical": "file:./payloadcms-richtext-lexical-3.0.0-beta.67.tgz",
+    "@payloadcms/ui": "file:./payloadcms-ui-3.0.0-beta.67.tgz",
+    "@payloadcms/translations": "file:./payloadcms-translations-3.0.0-beta.67.tgz",
     "babel-plugin-react-compiler": "^0.0.0-experimental-592953e-20240517",
     "cross-env": "^7.0.3",
     "graphql": "^16.8.2",
     "next": "15.0.0-canary.58",
-    "payload": "3.0.0-beta.67",
+    "payload": "file:./payload-3.0.0-beta.67.tgz",
     "react": "19.0.0-rc-6230622a1a-20240610",
     "react-dom": "19.0.0-rc-6230622a1a-20240610",
     "sharp": "0.32.6"
@@ -47,11 +48,25 @@
   "pnpm": {
     "overrides": {
       "@types/react": "npm:types-react@19.0.0-rc.0",
-      "@types/react-dom": "npm:types-react-dom@19.0.0-rc.0"
+      "@types/react-dom": "npm:types-react-dom@19.0.0-rc.0",
+      "payload": "file:./payload-3.0.0-beta.67.tgz",
+      "@payloadcms/db-mongodb": "file:./payloadcms-db-mongodb-3.0.0-beta.67.tgz",
+      "@payloadcms/db-postgres": "file:./payloadcms-db-postgres-3.0.0-beta.67.tgz",
+      "@payloadcms/next": "file:./payloadcms-next-3.0.0-beta.67.tgz",
+      "@payloadcms/richtext-lexical": "file:./payloadcms-richtext-lexical-3.0.0-beta.67.tgz",
+      "@payloadcms/ui": "file:./payloadcms-ui-3.0.0-beta.67.tgz",
+      "@payloadcms/translations": "file:./payloadcms-translations-3.0.0-beta.67.tgz"
     }
   },
   "overrides": {
     "@types/react": "npm:types-react@19.0.0-rc.0",
-    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.0"
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.0",
+    "payload": "file:./payload-3.0.0-beta.67.tgz",
+    "@payloadcms/db-mongodb": "file:./payloadcms-db-mongodb-3.0.0-beta.67.tgz",
+    "@payloadcms/db-postgres": "file:./payloadcms-db-postgres-3.0.0-beta.67.tgz",
+    "@payloadcms/next": "file:./payloadcms-next-3.0.0-beta.67.tgz",
+    "@payloadcms/richtext-lexical": "file:./payloadcms-richtext-lexical-3.0.0-beta.67.tgz",
+    "@payloadcms/ui": "file:./payloadcms-ui-3.0.0-beta.67.tgz",
+    "@payloadcms/translations": "file:./payloadcms-translations-3.0.0-beta.67.tgz"
   }
 }

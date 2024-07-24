@@ -1,24 +1,7 @@
 import path from 'path'
 // import { postgresAdapter } from '@payloadcms/db-postgres'
 import { en } from 'payload/i18n/en'
-import {
-  AlignFeature,
-  BlockquoteFeature,
-  BlocksFeature,
-  BoldFeature,
-  ChecklistFeature,
-  HeadingFeature,
-  IndentFeature,
-  InlineCodeFeature,
-  ItalicFeature,
-  lexicalEditor,
-  LinkFeature,
-  OrderedListFeature,
-  ParagraphFeature,
-  RelationshipFeature,
-  UnorderedListFeature,
-  UploadFeature,
-} from '@payloadcms/richtext-lexical'
+import { lexicalEditor } from '@payloadcms/richtext-lexical'
 //import { slateEditor } from '@payloadcms/richtext-slate'
 import { mongooseAdapter } from '@payloadcms/db-mongodb'
 import { buildConfig } from 'payload'
@@ -30,7 +13,9 @@ const dirname = path.dirname(filename)
 
 export default buildConfig({
   //editor: slateEditor({}),
-  editor: lexicalEditor(),
+  editor: lexicalEditor({
+    features: [],
+  }),
   collections: [
     {
       slug: 'users',
@@ -94,6 +79,9 @@ export default buildConfig({
       email: 'dev@payloadcms.com',
       password: 'test',
       prefillOnly: true,
+    },
+    componentImportMap: {
+      baseDir: path.resolve(dirname),
     },
   },
   async onInit(payload) {
