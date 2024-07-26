@@ -1,5 +1,5 @@
 import path from 'path'
-// import { postgresAdapter } from '@payloadcms/db-postgres'
+import { postgresAdapter } from '@payloadcms/db-postgres'
 import { en } from 'payload/i18n/en'
 import {
   AlignFeature,
@@ -20,7 +20,7 @@ import {
   UploadFeature,
 } from '@payloadcms/richtext-lexical'
 //import { slateEditor } from '@payloadcms/richtext-slate'
-import { mongooseAdapter } from '@payloadcms/db-mongodb'
+// import { mongooseAdapter } from '@payloadcms/db-mongodb'
 import { buildConfig } from 'payload'
 import sharp from 'sharp'
 import { fileURLToPath } from 'url'
@@ -55,6 +55,35 @@ export default buildConfig({
           name: 'content',
           type: 'richText',
         },
+        {
+          name: 'blocks',
+          label: 'Blocks',
+          type: 'blocks',
+          blocks: [
+            {
+              slug: 'nestedArrayBlock',
+              fields: [
+                {
+                  type: 'text',
+                  name: 'title',
+                },
+                {
+                  type: 'array',
+                  name: 'items',
+                  label: 'Items',
+                  localized: true,
+                  fields: [
+                    {
+                      type: 'richText',
+                      name: 'content',
+                      label: 'Content',
+                    },
+                  ],
+                },
+              ],
+            }
+          ]
+        },
       ],
     },
     {
@@ -72,14 +101,14 @@ export default buildConfig({
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },
-  // db: postgresAdapter({
-  //   pool: {
-  //     connectionString: process.env.POSTGRES_URI || ''
-  //   }
-  // }),
-  db: mongooseAdapter({
-    url: process.env.MONGODB_URI || '',
+  db: postgresAdapter({
+    pool: {
+      connectionString: process.env.POSTGRES_URI || ''
+    }
   }),
+  // db: mongooseAdapter({
+  //   url: process.env.MONGODB_URI || '',
+  // }),
 
   /**
    * Payload can now accept specific translations from 'payload/i18n/en'
