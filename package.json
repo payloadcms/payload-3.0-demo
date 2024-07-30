@@ -13,7 +13,7 @@
     "lint": "cross-env NODE_OPTIONS=--no-deprecation next lint",
     "ci": "payload migrate && pnpm build",
     "generate:types": "payload generate:types",
-    "generate:cm": "payload generate:componentimportmap",
+    "generate:im": "payload generate:importmap",
     "generate:schema": "payload-graphql generate:schema",
     "standalone-script": "node ./src/scripts/standalone-script.js"
   },
@@ -31,6 +31,7 @@
     "cross-env": "^7.0.3",
     "graphql": "^16.8.2",
     "next": "15.0.0-canary.58",
+    "@next/bundle-analyzer": "15.0.0-canary.58",
     "payload": "file:./payload-3.0.0-beta.67.tgz",
     "react": "19.0.0-rc-6230622a1a-20240610",
     "react-dom": "19.0.0-rc-6230622a1a-20240610",

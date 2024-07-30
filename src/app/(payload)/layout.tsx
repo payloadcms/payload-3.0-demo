@@ -4,7 +4,7 @@ import '@payloadcms/next/css'
 import { RootLayout } from '@payloadcms/next/layouts'
 /* DO NOT MODIFY IT BECAUSE IT COULD BE REWRITTEN AT ANY TIME. */
 import React from 'react'
-import { componentImportMap } from './admin/componentImportMap.js'
+import { importMap } from './admin/importMap.js'
 
 import './custom.scss'
 
@@ -13,7 +13,7 @@ type Args = {
 }
 
 const Layout = ({ children }: Args) => (
-  <RootLayout componentImportMap={componentImportMap} config={configPromise}>
+  <RootLayout importMap={importMap} config={configPromise}>
     {children}
   </RootLayout>
 )

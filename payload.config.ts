@@ -14,8 +14,8 @@ const dirname = path.dirname(filename)
 export default buildConfig({
   //editor: slateEditor({}),
   editor: lexicalEditor({
-    features: [],
-  }),
+    //features: [],
+  }) /*undefined,*/,
   collections: [
     {
       slug: 'users',
@@ -80,25 +80,23 @@ export default buildConfig({
       password: 'test',
       prefillOnly: true,
     },
-    componentImportMap: {
+    importMap: {
       baseDir: path.resolve(dirname),
     },
   },
   async onInit(payload) {
-    const existingUsers = await payload.find({
+    await payload.delete({
       collection: 'users',
-      limit: 1,
+      where: {},
     })
 
-    if (existingUsers.docs.length === 0) {
-      await payload.create({
-        collection: 'users',
-        data: {
-          email: 'dev@payloadcms.com',
-          password: 'test',
-        },
-      })
-    }
+    await payload.create({
+      collection: 'users',
+      data: {
+        email: 'dev@payloadcms.com',
+        password: 'test',
+      },
+    })
   },
   // Sharp is now an optional dependency -
   // if you want to resize images, crop, set focal point, etc.
