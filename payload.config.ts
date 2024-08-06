@@ -8,11 +8,14 @@ import {
   BoldFeature,
   ChecklistFeature,
   HeadingFeature,
+  HTMLConverterFeature,
   IndentFeature,
   InlineCodeFeature,
   ItalicFeature,
   lexicalEditor,
+  lexicalHTML,
   LinkFeature,
+  SerializedBlockNode,
   OrderedListFeature,
   ParagraphFeature,
   RelationshipFeature,
@@ -30,7 +33,38 @@ const dirname = path.dirname(filename)
 
 export default buildConfig({
   //editor: slateEditor({}),
-  editor: lexicalEditor(),
+  editor: lexicalEditor({
+    features: ({ defaultFeatures }) => [
+      ...defaultFeatures,
+      HTMLConverterFeature({
+        converters: ({ defaultConverters }) => [
+          ...defaultConverters,
+          {
+            converter: ({ node }: { node: any }) => {
+              if (node?.fields?.blockType === 'testBlock') {
+                return `<a href="${node?.fields?.myURLField}">${node?.fields?.myURLField}</a>`
+              }
+              return '<p>Unknown block type</p>'
+            },
+            nodeTypes: ['inlineBlock'],
+          },
+        ],
+      }),
+      BlocksFeature({
+        inlineBlocks: [
+          {
+            slug: 'testBlock',
+            fields: [
+              {
+                name: 'myURLField',
+                type: 'text',
+              },
+            ],
+          },
+        ],
+      }),
+    ],
+  }),
   collections: [
     {
       slug: 'users',
@@ -55,6 +89,7 @@ export default buildConfig({
           name: 'content',
           type: 'richText',
         },
+        lexicalHTML('content', { name: 'content_html' }),
       ],
     },
     {
