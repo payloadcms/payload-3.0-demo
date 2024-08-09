@@ -30,7 +30,7 @@
     "babel-plugin-react-compiler": "^0.0.0-experimental-592953e-20240517",
     "cross-env": "^7.0.3",
     "graphql": "^16.8.2",
-    "next": "15.0.0-canary.110",
+    "next": "15.0.0-canary.104",
     "react": "19.0.0-rc-06d0b89e-20240801",
     "react-dom": "19.0.0-rc-06d0b89e-20240801",
     "sharp": "0.32.6"
