@@ -23,6 +23,8 @@ import { mongooseAdapter } from '@payloadcms/db-mongodb'
 import { buildConfig } from 'payload'
 import sharp from 'sharp'
 import { fileURLToPath } from 'url'
+import { TestCollection } from '@/collections/test.collection'
+import { TestCollection2 } from './src/collections/test2.collection'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -31,6 +33,8 @@ export default buildConfig({
   //editor: slateEditor({}),
   editor: lexicalEditor(),
   collections: [
+    TestCollection,
+    TestCollection2,
     {
       slug: 'users',
       auth: true,
