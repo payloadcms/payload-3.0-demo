@@ -15,7 +15,8 @@
     "ci": "payload migrate && pnpm build",
     "generate:types": "payload generate:types",
     "generate:schema": "payload-graphql generate:schema",
-    "standalone-script": "node ./src/scripts/standalone-script.js"
+    "standalone-script": "node ./src/scripts/standalone-script.js",
+    "genimportmaptsx": "tsx node_modules/payload/bin.js generate:importmap"
   },
   "engines": {
     "node": "^18.20.2 || >=20.9.0"
@@ -26,14 +27,15 @@
     "@payloadcms/next": "file:./payloadcms-next-3.0.0-beta.77.tgz",
     "@payloadcms/richtext-lexical": "file:./payloadcms-richtext-lexical-3.0.0-beta.77.tgz",
     "@payloadcms/ui": "file:./payloadcms-ui-3.0.0-beta.77.tgz",
-    "payload": "file:./payload-3.0.0-beta.77.tgz",
     "babel-plugin-react-compiler": "^0.0.0-experimental-592953e-20240517",
     "cross-env": "^7.0.3",
     "graphql": "^16.8.2",
     "next": "15.0.0-canary.104",
+    "payload": "file:./payload-3.0.0-beta.77.tgz",
     "react": "19.0.0-rc-06d0b89e-20240801",
     "react-dom": "19.0.0-rc-06d0b89e-20240801",
-    "sharp": "0.32.6"
+    "sharp": "0.32.6",
+    "tsx": "^4.17.0"
   },
   "devDependencies": {
     "@payloadcms/graphql": "file:./payloadcms-graphql-3.0.0-beta.77.tgz",
