@@ -7128,7 +7128,7 @@ packages:
       - typescript
 
   file:payloadcms-db-mongodb-3.0.0-beta.77.tgz(@aws-sdk/client-sso-oidc@3.624.0)(payload@3.0.0-beta.77):
-    resolution: {integrity: sha512-XOann2x/9TYZ9SilY6OVtpw9Ky/VAL0BFT8oCVU/1J0oF/wGwVC2NjOd8CgoypxCulbGSjskg3e1BV0Sx+IYnA==, tarball: file:payloadcms-db-mongodb-3.0.0-beta.77.tgz}
+    resolution: {integrity: sha512-XVeNDYlblVaVqvfiYps7RwnlbNfN5742WdPp4nSkzXIEIoZqBBDg8MxjoX+Cq0P8154ejz+4BGvzheeklrf+0Q==, tarball: file:payloadcms-db-mongodb-3.0.0-beta.77.tgz}
     id: file:payloadcms-db-mongodb-3.0.0-beta.77.tgz
     name: '@payloadcms/db-mongodb'
     version: 3.0.0-beta.77
@@ -7149,7 +7149,7 @@ packages:
     dev: false
 
   file:payloadcms-db-postgres-3.0.0-beta.77.tgz(payload@3.0.0-beta.77)(react@19.0.0-rc-06d0b89e-20240801)(types-react@19.0.0-rc.0):
-    resolution: {integrity: sha512-+BaxymcBODGmji2vlcPIi04e1/M1mMlRduakAv1SrUfXMwk4/Q52BUZAqKUdYqLH+GTuJ4k5CaMM9ySro87INA==, tarball: file:payloadcms-db-postgres-3.0.0-beta.77.tgz}
+    resolution: {integrity: sha512-DN3o9mkGzWdi9wHt5rMBWUEw8WQ0OaEXYrZG7K3lr4p7OiTEoyOySzQwLhH2cZMZqMwckSKQlyPFeka7DfJVnA==, tarball: file:payloadcms-db-postgres-3.0.0-beta.77.tgz}
     id: file:payloadcms-db-postgres-3.0.0-beta.77.tgz
     name: '@payloadcms/db-postgres'
     version: 3.0.0-beta.77
@@ -7198,7 +7198,7 @@ packages:
     dev: false
 
   file:payloadcms-graphql-3.0.0-beta.77.tgz(graphql@16.9.0)(payload@3.0.0-beta.77)(typescript@5.5.4):
-    resolution: {integrity: sha512-Lm+R3WEbBeeQ664Rx//eZ7Z9sDM+Xn5Szgh72ly9CaKyNetod8/XlTxcHrK7G1NragLiU4XRYYpSdx95NBKTcg==, tarball: file:payloadcms-graphql-3.0.0-beta.77.tgz}
+    resolution: {integrity: sha512-0Ox3wQ/Chv/7V1cS3WSIkfxpnbUAPjgC+jLtK743wrE5V/8qunaFMO4J9e8SiFb1e3cF0kMKUzlnniVqmXCH4A==, tarball: file:payloadcms-graphql-3.0.0-beta.77.tgz}
     id: file:payloadcms-graphql-3.0.0-beta.77.tgz
     name: '@payloadcms/graphql'
     version: 3.0.0-beta.77
@@ -7217,7 +7217,7 @@ packages:
     dev: true
 
   file:payloadcms-next-3.0.0-beta.77.tgz(graphql@16.9.0)(monaco-editor@0.50.0)(next@15.0.0-canary.104)(payload@3.0.0-beta.77)(react-dom@19.0.0-rc-06d0b89e-20240801)(react@19.0.0-rc-06d0b89e-20240801)(types-react@19.0.0-rc.0)(typescript@5.5.4):
-    resolution: {integrity: sha512-BN9oSu2l1Yjeaq+sDWi3EqAHtFY3wypeYCXTNwjdkMaoXJYnJw2jKldmu/hU2lycXaP9JB64T0l8imYMkPXQbA==, tarball: file:payloadcms-next-3.0.0-beta.77.tgz}
+    resolution: {integrity: sha512-rvJoEMgTo9sfhtrC2YlUJA9ipQwzkNHmRn5/XBaT4qVpT1GJP3QBDppPRojyWPG0M7cdLjzWGP6Qr5hOM+CEQw==, tarball: file:payloadcms-next-3.0.0-beta.77.tgz}
     id: file:payloadcms-next-3.0.0-beta.77.tgz
     name: '@payloadcms/next'
     version: 3.0.0-beta.77
@@ -7258,7 +7258,7 @@ packages:
     dev: false
 
   file:payloadcms-richtext-lexical-3.0.0-beta.77.tgz(@faceless-ui/modal@3.0.0-beta.2)(@faceless-ui/scroll-info@2.0.0-beta.0)(@lexical/headless@0.17.0)(@lexical/link@0.17.0)(@lexical/list@0.17.0)(@lexical/mark@0.17.0)(@lexical/markdown@0.17.0)(@lexical/react@0.17.0)(@lexical/rich-text@0.17.0)(@lexical/selection@0.17.0)(@lexical/table@0.17.0)(@lexical/utils@0.17.0)(@payloadcms/next@3.0.0-beta.77)(@payloadcms/translations@3.0.0-beta.77)(@payloadcms/ui@3.0.0-beta.77)(lexical@0.17.0)(payload@3.0.0-beta.77)(react-dom@19.0.0-rc-06d0b89e-20240801)(react@19.0.0-rc-06d0b89e-20240801):
-    resolution: {integrity: sha512-p0GP6+4V8NDjw1UQ4CfJSH6CySKYbE2u0BC4htcR1+Hix5u7wTEH0i6ejUrlnbupcZcJnFkNIS3WH8C3i6aCHg==, tarball: file:payloadcms-richtext-lexical-3.0.0-beta.77.tgz}
+    resolution: {integrity: sha512-8jEkPNWohm7mye/jwRS3vMdSkM69FGHgKfUqQ+8Fu0x73hicYDDzxDu+t8q3Bs8cilkk+LeVFZgTElU/l5wvhw==, tarball: file:payloadcms-richtext-lexical-3.0.0-beta.77.tgz}
     id: file:payloadcms-richtext-lexical-3.0.0-beta.77.tgz
     name: '@payloadcms/richtext-lexical'
     version: 3.0.0-beta.77
