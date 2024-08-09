@@ -13,6 +13,7 @@ type Args = {
 }
 
 const Layout = ({ children }: Args) => (
+  // @ts-expect-error
   <RootLayout importMap={importMap} config={configPromise}>
     {children}
   </RootLayout>

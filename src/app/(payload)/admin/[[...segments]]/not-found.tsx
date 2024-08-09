@@ -19,6 +19,7 @@ export const generateMetadata = ({ params, searchParams }: Args): Promise<Metada
   generatePageMetadata({ config, params, searchParams })
 
 const NotFound = ({ params, searchParams }: Args) =>
+  // @ts-expect-error
   NotFoundPage({ config, params, searchParams, importMap })
 
 export default NotFound

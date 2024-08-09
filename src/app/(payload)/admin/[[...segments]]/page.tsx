@@ -19,6 +19,7 @@ export const generateMetadata = ({ params, searchParams }: Args): Promise<Metada
   generatePageMetadata({ config, params, searchParams })
 
 const Page = ({ params, searchParams }: Args) =>
+  // @ts-expect-error
   RootPage({ config, params, searchParams, importMap })
 
 export default Page
