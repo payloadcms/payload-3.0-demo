@@ -15,8 +15,8 @@
     "ci": "payload migrate && pnpm build",
     "generate:types": "payload generate:types",
     "generate:schema": "payload-graphql generate:schema",
-    "standalone-script": "node ./src/scripts/standalone-script.js",
-    "genimportmaptsx": "tsx node_modules/payload/bin.js generate:importmap"
+    "standalone-script": "payload run ./src/scripts/standalone-script.ts",
+    "generate:importmap": "payload generate:importmap"
   },
   "engines": {
     "node": "^18.20.2 || >=20.9.0"
@@ -34,8 +34,7 @@
     "payload": "file:./payload-3.0.0-beta.77.tgz",
     "react": "19.0.0-rc-06d0b89e-20240801",
     "react-dom": "19.0.0-rc-06d0b89e-20240801",
-    "sharp": "0.32.6",
-    "tsx": "^4.17.0"
+    "sharp": "0.32.6"
   },
   "devDependencies": {
     "@payloadcms/graphql": "file:./payloadcms-graphql-3.0.0-beta.77.tgz",
