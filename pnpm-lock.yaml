@@ -2679,7 +2679,7 @@ packages:
     resolution: {integrity: sha512-iXy2sjP0phPEpK2yivjRC3PAgoLaT4sjSk0LDWCTdcTBJmR4waEog0E6eJbvoOkLkOtWw37SB8vCkl/bbh4+8A==}
     peerDependencies:
       '@swc/core': '>= 1.4.13'
-      typescript: '>= 4.3'
+      typescript: 5.5.4
     dependencies:
       '@swc-node/core': 1.13.3(@swc/core@1.7.10)(@swc/types@0.1.12)
       '@swc-node/sourcemap-support': 0.5.1
@@ -6967,7 +6967,7 @@ packages:
     engines: {node: '>=12.20'}
 
   file:payload-3.0.0-beta.77.tgz(@swc/core@1.7.10)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4):
-    resolution: {integrity: sha512-TyWdHxOSU7LBAHPe/W4aCN3aSAHQLKEh5+AONqMVClK+kNfyN8+yg0jQaneoCWNCE91u4EzK0trkXqB4UZepLQ==, tarball: file:payload-3.0.0-beta.77.tgz}
+    resolution: {integrity: sha512-UJ2JnhTueOgUa2s+TzBGUX7SkOFPCGPICFkVG/gZHYOXrJdGIT8g3nwFCoGygeY3bBz8v+oO88HlU/w1nJvKmQ==, tarball: file:payload-3.0.0-beta.77.tgz}
     id: file:payload-3.0.0-beta.77.tgz
     name: payload
     version: 3.0.0-beta.77
@@ -7030,7 +7030,7 @@ packages:
     dev: false
 
   file:payloadcms-db-postgres-3.0.0-beta.77.tgz(payload@3.0.0-beta.77)(react@19.0.0-rc-06d0b89e-20240801)(types-react@19.0.0-rc.0):
-    resolution: {integrity: sha512-H3QKLFiojBPrxjuhPW69hcMpc5Arg65lZpFKiAlyh63INNwCO/fe0CQTHDYG4803A6icN5xFbUsazAVu/f+RWA==, tarball: file:payloadcms-db-postgres-3.0.0-beta.77.tgz}
+    resolution: {integrity: sha512-GutH0/lCFwvWk5PGnM/QYBUy7ZFk9hdCZl3/EZBZKeIVWwdm2DSHue0jcg6Dhf1iRROvgu5VciXn8Aea4L5qWQ==, tarball: file:payloadcms-db-postgres-3.0.0-beta.77.tgz}
     id: file:payloadcms-db-postgres-3.0.0-beta.77.tgz
     name: '@payloadcms/db-postgres'
     version: 3.0.0-beta.77
@@ -7102,7 +7102,7 @@ packages:
     dev: true
 
   file:payloadcms-next-3.0.0-beta.77.tgz(graphql@16.9.0)(monaco-editor@0.50.0)(next@15.0.0-canary.104)(payload@3.0.0-beta.77)(react-dom@19.0.0-rc-06d0b89e-20240801)(react@19.0.0-rc-06d0b89e-20240801)(types-react@19.0.0-rc.0)(typescript@5.5.4):
-    resolution: {integrity: sha512-etLV9zWDPGpRDLDIvMBwF7YDgTpks0Il03bcyZxOw+pqKfW/UiyIzGOigry65Ds9dDPJq7iJLpvxqDe454tmBw==, tarball: file:payloadcms-next-3.0.0-beta.77.tgz}
+    resolution: {integrity: sha512-MtlGgN0RL5E+63qI0BHyP95PUqAS7p0baAbVbc+iKAMR1K8CbuMbfQsT7JapeIGZiyXlU4HerOFpqTAdYE78pA==, tarball: file:payloadcms-next-3.0.0-beta.77.tgz}
     id: file:payloadcms-next-3.0.0-beta.77.tgz
     name: '@payloadcms/next'
     version: 3.0.0-beta.77
@@ -7143,7 +7143,7 @@ packages:
     dev: false
 
   file:payloadcms-richtext-lexical-3.0.0-beta.77.tgz(@faceless-ui/modal@3.0.0-beta.2)(@faceless-ui/scroll-info@2.0.0-beta.0)(@lexical/headless@0.17.0)(@lexical/link@0.17.0)(@lexical/list@0.17.0)(@lexical/mark@0.17.0)(@lexical/markdown@0.17.0)(@lexical/react@0.17.0)(@lexical/rich-text@0.17.0)(@lexical/selection@0.17.0)(@lexical/table@0.17.0)(@lexical/utils@0.17.0)(@payloadcms/next@3.0.0-beta.77)(@payloadcms/translations@3.0.0-beta.77)(@payloadcms/ui@3.0.0-beta.77)(lexical@0.17.0)(payload@3.0.0-beta.77)(react-dom@19.0.0-rc-06d0b89e-20240801)(react@19.0.0-rc-06d0b89e-20240801):
-    resolution: {integrity: sha512-PFYGfgew+dFJXSQPgwiY8qSOgla1a2FNpLC8sOhC8cpTk2kjeHqz0gs5ZTweQ7B6Jk/pq3HGjh6Xyv2SIZCOvw==, tarball: file:payloadcms-richtext-lexical-3.0.0-beta.77.tgz}
+    resolution: {integrity: sha512-rDIHOLkVBbzJxqjNR4i5YxixCumDgub0xrNtFM6xoATUpRJfdC6ZS9aFqss5jRyjdDJLoQ6T6sbfDmYy2GXIGQ==, tarball: file:payloadcms-richtext-lexical-3.0.0-beta.77.tgz}
     id: file:payloadcms-richtext-lexical-3.0.0-beta.77.tgz
     name: '@payloadcms/richtext-lexical'
     version: 3.0.0-beta.77
@@ -7196,7 +7196,7 @@ packages:
     dev: false
 
   file:payloadcms-ui-3.0.0-beta.77.tgz(monaco-editor@0.50.0)(next@15.0.0-canary.104)(payload@3.0.0-beta.77)(react-dom@19.0.0-rc-06d0b89e-20240801)(react@19.0.0-rc-06d0b89e-20240801)(types-react@19.0.0-rc.0)(typescript@5.5.4):
-    resolution: {integrity: sha512-pgku3uvWFsrlXYiEIebKkck1wrlVE6gmJ0tLqOCg6EWICq/DH6Us/8/SUxrljnVsRfcxi9KH17BwzHTu6cplLA==, tarball: file:payloadcms-ui-3.0.0-beta.77.tgz}
+    resolution: {integrity: sha512-m8EjNDeeIrKq9DAzipwR9XzWjJWAJUIYCA45dn0hMr8ii0RP6SvfO05afYEhbo1iwbw0eaFynKt0B6BpRjkKVw==, tarball: file:payloadcms-ui-3.0.0-beta.77.tgz}
     id: file:payloadcms-ui-3.0.0-beta.77.tgz
     name: '@payloadcms/ui'
     version: 3.0.0-beta.77

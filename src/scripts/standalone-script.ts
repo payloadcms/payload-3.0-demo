@@ -4,7 +4,7 @@
  */
 
 import { getPayload } from 'payload'
-import config from '../../payload.config'
+import config from '@payload-config'
 
 async function run() {
   const payload = await getPayload({ config })
