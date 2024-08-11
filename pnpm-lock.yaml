@@ -44,7 +44,7 @@ dependencies:
     version: 15.0.0-canary.104(babel-plugin-react-compiler@0.0.0)(react-dom@19.0.0-rc-06d0b89e-20240801)(react@19.0.0-rc-06d0b89e-20240801)
   payload:
     specifier: file:/Users/alessio/Documents/GitHub/payload-3.0-demo-2/payload-3.0.0-beta.77.tgz
-    version: file:payload-3.0.0-beta.77.tgz(@swc/core@1.7.9)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4)
+    version: file:payload-3.0.0-beta.77.tgz(@swc/core@1.7.10)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4)
   react:
     specifier: 19.0.0-rc-06d0b89e-20240801
     version: 19.0.0-rc-06d0b89e-20240801
@@ -61,10 +61,10 @@ dependencies:
 devDependencies:
   '@payloadcms/graphql':
     specifier: file:./payloadcms-graphql-3.0.0-beta.77.tgz
-    version: file:payloadcms-graphql-3.0.0-beta.77.tgz(graphql@16.9.0)(payload@3.0.0-beta.77)(typescript@5.5.4)
+    version: file:payloadcms-graphql-3.0.0-beta.77.tgz(@swc/core@1.7.10)(@swc/types@0.1.12)(graphql@16.9.0)(payload@3.0.0-beta.77)(typescript@5.5.4)
   '@types/node':
     specifier: ^20.14.9
-    version: 20.14.14
+    version: 20.14.15
   '@types/react':
     specifier: npm:types-react@19.0.0-rc.0
     version: /types-react@19.0.0-rc.0
@@ -796,12 +796,26 @@ packages:
     resolution: {integrity: sha512-zTrFENsqGvOkBOuHDC1pXCkDXNd2UhP4lI3gYGhQ1R1SPeAAfqzPsV1dcpMy4uNU6kB5VpU5NGhvwxVNETR02A==}
     dev: false
 
+  /@emnapi/core@1.2.0:
+    resolution: {integrity: sha512-E7Vgw78I93we4ZWdYCb4DGAwRROGkMIXk7/y87UmANR+J6qsWusmC3gLt0H+O0KOt5e6O38U8oJamgbudrES/w==}
+    requiresBuild: true
+    dependencies:
+      '@emnapi/wasi-threads': 1.0.1
+      tslib: 2.6.3
+    optional: true
+
   /@emnapi/runtime@1.2.0:
     resolution: {integrity: sha512-bV21/9LQmcQeCPEg3BDFtvwL6cwiTMksYNWQQ4KOxCZikEGalWtenoZ0wCiukJINlGCIi2KXx01g4FoH/LxpzQ==}
     requiresBuild: true
     dependencies:
       tslib: 2.6.3
-    dev: false
+    optional: true
+
+  /@emnapi/wasi-threads@1.0.1:
+    resolution: {integrity: sha512-iIBu7mwkq4UQGeMEM8bLwNK962nXdhodeScX4slfQnRhEMMzvYivHhutCIk8uojvmASXXPC2WNEjwxFWk72Oqw==}
+    requiresBuild: true
+    dependencies:
+      tslib: 2.6.3
     optional: true
 
   /@emotion/babel-plugin@11.12.0:
@@ -2129,6 +2143,15 @@ packages:
     dev: false
     optional: true
 
+  /@napi-rs/wasm-runtime@0.2.4:
+    resolution: {integrity: sha512-9zESzOO5aDByvhIAsOy9TbpZ0Ur2AJbUI7UT73kcUTS2mxAMHOBaa1st/jAymNoCtvrit99kkzT1FZuXVcgfIQ==}
+    requiresBuild: true
+    dependencies:
+      '@emnapi/core': 1.2.0
+      '@emnapi/runtime': 1.2.0
+      '@tybys/wasm-util': 0.9.0
+    optional: true
+
   /@next/env@15.0.0-canary.104:
     resolution: {integrity: sha512-7wOJhe62uL4ViZOumMwuPev4IxQaXJ4g97iMsXelOF+Q5QuuFXzbxIXh4OJMVAHZJMYkM5VyD2zxV66iYU01DQ==}
     dev: false
@@ -2244,6 +2267,85 @@ packages:
       fastq: 1.17.1
     dev: true
 
+  /@oxc-resolver/binding-darwin-arm64@1.10.2:
+    resolution: {integrity: sha512-aOCZYXqmFL+2sXlaVkYbAOtICGGeTFtmdul8OimQfOXHJods6YHJ2nR6+rEeBcJzaXyXPP18ne1IsEc4AYL1IA==}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    optional: true
+
+  /@oxc-resolver/binding-darwin-x64@1.10.2:
+    resolution: {integrity: sha512-6WD7lHGkoduFZfUgnC2suKOlqttQRKxWsiVXiiGPu3mfXvQAhMd/gekuH1t8vOhFlPJduaww15n5UB0bSjCK+w==}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    optional: true
+
+  /@oxc-resolver/binding-freebsd-x64@1.10.2:
+    resolution: {integrity: sha512-nEqHWx/Ot5p7Mafj8qH6vFlLSvHjECxAcZwhnAMqRuQu1NgXC/QM3emkdhVGy7QJgsxZbHpPaF6TERNf5/NL9Q==}
+    cpu: [x64]
+    os: [freebsd]
+    requiresBuild: true
+    optional: true
+
+  /@oxc-resolver/binding-linux-arm-gnueabihf@1.10.2:
+    resolution: {integrity: sha512-+AlZI0fPnpfArh8aC5k2295lmQrxa2p8gBLxC3buvCkz0ZpbVLxyyAXz3J2jGwJnmc5MUPLEqPYw6ZlAGH4XHA==}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    optional: true
+
+  /@oxc-resolver/binding-linux-arm64-gnu@1.10.2:
+    resolution: {integrity: sha512-8fZ8NszFaUZaoA8eUwkF2lHjgUs76aFiewWgG/cjcZmwKp+ErZQLW8eOvIWZ4SohHQ+ScvhVsSaU2PU38c88gw==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    optional: true
+
+  /@oxc-resolver/binding-linux-arm64-musl@1.10.2:
+    resolution: {integrity: sha512-oPrLICrw96Ym9n04FWXWGkbkpF6qJtZ57JSnqI3oQ24xHTt4iWyjHKHQO46NbJAK9sFb3Qce4BzV8faDI5Rifg==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    optional: true
+
+  /@oxc-resolver/binding-linux-x64-gnu@1.10.2:
+    resolution: {integrity: sha512-eli74jTAUiIfqi8IPFqiPxQS69Alcr6w/IFRyf3XxrkxeFGgcgxJkRIxWNTKJ6T3EXxjuma+49LdZn6l9rEj7A==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    optional: true
+
+  /@oxc-resolver/binding-linux-x64-musl@1.10.2:
+    resolution: {integrity: sha512-HH9zmjNSQo3rkbqJH5nIjGrtjC+QPrUy0KGGMR/oRCSLuD0cNFJ/Uly1XAugwSm4oEw0+rv6PmeclXmVTKsxhw==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    optional: true
+
+  /@oxc-resolver/binding-wasm32-wasi@1.10.2:
+    resolution: {integrity: sha512-3ItX23q33sfVBtMMdMhVDSe0NX5zBHxHfmFiXhSJuwNaVIwGpLFU7WU2nmq9oNdnmTOvjL8vlhOqiGvumBLlRA==}
+    engines: {node: '>=14.0.0'}
+    cpu: [wasm32]
+    requiresBuild: true
+    dependencies:
+      '@napi-rs/wasm-runtime': 0.2.4
+    optional: true
+
+  /@oxc-resolver/binding-win32-arm64-msvc@1.10.2:
+    resolution: {integrity: sha512-aVoj2V+jmQ1N+lVy9AhaLmzssJM0lcKt8D0UL83aNLZJ5lSN7hgBuUXTVmL+VF268f167khjo38z+fbELDVm8Q==}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    optional: true
+
+  /@oxc-resolver/binding-win32-x64-msvc@1.10.2:
+    resolution: {integrity: sha512-l8BDQWyP0Piw8hlmYPUqTRKLsq+ceG9h+9p6ZrjNzwW9AmJX7T7T2hgoVVHqS6f4WNA/CFkb3RyZP9QTzNkyyA==}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    optional: true
+
   /@payloadcms/drizzle@3.0.0-beta.77(payload@3.0.0-beta.77)(pg@8.11.3)(react@19.0.0-rc-06d0b89e-20240801)(types-react@19.0.0-rc.0):
     resolution: {integrity: sha512-zxpr2Xqsndb7O8NiEjlD6NmhUTG0ArVqy0IDAwogdSfYwQKPoXTe8hi3GAzbaCR2+SScoAEqcU8b3huvIq62+A==}
     peerDependencies:
@@ -2251,7 +2353,7 @@ packages:
     dependencies:
       console-table-printer: 2.11.2
       drizzle-orm: 0.32.1(pg@8.11.3)(react@19.0.0-rc-06d0b89e-20240801)(types-react@19.0.0-rc.0)
-      payload: file:payload-3.0.0-beta.77.tgz(@swc/core@1.7.9)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4)
+      payload: file:payload-3.0.0-beta.77.tgz(@swc/core@1.7.10)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4)
       prompts: 2.4.2
       to-snake-case: 1.0.0
       uuid: 9.0.0
@@ -2295,7 +2397,7 @@ packages:
     dependencies:
       graphql: 16.9.0
       graphql-scalars: 1.22.2(graphql@16.9.0)
-      payload: file:payload-3.0.0-beta.77.tgz(@swc/core@1.7.9)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4)
+      payload: file:payload-3.0.0-beta.77.tgz(@swc/core@1.7.10)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4)
       pluralize: 8.0.0
       ts-essentials: 7.0.3(typescript@5.5.4)
     transitivePeerDependencies:
@@ -2782,104 +2884,123 @@ packages:
     dev: false
     optional: true
 
-  /@swc-node/core@1.13.1(@swc/core@1.7.9)(@swc/types@0.1.12):
-    resolution: {integrity: sha512-emB5l2nZsXjUEAuusqjYvWnQMLWZp6K039Mv8aq5SX1rsNM/N7DNhw1i4/DX7AyzNZ0tT+ASWyTvqEURldp5HA==}
+  /@swc-node/core@1.13.3(@swc/core@1.7.10)(@swc/types@0.1.12):
+    resolution: {integrity: sha512-OGsvXIid2Go21kiNqeTIn79jcaX4l0G93X2rAnas4LFoDyA9wAwVK7xZdm+QsKoMn5Mus2yFLCc4OtX2dD/PWA==}
     engines: {node: '>= 10'}
     peerDependencies:
       '@swc/core': '>= 1.4.13'
       '@swc/types': '>= 0.1'
     dependencies:
-      '@swc/core': 1.7.9
+      '@swc/core': 1.7.10
       '@swc/types': 0.1.12
 
-  /@swc-node/sourcemap-support@0.5.0:
-    resolution: {integrity: sha512-fbhjL5G0YvFoWwNhWleuBUfotiX+USiA9oJqu9STFw+Hb0Cgnddn+HVS/K5fI45mn92e8V+cHD2jgFjk4w2T9Q==}
+  /@swc-node/register@1.10.9(@swc/core@1.7.10)(@swc/types@0.1.12)(typescript@5.5.4):
+    resolution: {integrity: sha512-iXy2sjP0phPEpK2yivjRC3PAgoLaT4sjSk0LDWCTdcTBJmR4waEog0E6eJbvoOkLkOtWw37SB8vCkl/bbh4+8A==}
+    peerDependencies:
+      '@swc/core': '>= 1.4.13'
+      typescript: 5.5.4
+    dependencies:
+      '@swc-node/core': 1.13.3(@swc/core@1.7.10)(@swc/types@0.1.12)
+      '@swc-node/sourcemap-support': 0.5.1
+      '@swc/core': 1.7.10
+      colorette: 2.0.20
+      debug: 4.3.6
+      oxc-resolver: 1.10.2
+      pirates: 4.0.6
+      tslib: 2.6.3
+      typescript: 5.5.4
+    transitivePeerDependencies:
+      - '@swc/types'
+      - supports-color
+
+  /@swc-node/sourcemap-support@0.5.1:
+    resolution: {integrity: sha512-JxIvIo/Hrpv0JCHSyRpetAdQ6lB27oFYhv0PKCNf1g2gUXOjpeR1exrXccRxLMuAV5WAmGFBwRnNOJqN38+qtg==}
     dependencies:
       source-map-support: 0.5.21
       tslib: 2.6.3
 
-  /@swc/core-darwin-arm64@1.7.9:
-    resolution: {integrity: sha512-OIfjf7iK0OCZ87IASLymq6HO9nT0s80R7hI9zHfsJJ9vxKc63iAKe+oxgXzljecBGPlkjUjj6nTFlN0wVeraUQ==}
+  /@swc/core-darwin-arm64@1.7.10:
+    resolution: {integrity: sha512-TYp4x/9w/C/yMU1olK5hTKq/Hi7BjG71UJ4V1U1WxI1JA3uokjQ/GoktDfmH5V5pX4dgGSOJwUe2RjoN8Z/XnA==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     optional: true
 
-  /@swc/core-darwin-x64@1.7.9:
-    resolution: {integrity: sha512-8ekLnd6IdOudNtm2ru0FrUCEBzs46Gg5f5Wkm7TPV6xA1hgIQMUbc9NJ/unRTh0FRvO1hbtoIz06GGD9MRQW8Q==}
+  /@swc/core-darwin-x64@1.7.10:
+    resolution: {integrity: sha512-P3LJjAWh5yLc6p5IUwV5LgRfA3R1oDCZDMabYyb2BVQuJTD4MfegW9DhBcUUF5dhBLwq3191KpLVzE+dLTbiXw==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     optional: true
 
-  /@swc/core-linux-arm-gnueabihf@1.7.9:
-    resolution: {integrity: sha512-6kSe+cCp0nrf1JP9MYrJxsjATq2Abs4RrZ501EXfcJuP9pJrdlX3UlGvT7kboeXP1723eWgMOEjRsx/qW5E4QQ==}
+  /@swc/core-linux-arm-gnueabihf@1.7.10:
+    resolution: {integrity: sha512-yGOFjE7w/akRTmqGY3FvWYrqbxO7OB2N2FHj2LO5HtzXflfoABb5RyRvdEquX+17J6mEpu4EwjYNraTD/WHIEQ==}
     engines: {node: '>=10'}
     cpu: [arm]
     os: [linux]
     requiresBuild: true
     optional: true
 
-  /@swc/core-linux-arm64-gnu@1.7.9:
-    resolution: {integrity: sha512-I+cGw4N9xqprsvPywU1vt+Ni4LnZMlDzH7Ow3n4KWKRJ34V9/0jnnmTYd7twpjpib9TsdEzAADFwlP3dVvetCQ==}
+  /@swc/core-linux-arm64-gnu@1.7.10:
+    resolution: {integrity: sha512-SPWsgWHfdWKKjLrYlvhxcdBJ7Ruy6crJbPoE9NfD95eJEjMnS2yZTqj2ChFsY737WeyhWYlHzgYhYOVCp83YwQ==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     optional: true
 
-  /@swc/core-linux-arm64-musl@1.7.9:
-    resolution: {integrity: sha512-u5ryq5fe8DZMLoyv8h3970NzuNdsdOmOod48b0EFVbNwHm0Tpz9wTRuzzGfpZXOR5xjgBiO+MbxiTU2vSdHo/g==}
+  /@swc/core-linux-arm64-musl@1.7.10:
+    resolution: {integrity: sha512-PUi50bkNqnBL3Z/Zq6jSfwgN9A/taA6u2Zou0tjDJi7oVdpjdr7SxNgCGzMJ/nNg5D/IQn1opM1jktMvpsPAuQ==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     optional: true
 
-  /@swc/core-linux-x64-gnu@1.7.9:
-    resolution: {integrity: sha512-rpdjz8kqLDqLyWEfhzYtGkGxh4oDRxnf7xLmNUptX6WyBDnOxcAjyBpeaNIV2mhIM4e1jmNtiUHDTwjLX15ECA==}
+  /@swc/core-linux-x64-gnu@1.7.10:
+    resolution: {integrity: sha512-Sc+pY55gknCAmBQBR6DhlA7jZSxHaLSDb5Sevzi6DOFMXR79NpA6zWTNKwp1GK2AnRIkbAfvYLgOxS5uWTFVpg==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     optional: true
 
-  /@swc/core-linux-x64-musl@1.7.9:
-    resolution: {integrity: sha512-KPTzWcAbnb1Cu8Jjs/Kty26TGT+PwT6l1jmXtVoKlc+5/ewM7CxSD7ZbutvFriJrg4Z1i3oyEOaQ2eM9T+LOVA==}
+  /@swc/core-linux-x64-musl@1.7.10:
+    resolution: {integrity: sha512-g5NKx2LXaGd0K26hmEts1Cvb7ptIvq3MHSgr6/D1tRPcDZw1Sp0dYsmyOv0ho4F5GOJyiCooG3oE9FXdb7jIpQ==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     optional: true
 
-  /@swc/core-win32-arm64-msvc@1.7.9:
-    resolution: {integrity: sha512-ZFbgm7ye/mTyeXik4o/3KqoEOSA2E2eb3e4JkAsVJB0K/hZdAoUtyyRCKlnq7nqbInhyKr0Pxqas6LkfyCQ48g==}
+  /@swc/core-win32-arm64-msvc@1.7.10:
+    resolution: {integrity: sha512-plRIsOcfy9t9Q/ivm5DA7I0HaIvfAWPbI+bvVRrr3C/1K2CSqnqZJjEWOAmx2LiyipijNnEaFYuLBp0IkGuJpg==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
     optional: true
 
-  /@swc/core-win32-ia32-msvc@1.7.9:
-    resolution: {integrity: sha512-xIcQost/1XcDL38pPQtBG1E4cOGHUorBxfD1S3/B9vVJlaAJIfZ8vwmOKpMIcRGXAQOXd0MXsBz+kaaOIJfqQQ==}
+  /@swc/core-win32-ia32-msvc@1.7.10:
+    resolution: {integrity: sha512-GntrVNT23viHtbfzmlK8lfBiKeajH24GzbDT7qXhnoO20suUPcyYZxyvCb4gWM2zu8ZBTPHNlqfrNsriQCZ+lQ==}
     engines: {node: '>=10'}
     cpu: [ia32]
     os: [win32]
     requiresBuild: true
     optional: true
 
-  /@swc/core-win32-x64-msvc@1.7.9:
-    resolution: {integrity: sha512-VSMce64nnvz1dDjbpUrtvi7wcXqdXkCwyXLp5ohAKG/ECy2JxZXdDB+FiP4BeYgH59ANRVVlmcaPrQGpK3QAnQ==}
+  /@swc/core-win32-x64-msvc@1.7.10:
+    resolution: {integrity: sha512-uXIF8GuSappe1imm6Lf7pHGepfCBjDQlS+qTqvEGE0wZAsL1IVATK9P/cH/OCLfJXeQDTLeSYmrpwjtXNt46tQ==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
     optional: true
 
-  /@swc/core@1.7.9:
-    resolution: {integrity: sha512-GUS7qH2/vOgLIiu3lCUheCo/r/ppj/fDjhRUuhXb/S13CeTQ1YJwLYpL5QCUZDas2Hn0aKrB4TiQtyM1cCpDRA==}
+  /@swc/core@1.7.10:
+    resolution: {integrity: sha512-l0xrFwBQ9atizhmV94yC2nwcecTk/oftofwMNPiFMGe56dqdmi2ArHaTV3PCtMlgaUH6rGCehoRMt5OrCI1ktg==}
     engines: {node: '>=10'}
     requiresBuild: true
     peerDependencies:
@@ -2891,16 +3012,16 @@ packages:
       '@swc/counter': 0.1.3
       '@swc/types': 0.1.12
     optionalDependencies:
-      '@swc/core-darwin-arm64': 1.7.9
-      '@swc/core-darwin-x64': 1.7.9
-      '@swc/core-linux-arm-gnueabihf': 1.7.9
-      '@swc/core-linux-arm64-gnu': 1.7.9
-      '@swc/core-linux-arm64-musl': 1.7.9
-      '@swc/core-linux-x64-gnu': 1.7.9
-      '@swc/core-linux-x64-musl': 1.7.9
-      '@swc/core-win32-arm64-msvc': 1.7.9
-      '@swc/core-win32-ia32-msvc': 1.7.9
-      '@swc/core-win32-x64-msvc': 1.7.9
+      '@swc/core-darwin-arm64': 1.7.10
+      '@swc/core-darwin-x64': 1.7.10
+      '@swc/core-linux-arm-gnueabihf': 1.7.10
+      '@swc/core-linux-arm64-gnu': 1.7.10
+      '@swc/core-linux-arm64-musl': 1.7.10
+      '@swc/core-linux-x64-gnu': 1.7.10
+      '@swc/core-linux-x64-musl': 1.7.10
+      '@swc/core-win32-arm64-msvc': 1.7.10
+      '@swc/core-win32-ia32-msvc': 1.7.10
+      '@swc/core-win32-x64-msvc': 1.7.10
 
   /@swc/counter@0.1.3:
     resolution: {integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==}
@@ -2919,11 +3040,18 @@ packages:
   /@tokenizer/token@0.3.0:
     resolution: {integrity: sha512-OvjF+z51L3ov0OyAU0duzsYuvO01PH7x4t6DJx+guahgTnBHkhJdG7soQeTSFLWN3efnHyibZ4Z8l2EuWwJN3A==}
 
+  /@tybys/wasm-util@0.9.0:
+    resolution: {integrity: sha512-6+7nlbMVX/PVDCwaIQ8nTOPveOcFLSt8GcXdx8hD0bt39uWxYT88uXzqTd4fTvqta7oeUJqudepapKNt2DYJFw==}
+    requiresBuild: true
+    dependencies:
+      tslib: 2.6.3
+    optional: true
+
   /@types/glob@7.2.0:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 20.14.14
+      '@types/node': 20.14.15
 
   /@types/json-schema@7.0.15:
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
@@ -2938,8 +3066,8 @@ packages:
   /@types/minimatch@5.1.2:
     resolution: {integrity: sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==}
 
-  /@types/node@20.14.14:
-    resolution: {integrity: sha512-d64f00982fS9YoOgJkAMolK7MN8Iq3TDdVjchbYHdEmjth/DHowx82GnoA+tVUAN+7vxfYUgAzi+JXbKNd2SDQ==}
+  /@types/node@20.14.15:
+    resolution: {integrity: sha512-Fz1xDMCF/B00/tYSVMlmK7hVeLh7jE5f3B7X1/hmV0MJBwE27KlS7EvD/Yp+z1lm8mVhwV5w+n8jOZG8AfTlKw==}
     dependencies:
       undici-types: 5.26.5
 
@@ -2950,8 +3078,8 @@ packages:
   /@types/prettier@2.7.3:
     resolution: {integrity: sha512-+68kP9yzs4LMp7VNh8gdzMSPZFL44MLGqiHWvttYJe+6qnuVr4Ek9wSBQoveqY/r+LwjCcU29kNVkidwim+kYA==}
 
-  /@types/react-transition-group@4.4.10:
-    resolution: {integrity: sha512-hT/+s0VQs2ojCX823m60m5f0sL5idt9SO6Tj6Dg+rdphGPIeJbJ6CxvBYkgkGKrYeDjvIpKTR38UzmtHJOGW3Q==}
+  /@types/react-transition-group@4.4.11:
+    resolution: {integrity: sha512-RM05tAniPZ5DZPzzNFP+DmrcOdD0efDUxMy3145oljWSl3x9ZV5vhme98gTxFrj2lhXvmGNnUiuDyJgY9IKkNA==}
     dependencies:
       '@types/react': /types-react@19.0.0-rc.0
     dev: false
@@ -2967,7 +3095,7 @@ packages:
   /@types/whatwg-url@8.2.2:
     resolution: {integrity: sha512-FtQu10RWgn3D9U4aazdwIE2yzphmTJREDqNdODHrbrZmmMqI0vMheC/6NE/J1Yveaj8H+ela+YwWTjq5PGmuhA==}
     dependencies:
-      '@types/node': 20.14.14
+      '@types/node': 20.14.15
       '@types/webidl-conversions': 7.0.3
     dev: false
 
@@ -5654,6 +5782,21 @@ packages:
       word-wrap: 1.2.5
     dev: true
 
+  /oxc-resolver@1.10.2:
+    resolution: {integrity: sha512-NIbwVqoU8Bhl7PVtItHCg+VFFokIDwBgIgFUwFG2Y8ePhxftFh5xG+KLar5PLWXlCP4WunPIuXD3jr3v6/MfRw==}
+    optionalDependencies:
+      '@oxc-resolver/binding-darwin-arm64': 1.10.2
+      '@oxc-resolver/binding-darwin-x64': 1.10.2
+      '@oxc-resolver/binding-freebsd-x64': 1.10.2
+      '@oxc-resolver/binding-linux-arm-gnueabihf': 1.10.2
+      '@oxc-resolver/binding-linux-arm64-gnu': 1.10.2
+      '@oxc-resolver/binding-linux-arm64-musl': 1.10.2
+      '@oxc-resolver/binding-linux-x64-gnu': 1.10.2
+      '@oxc-resolver/binding-linux-x64-musl': 1.10.2
+      '@oxc-resolver/binding-wasm32-wasi': 1.10.2
+      '@oxc-resolver/binding-win32-arm64-msvc': 1.10.2
+      '@oxc-resolver/binding-win32-x64-msvc': 1.10.2
+
   /p-limit@3.1.0:
     resolution: {integrity: sha512-TYOanM3wGwNGsZN2cVTYPArw454xnXj5qmWF1bEoAc4+cU/ol7GVh7odevjp1FNHduHc3KZMcFduxU5Xc6uJRQ==}
     engines: {node: '>=10'}
@@ -5847,6 +5990,10 @@ packages:
       safe-stable-stringify: 2.4.3
       sonic-boom: 4.0.1
       thread-stream: 3.1.0
+
+  /pirates@4.0.6:
+    resolution: {integrity: sha512-saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==}
+    engines: {node: '>= 6'}
 
   /pluralize@8.0.0:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
@@ -6090,7 +6237,7 @@ packages:
       '@emotion/cache': 11.13.1
       '@emotion/react': 11.13.0(react@19.0.0-rc-06d0b89e-20240801)(types-react@19.0.0-rc.0)
       '@floating-ui/dom': 1.6.10
-      '@types/react-transition-group': 4.4.10
+      '@types/react-transition-group': 4.4.11
       memoize-one: 6.0.0
       prop-types: 15.8.1
       react: 19.0.0-rc-06d0b89e-20240801
@@ -7081,25 +7228,19 @@ packages:
     resolution: {integrity: sha512-b4JR1PFR10y1mKjhHY9LaGo6tmrgjit7hxVIeAmyMw3jegXR4dhYqLaQF5zMXZxY7tLpMyJeLjr1C4rLmkVe8g==}
     engines: {node: '>=12.20'}
 
-  file:payload-3.0.0-beta.77.tgz(@swc/core@1.7.9)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4):
-    resolution: {integrity: sha512-sHjOq1DAvxppgnH4iGyeDYLGxweh/K2Uk/7eO9gZxWLxuJLfw6UhaMEVaBIb7/05Tq5tYcimN6L7mN6kQRQZ7w==, tarball: file:payload-3.0.0-beta.77.tgz}
+  file:payload-3.0.0-beta.77.tgz(@swc/core@1.7.10)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4):
+    resolution: {integrity: sha512-TyWdHxOSU7LBAHPe/W4aCN3aSAHQLKEh5+AONqMVClK+kNfyN8+yg0jQaneoCWNCE91u4EzK0trkXqB4UZepLQ==, tarball: file:payload-3.0.0-beta.77.tgz}
     id: file:payload-3.0.0-beta.77.tgz
     name: payload
     version: 3.0.0-beta.77
     engines: {node: ^18.20.2 || >=20.9.0}
     hasBin: true
     peerDependencies:
-      '@swc/core': ^1.6.13
       graphql: ^16.8.1
-    peerDependenciesMeta:
-      '@swc/core':
-        optional: true
     dependencies:
       '@next/env': 15.0.0-rc.0
       '@payloadcms/translations': 3.0.0-beta.77
-      '@swc-node/core': 1.13.1(@swc/core@1.7.9)(@swc/types@0.1.12)
-      '@swc-node/sourcemap-support': 0.5.0
-      '@swc/core': 1.7.9
+      '@swc-node/register': 1.10.9(@swc/core@1.7.10)(@swc/types@0.1.12)(typescript@5.5.4)
       ajv: 8.14.0
       bson-objectid: 2.0.4
       ci-info: 4.0.0
@@ -7124,11 +7265,13 @@ packages:
       ts-essentials: 7.0.3(typescript@5.5.4)
       uuid: 10.0.0
     transitivePeerDependencies:
+      - '@swc/core'
       - '@swc/types'
+      - supports-color
       - typescript
 
   file:payloadcms-db-mongodb-3.0.0-beta.77.tgz(@aws-sdk/client-sso-oidc@3.624.0)(payload@3.0.0-beta.77):
-    resolution: {integrity: sha512-XVeNDYlblVaVqvfiYps7RwnlbNfN5742WdPp4nSkzXIEIoZqBBDg8MxjoX+Cq0P8154ejz+4BGvzheeklrf+0Q==, tarball: file:payloadcms-db-mongodb-3.0.0-beta.77.tgz}
+    resolution: {integrity: sha512-XOann2x/9TYZ9SilY6OVtpw9Ky/VAL0BFT8oCVU/1J0oF/wGwVC2NjOd8CgoypxCulbGSjskg3e1BV0Sx+IYnA==, tarball: file:payloadcms-db-mongodb-3.0.0-beta.77.tgz}
     id: file:payloadcms-db-mongodb-3.0.0-beta.77.tgz
     name: '@payloadcms/db-mongodb'
     version: 3.0.0-beta.77
@@ -7139,7 +7282,7 @@ packages:
       http-status: 1.6.2
       mongoose: 6.12.3(@aws-sdk/client-sso-oidc@3.624.0)
       mongoose-paginate-v2: 1.7.22
-      payload: file:payload-3.0.0-beta.77.tgz(@swc/core@1.7.9)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4)
+      payload: file:payload-3.0.0-beta.77.tgz(@swc/core@1.7.10)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4)
       prompts: 2.4.2
       uuid: 10.0.0
     transitivePeerDependencies:
@@ -7149,7 +7292,7 @@ packages:
     dev: false
 
   file:payloadcms-db-postgres-3.0.0-beta.77.tgz(payload@3.0.0-beta.77)(react@19.0.0-rc-06d0b89e-20240801)(types-react@19.0.0-rc.0):
-    resolution: {integrity: sha512-DN3o9mkGzWdi9wHt5rMBWUEw8WQ0OaEXYrZG7K3lr4p7OiTEoyOySzQwLhH2cZMZqMwckSKQlyPFeka7DfJVnA==, tarball: file:payloadcms-db-postgres-3.0.0-beta.77.tgz}
+    resolution: {integrity: sha512-H3QKLFiojBPrxjuhPW69hcMpc5Arg65lZpFKiAlyh63INNwCO/fe0CQTHDYG4803A6icN5xFbUsazAVu/f+RWA==, tarball: file:payloadcms-db-postgres-3.0.0-beta.77.tgz}
     id: file:payloadcms-db-postgres-3.0.0-beta.77.tgz
     name: '@payloadcms/db-postgres'
     version: 3.0.0-beta.77
@@ -7160,7 +7303,7 @@ packages:
       console-table-printer: 2.11.2
       drizzle-kit: 0.23.2-df9e596
       drizzle-orm: 0.32.1(pg@8.11.3)(react@19.0.0-rc-06d0b89e-20240801)(types-react@19.0.0-rc.0)
-      payload: file:payload-3.0.0-beta.77.tgz(@swc/core@1.7.9)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4)
+      payload: file:payload-3.0.0-beta.77.tgz(@swc/core@1.7.10)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4)
       pg: 8.11.3
       prompts: 2.4.2
       to-snake-case: 1.0.0
@@ -7197,8 +7340,8 @@ packages:
       - supports-color
     dev: false
 
-  file:payloadcms-graphql-3.0.0-beta.77.tgz(graphql@16.9.0)(payload@3.0.0-beta.77)(typescript@5.5.4):
-    resolution: {integrity: sha512-0Ox3wQ/Chv/7V1cS3WSIkfxpnbUAPjgC+jLtK743wrE5V/8qunaFMO4J9e8SiFb1e3cF0kMKUzlnniVqmXCH4A==, tarball: file:payloadcms-graphql-3.0.0-beta.77.tgz}
+  file:payloadcms-graphql-3.0.0-beta.77.tgz(@swc/core@1.7.10)(@swc/types@0.1.12)(graphql@16.9.0)(payload@3.0.0-beta.77)(typescript@5.5.4):
+    resolution: {integrity: sha512-3G8WcAbMlI06LFF4EZaJ1hXigaNnCZ9gSNv864LXc+ZdhiDENEvskZ1MSiPLttn9INfvqGRvy4In8G4cvOaiUw==, tarball: file:payloadcms-graphql-3.0.0-beta.77.tgz}
     id: file:payloadcms-graphql-3.0.0-beta.77.tgz
     name: '@payloadcms/graphql'
     version: 3.0.0-beta.77
@@ -7207,17 +7350,21 @@ packages:
       graphql: ^16.8.1
       payload: file:/Users/alessio/Documents/GitHub/payload-3.0-demo-2/payload-3.0.0-beta.77.tgz
     dependencies:
+      '@swc-node/register': 1.10.9(@swc/core@1.7.10)(@swc/types@0.1.12)(typescript@5.5.4)
       graphql: 16.9.0
       graphql-scalars: 1.22.2(graphql@16.9.0)
-      payload: file:payload-3.0.0-beta.77.tgz(@swc/core@1.7.9)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4)
+      payload: file:payload-3.0.0-beta.77.tgz(@swc/core@1.7.10)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4)
       pluralize: 8.0.0
       ts-essentials: 7.0.3(typescript@5.5.4)
     transitivePeerDependencies:
+      - '@swc/core'
+      - '@swc/types'
+      - supports-color
       - typescript
     dev: true
 
   file:payloadcms-next-3.0.0-beta.77.tgz(graphql@16.9.0)(monaco-editor@0.50.0)(next@15.0.0-canary.104)(payload@3.0.0-beta.77)(react-dom@19.0.0-rc-06d0b89e-20240801)(react@19.0.0-rc-06d0b89e-20240801)(types-react@19.0.0-rc.0)(typescript@5.5.4):
-    resolution: {integrity: sha512-rvJoEMgTo9sfhtrC2YlUJA9ipQwzkNHmRn5/XBaT4qVpT1GJP3QBDppPRojyWPG0M7cdLjzWGP6Qr5hOM+CEQw==, tarball: file:payloadcms-next-3.0.0-beta.77.tgz}
+    resolution: {integrity: sha512-etLV9zWDPGpRDLDIvMBwF7YDgTpks0Il03bcyZxOw+pqKfW/UiyIzGOigry65Ds9dDPJq7iJLpvxqDe454tmBw==, tarball: file:payloadcms-next-3.0.0-beta.77.tgz}
     id: file:payloadcms-next-3.0.0-beta.77.tgz
     name: '@payloadcms/next'
     version: 3.0.0-beta.77
@@ -7239,7 +7386,7 @@ packages:
       http-status: 1.6.2
       next: 15.0.0-canary.104(babel-plugin-react-compiler@0.0.0)(react-dom@19.0.0-rc-06d0b89e-20240801)(react@19.0.0-rc-06d0b89e-20240801)
       path-to-regexp: 6.2.2
-      payload: file:payload-3.0.0-beta.77.tgz(@swc/core@1.7.9)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4)
+      payload: file:payload-3.0.0-beta.77.tgz(@swc/core@1.7.10)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4)
       qs-esm: 7.0.2
       react-diff-viewer-continued: 3.2.6(react-dom@19.0.0-rc-06d0b89e-20240801)(react@19.0.0-rc-06d0b89e-20240801)
       sass: 1.77.4
@@ -7258,7 +7405,7 @@ packages:
     dev: false
 
   file:payloadcms-richtext-lexical-3.0.0-beta.77.tgz(@faceless-ui/modal@3.0.0-beta.2)(@faceless-ui/scroll-info@2.0.0-beta.0)(@lexical/headless@0.17.0)(@lexical/link@0.17.0)(@lexical/list@0.17.0)(@lexical/mark@0.17.0)(@lexical/markdown@0.17.0)(@lexical/react@0.17.0)(@lexical/rich-text@0.17.0)(@lexical/selection@0.17.0)(@lexical/table@0.17.0)(@lexical/utils@0.17.0)(@payloadcms/next@3.0.0-beta.77)(@payloadcms/translations@3.0.0-beta.77)(@payloadcms/ui@3.0.0-beta.77)(lexical@0.17.0)(payload@3.0.0-beta.77)(react-dom@19.0.0-rc-06d0b89e-20240801)(react@19.0.0-rc-06d0b89e-20240801):
-    resolution: {integrity: sha512-8jEkPNWohm7mye/jwRS3vMdSkM69FGHgKfUqQ+8Fu0x73hicYDDzxDu+t8q3Bs8cilkk+LeVFZgTElU/l5wvhw==, tarball: file:payloadcms-richtext-lexical-3.0.0-beta.77.tgz}
+    resolution: {integrity: sha512-PFYGfgew+dFJXSQPgwiY8qSOgla1a2FNpLC8sOhC8cpTk2kjeHqz0gs5ZTweQ7B6Jk/pq3HGjh6Xyv2SIZCOvw==, tarball: file:payloadcms-richtext-lexical-3.0.0-beta.77.tgz}
     id: file:payloadcms-richtext-lexical-3.0.0-beta.77.tgz
     name: '@payloadcms/richtext-lexical'
     version: 3.0.0-beta.77
@@ -7303,7 +7450,7 @@ packages:
       bson-objectid: 2.0.4
       dequal: 2.0.3
       lexical: 0.17.0
-      payload: file:payload-3.0.0-beta.77.tgz(@swc/core@1.7.9)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4)
+      payload: file:payload-3.0.0-beta.77.tgz(@swc/core@1.7.10)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4)
       react: 19.0.0-rc-06d0b89e-20240801
       react-dom: 19.0.0-rc-06d0b89e-20240801(react@19.0.0-rc-06d0b89e-20240801)
       react-error-boundary: 4.0.13(react@19.0.0-rc-06d0b89e-20240801)
@@ -7311,7 +7458,7 @@ packages:
     dev: false
 
   file:payloadcms-ui-3.0.0-beta.77.tgz(monaco-editor@0.50.0)(next@15.0.0-canary.104)(payload@3.0.0-beta.77)(react-dom@19.0.0-rc-06d0b89e-20240801)(react@19.0.0-rc-06d0b89e-20240801)(types-react@19.0.0-rc.0)(typescript@5.5.4):
-    resolution: {integrity: sha512-tM3qTAbTRPCTDprL5Zw4sP+GyaHOGuue4MYP0fU/CesjXFAulDGJ4k4npcAn3eXk+XkbBmeKW68IZCQj8eKEUg==, tarball: file:payloadcms-ui-3.0.0-beta.77.tgz}
+    resolution: {integrity: sha512-pgku3uvWFsrlXYiEIebKkck1wrlVE6gmJ0tLqOCg6EWICq/DH6Us/8/SUxrljnVsRfcxi9KH17BwzHTu6cplLA==, tarball: file:payloadcms-ui-3.0.0-beta.77.tgz}
     id: file:payloadcms-ui-3.0.0-beta.77.tgz
     name: '@payloadcms/ui'
     version: 3.0.0-beta.77
@@ -7336,7 +7483,7 @@ packages:
       md5: 2.3.0
       next: 15.0.0-canary.104(babel-plugin-react-compiler@0.0.0)(react-dom@19.0.0-rc-06d0b89e-20240801)(react@19.0.0-rc-06d0b89e-20240801)
       object-to-formdata: 4.5.1
-      payload: file:payload-3.0.0-beta.77.tgz(@swc/core@1.7.9)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4)
+      payload: file:payload-3.0.0-beta.77.tgz(@swc/core@1.7.10)(@swc/types@0.1.12)(graphql@16.9.0)(typescript@5.5.4)
       qs-esm: 7.0.2
       react: 19.0.0-rc-06d0b89e-20240801
       react-animate-height: 2.1.2(react-dom@19.0.0-rc-06d0b89e-20240801)(react@19.0.0-rc-06d0b89e-20240801)
