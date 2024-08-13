@@ -22,12 +22,12 @@
     "node": "^18.20.2 || >=20.9.0"
   },
   "dependencies": {
-    "@payloadcms/db-mongodb": "3.0.0-canary.93a7bbd",
-    "@payloadcms/db-postgres": "3.0.0-canary.93a7bbd",
-    "@payloadcms/next": "3.0.0-canary.93a7bbd",
-    "@payloadcms/richtext-lexical": "3.0.0-canary.93a7bbd",
-    "@payloadcms/ui": "3.0.0-canary.93a7bbd",
-    "payload": "3.0.0-canary.93a7bbd",
+    "@payloadcms/db-mongodb": "3.0.0-canary.a192632",
+    "@payloadcms/db-postgres": "3.0.0-canary.a192632",
+    "@payloadcms/next": "3.0.0-canary.a192632",
+    "@payloadcms/richtext-lexical": "3.0.0-canary.a192632",
+    "@payloadcms/ui": "3.0.0-canary.a192632",
+    "payload": "3.0.0-canary.a192632",
     "babel-plugin-react-compiler": "^0.0.0-experimental-592953e-20240517",
     "cross-env": "^7.0.3",
     "graphql": "^16.8.2",
@@ -37,7 +37,7 @@
     "sharp": "0.32.6"
   },
   "devDependencies": {
-    "@payloadcms/graphql": "3.0.0-canary.93a7bbd",
+    "@payloadcms/graphql": "3.0.0-canary.a192632",
     "@types/node": "^20.14.9",
     "@types/react": "npm:types-react@19.0.0-rc.0",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.0",
