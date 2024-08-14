@@ -1209,7 +1209,7 @@ packages:
       payload: file:/Users/alessio/Documents/GitHub/payload-3.0-demo-2/payload-3.0.0-beta.80.tgz
 
   '@payloadcms/graphql@file:payloadcms-graphql-3.0.0-beta.80.tgz':
-    resolution: {integrity: sha512-bA+6TFZsJg6f2CSIy2ydi2ehED29w8If5lR3/5HhL34r1HxpV2Zv23blEnQmR4ymTF6723IlfPb2GwKlTA8Kbg==, tarball: file:payloadcms-graphql-3.0.0-beta.80.tgz}
+    resolution: {integrity: sha512-kfpCeiCzUO8x9Kh2D0vYKlJkKfnAPI8n3bdDM4jix9UxqowXms8Y3gRM9WOhyeK2U3a06q9suNugTJlpNkm81w==, tarball: file:payloadcms-graphql-3.0.0-beta.80.tgz}
     version: 3.0.0-beta.80
     hasBin: true
     peerDependencies:
@@ -1217,7 +1217,7 @@ packages:
       payload: file:/Users/alessio/Documents/GitHub/payload-3.0-demo-2/payload-3.0.0-beta.80.tgz
 
   '@payloadcms/next@file:payloadcms-next-3.0.0-beta.80.tgz':
-    resolution: {integrity: sha512-Pr205jc1wCwMwFB8aAuf9qU9Vm+swlSpQmlf0mP5k7kR+4lJTAiom905MENXKseeS3Hl2Bh62P62ttazM7grnw==, tarball: file:payloadcms-next-3.0.0-beta.80.tgz}
+    resolution: {integrity: sha512-0vai2lD4fko8HgW5BlidqRnideg9rTTP2d6soxP0ren0ghd6Uts8DsvQzg5DMTaqRcZlqHA4rhbE04AL8d9+5w==, tarball: file:payloadcms-next-3.0.0-beta.80.tgz}
     version: 3.0.0-beta.80
     engines: {node: ^18.20.2 || >=20.9.0}
     peerDependencies:
@@ -1226,7 +1226,7 @@ packages:
       payload: file:/Users/alessio/Documents/GitHub/payload-3.0-demo-2/payload-3.0.0-beta.80.tgz
 
   '@payloadcms/richtext-lexical@file:payloadcms-richtext-lexical-3.0.0-beta.80.tgz':
-    resolution: {integrity: sha512-bRCSv24C8zUW+wkFaKP0Pl6UTeYx0MU78efQpyFiX/GKMz1dfmcATVwXYoXDwydlZHBCABkzlmR0X59mxceqmA==, tarball: file:payloadcms-richtext-lexical-3.0.0-beta.80.tgz}
+    resolution: {integrity: sha512-q1o/WwBnEev0HG1Rf5w0Ly2028MSIAcLzqMjL1EmEQsqKG2NCoQEvl+ah6PC+xFeO0wksp+HNyr0KJ064T5bcg==, tarball: file:payloadcms-richtext-lexical-3.0.0-beta.80.tgz}
     version: 3.0.0-beta.80
     engines: {node: ^18.20.2 || >=20.9.0}
     peerDependencies:
@@ -1254,7 +1254,7 @@ packages:
     resolution: {integrity: sha512-LgNh1/LKgNPJSxc/sime2UvyuETQeJDLSQRwuxpRRyOxOBsfWRHuPeYbcjK5p3CofUjwBMaUGbtijit1PKRzZw==}
 
   '@payloadcms/ui@file:payloadcms-ui-3.0.0-beta.80.tgz':
-    resolution: {integrity: sha512-1ZrM/odcwusH4iWiE46FYJfNz/EGHzoirBdmL09+kNPxaazEI7T56uAKZ2NWnHCW2yjIMhG9xygFElw1WWUDhw==, tarball: file:payloadcms-ui-3.0.0-beta.80.tgz}
+    resolution: {integrity: sha512-Wnyu2TJYcqyOiJjcL9snK0x2lcrIEsuSoem2CLUVSm/FmCNvyT/knihh4CY6BcU/Ck7ei1zXKhcQH21cK7zKBw==, tarball: file:payloadcms-ui-3.0.0-beta.80.tgz}
     version: 3.0.0-beta.80
     engines: {node: ^18.20.2 || >=20.9.0}
     peerDependencies:
@@ -3051,7 +3051,7 @@ packages:
     engines: {node: '>=8'}
 
   payload@file:payload-3.0.0-beta.80.tgz:
-    resolution: {integrity: sha512-++RpVv7Hzd8kBDIbjpSEUyoKwyk7Dq9HruZU6HG7gOEkLG1bgt74iq/k9ce1Z4cdSeQ68sDUy2NT1JQyK4e3nA==, tarball: file:payload-3.0.0-beta.80.tgz}
+    resolution: {integrity: sha512-1mWj1galLwxIpqaVAQgzoQcv/5aWQ0kK9T5HchC444g1pmedNSc18axWwqgo4zOFzbjdl+1JzUt+wBiiEyx74Q==, tarball: file:payload-3.0.0-beta.80.tgz}
     version: 3.0.0-beta.80
     engines: {node: ^18.20.2 || >=20.9.0}
     hasBin: true
