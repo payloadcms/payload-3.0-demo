@@ -1,4 +1,12 @@
 type Query {
+  Test(id: String!, draft: Boolean): Test
+  Tests(draft: Boolean, where: Test_where, limit: Int, page: Int, sort: String): Tests
+  countTests(draft: Boolean, where: Test_where): countTests
+  docAccessTest(id: String!): testDocAccess
+  Test2(id: String!, draft: Boolean): Test2
+  Test2s(draft: Boolean, where: Test2_where, limit: Int, page: Int, sort: String): Test2s
+  countTest2s(draft: Boolean, where: Test2_where): countTest2s
+  docAccessTest2(id: String!): test2DocAccess
   User(id: String!, draft: Boolean): User
   Users(draft: Boolean, where: User_where, limit: Int, page: Int, sort: String): Users
   countUsers(draft: Boolean, where: User_where): countUsers
@@ -20,6 +28,414 @@ type Query {
   Access: Access
 }
 
+type Test {
+  id: String
+  test: String
+  updatedAt: DateTime
+  createdAt: DateTime
+}
+
+"""
+A date-time string at UTC, such as 2007-12-03T10:15:30Z, compliant with the `date-time` format outlined in section 5.6 of the RFC 3339 profile of the ISO 8601 standard for representation of dates and times using the Gregorian calendar.
+"""
+scalar DateTime
+
+type Tests {
+  docs: [Test]
+  hasNextPage: Boolean
+  hasPrevPage: Boolean
+  limit: Int
+  nextPage: Int
+  offset: Int
+  page: Int
+  pagingCounter: Int
+  prevPage: Int
+  totalDocs: Int
+  totalPages: Int
+}
+
+input Test_where {
+  test: Test_test_operator
+  updatedAt: Test_updatedAt_operator
+  createdAt: Test_createdAt_operator
+  id: Test_id_operator
+  AND: [Test_where_and]
+  OR: [Test_where_or]
+}
+
+input Test_test_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Test_updatedAt_operator {
+  equals: DateTime
+  not_equals: DateTime
+  greater_than_equal: DateTime
+  greater_than: DateTime
+  less_than_equal: DateTime
+  less_than: DateTime
+  like: DateTime
+  exists: Boolean
+}
+
+input Test_createdAt_operator {
+  equals: DateTime
+  not_equals: DateTime
+  greater_than_equal: DateTime
+  greater_than: DateTime
+  less_than_equal: DateTime
+  less_than: DateTime
+  like: DateTime
+  exists: Boolean
+}
+
+input Test_id_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Test_where_and {
+  test: Test_test_operator
+  updatedAt: Test_updatedAt_operator
+  createdAt: Test_createdAt_operator
+  id: Test_id_operator
+  AND: [Test_where_and]
+  OR: [Test_where_or]
+}
+
+input Test_where_or {
+  test: Test_test_operator
+  updatedAt: Test_updatedAt_operator
+  createdAt: Test_createdAt_operator
+  id: Test_id_operator
+  AND: [Test_where_and]
+  OR: [Test_where_or]
+}
+
+type countTests {
+  totalDocs: Int
+}
+
+type testDocAccess {
+  fields: TestDocAccessFields
+  create: TestCreateDocAccess
+  read: TestReadDocAccess
+  update: TestUpdateDocAccess
+  delete: TestDeleteDocAccess
+}
+
+type TestDocAccessFields {
+  test: TestDocAccessFields_test
+  updatedAt: TestDocAccessFields_updatedAt
+  createdAt: TestDocAccessFields_createdAt
+}
+
+type TestDocAccessFields_test {
+  create: TestDocAccessFields_test_Create
+  read: TestDocAccessFields_test_Read
+  update: TestDocAccessFields_test_Update
+  delete: TestDocAccessFields_test_Delete
+}
+
+type TestDocAccessFields_test_Create {
+  permission: Boolean!
+}
+
+type TestDocAccessFields_test_Read {
+  permission: Boolean!
+}
+
+type TestDocAccessFields_test_Update {
+  permission: Boolean!
+}
+
+type TestDocAccessFields_test_Delete {
+  permission: Boolean!
+}
+
+type TestDocAccessFields_updatedAt {
+  create: TestDocAccessFields_updatedAt_Create
+  read: TestDocAccessFields_updatedAt_Read
+  update: TestDocAccessFields_updatedAt_Update
+  delete: TestDocAccessFields_updatedAt_Delete
+}
+
+type TestDocAccessFields_updatedAt_Create {
+  permission: Boolean!
+}
+
+type TestDocAccessFields_updatedAt_Read {
+  permission: Boolean!
+}
+
+type TestDocAccessFields_updatedAt_Update {
+  permission: Boolean!
+}
+
+type TestDocAccessFields_updatedAt_Delete {
+  permission: Boolean!
+}
+
+type TestDocAccessFields_createdAt {
+  create: TestDocAccessFields_createdAt_Create
+  read: TestDocAccessFields_createdAt_Read
+  update: TestDocAccessFields_createdAt_Update
+  delete: TestDocAccessFields_createdAt_Delete
+}
+
+type TestDocAccessFields_createdAt_Create {
+  permission: Boolean!
+}
+
+type TestDocAccessFields_createdAt_Read {
+  permission: Boolean!
+}
+
+type TestDocAccessFields_createdAt_Update {
+  permission: Boolean!
+}
+
+type TestDocAccessFields_createdAt_Delete {
+  permission: Boolean!
+}
+
+type TestCreateDocAccess {
+  permission: Boolean!
+  where: JSONObject
+}
+
+"""
+The `JSONObject` scalar type represents JSON objects as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf).
+"""
+scalar JSONObject @specifiedBy(url: "http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf")
+
+type TestReadDocAccess {
+  permission: Boolean!
+  where: JSONObject
+}
+
+type TestUpdateDocAccess {
+  permission: Boolean!
+  where: JSONObject
+}
+
+type TestDeleteDocAccess {
+  permission: Boolean!
+  where: JSONObject
+}
+
+type Test2 {
+  id: String
+  test2: String
+  updatedAt: DateTime
+  createdAt: DateTime
+}
+
+type Test2s {
+  docs: [Test2]
+  hasNextPage: Boolean
+  hasPrevPage: Boolean
+  limit: Int
+  nextPage: Int
+  offset: Int
+  page: Int
+  pagingCounter: Int
+  prevPage: Int
+  totalDocs: Int
+  totalPages: Int
+}
+
+input Test2_where {
+  test2: Test2_test2_operator
+  updatedAt: Test2_updatedAt_operator
+  createdAt: Test2_createdAt_operator
+  id: Test2_id_operator
+  AND: [Test2_where_and]
+  OR: [Test2_where_or]
+}
+
+input Test2_test2_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Test2_updatedAt_operator {
+  equals: DateTime
+  not_equals: DateTime
+  greater_than_equal: DateTime
+  greater_than: DateTime
+  less_than_equal: DateTime
+  less_than: DateTime
+  like: DateTime
+  exists: Boolean
+}
+
+input Test2_createdAt_operator {
+  equals: DateTime
+  not_equals: DateTime
+  greater_than_equal: DateTime
+  greater_than: DateTime
+  less_than_equal: DateTime
+  less_than: DateTime
+  like: DateTime
+  exists: Boolean
+}
+
+input Test2_id_operator {
+  equals: String
+  not_equals: String
+  like: String
+  contains: String
+  in: [String]
+  not_in: [String]
+  all: [String]
+  exists: Boolean
+}
+
+input Test2_where_and {
+  test2: Test2_test2_operator
+  updatedAt: Test2_updatedAt_operator
+  createdAt: Test2_createdAt_operator
+  id: Test2_id_operator
+  AND: [Test2_where_and]
+  OR: [Test2_where_or]
+}
+
+input Test2_where_or {
+  test2: Test2_test2_operator
+  updatedAt: Test2_updatedAt_operator
+  createdAt: Test2_createdAt_operator
+  id: Test2_id_operator
+  AND: [Test2_where_and]
+  OR: [Test2_where_or]
+}
+
+type countTest2s {
+  totalDocs: Int
+}
+
+type test2DocAccess {
+  fields: Test2DocAccessFields
+  create: Test2CreateDocAccess
+  read: Test2ReadDocAccess
+  update: Test2UpdateDocAccess
+  delete: Test2DeleteDocAccess
+}
+
+type Test2DocAccessFields {
+  test2: Test2DocAccessFields_test2
+  updatedAt: Test2DocAccessFields_updatedAt
+  createdAt: Test2DocAccessFields_createdAt
+}
+
+type Test2DocAccessFields_test2 {
+  create: Test2DocAccessFields_test2_Create
+  read: Test2DocAccessFields_test2_Read
+  update: Test2DocAccessFields_test2_Update
+  delete: Test2DocAccessFields_test2_Delete
+}
+
+type Test2DocAccessFields_test2_Create {
+  permission: Boolean!
+}
+
+type Test2DocAccessFields_test2_Read {
+  permission: Boolean!
+}
+
+type Test2DocAccessFields_test2_Update {
+  permission: Boolean!
+}
+
+type Test2DocAccessFields_test2_Delete {
+  permission: Boolean!
+}
+
+type Test2DocAccessFields_updatedAt {
+  create: Test2DocAccessFields_updatedAt_Create
+  read: Test2DocAccessFields_updatedAt_Read
+  update: Test2DocAccessFields_updatedAt_Update
+  delete: Test2DocAccessFields_updatedAt_Delete
+}
+
+type Test2DocAccessFields_updatedAt_Create {
+  permission: Boolean!
+}
+
+type Test2DocAccessFields_updatedAt_Read {
+  permission: Boolean!
+}
+
+type Test2DocAccessFields_updatedAt_Update {
+  permission: Boolean!
+}
+
+type Test2DocAccessFields_updatedAt_Delete {
+  permission: Boolean!
+}
+
+type Test2DocAccessFields_createdAt {
+  create: Test2DocAccessFields_createdAt_Create
+  read: Test2DocAccessFields_createdAt_Read
+  update: Test2DocAccessFields_createdAt_Update
+  delete: Test2DocAccessFields_createdAt_Delete
+}
+
+type Test2DocAccessFields_createdAt_Create {
+  permission: Boolean!
+}
+
+type Test2DocAccessFields_createdAt_Read {
+  permission: Boolean!
+}
+
+type Test2DocAccessFields_createdAt_Update {
+  permission: Boolean!
+}
+
+type Test2DocAccessFields_createdAt_Delete {
+  permission: Boolean!
+}
+
+type Test2CreateDocAccess {
+  permission: Boolean!
+  where: JSONObject
+}
+
+type Test2ReadDocAccess {
+  permission: Boolean!
+  where: JSONObject
+}
+
+type Test2UpdateDocAccess {
+  permission: Boolean!
+  where: JSONObject
+}
+
+type Test2DeleteDocAccess {
+  permission: Boolean!
+  where: JSONObject
+}
+
 type User {
   id: String
   updatedAt: DateTime
@@ -33,11 +449,6 @@ type User {
   lockUntil: DateTime
   password: String!
 }
-
-"""
-A date-time string at UTC, such as 2007-12-03T10:15:30Z, compliant with the `date-time` format outlined in section 5.6 of the RFC 3339 profile of the ISO 8601 standard for representation of dates and times using the Gregorian calendar.
-"""
-scalar DateTime
 
 """
 A field whose value conforms to the standard internet email address format as specified in HTML Spec: https://html.spec.whatwg.org/multipage/input.html#valid-e-mail-address.
@@ -245,11 +656,6 @@ type UsersCreateDocAccess {
   where: JSONObject
 }
 
-"""
-The `JSONObject` scalar type represents JSON objects as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf).
-"""
-scalar JSONObject @specifiedBy(url: "http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf")
-
 type UsersReadDocAccess {
   permission: Boolean!
   where: JSONObject
@@ -273,6 +679,7 @@ type UsersUnlockDocAccess {
 type usersMe {
   collection: String
   exp: Int
+  strategy: String
   token: String
   user: User
 }
@@ -1349,10 +1756,218 @@ type PayloadPreferencesDeleteDocAccess {
 
 type Access {
   canAccessAdmin: Boolean!
+  test: testAccess
+  test2: test2Access
   users: usersAccess
   pages: pagesAccess
   media: mediaAccess
   payload_preferences: payload_preferencesAccess
+}
+
+type testAccess {
+  fields: TestFields
+  create: TestCreateAccess
+  read: TestReadAccess
+  update: TestUpdateAccess
+  delete: TestDeleteAccess
+}
+
+type TestFields {
+  test: TestFields_test
+  updatedAt: TestFields_updatedAt
+  createdAt: TestFields_createdAt
+}
+
+type TestFields_test {
+  create: TestFields_test_Create
+  read: TestFields_test_Read
+  update: TestFields_test_Update
+  delete: TestFields_test_Delete
+}
+
+type TestFields_test_Create {
+  permission: Boolean!
+}
+
+type TestFields_test_Read {
+  permission: Boolean!
+}
+
+type TestFields_test_Update {
+  permission: Boolean!
+}
+
+type TestFields_test_Delete {
+  permission: Boolean!
+}
+
+type TestFields_updatedAt {
+  create: TestFields_updatedAt_Create
+  read: TestFields_updatedAt_Read
+  update: TestFields_updatedAt_Update
+  delete: TestFields_updatedAt_Delete
+}
+
+type TestFields_updatedAt_Create {
+  permission: Boolean!
+}
+
+type TestFields_updatedAt_Read {
+  permission: Boolean!
+}
+
+type TestFields_updatedAt_Update {
+  permission: Boolean!
+}
+
+type TestFields_updatedAt_Delete {
+  permission: Boolean!
+}
+
+type TestFields_createdAt {
+  create: TestFields_createdAt_Create
+  read: TestFields_createdAt_Read
+  update: TestFields_createdAt_Update
+  delete: TestFields_createdAt_Delete
+}
+
+type TestFields_createdAt_Create {
+  permission: Boolean!
+}
+
+type TestFields_createdAt_Read {
+  permission: Boolean!
+}
+
+type TestFields_createdAt_Update {
+  permission: Boolean!
+}
+
+type TestFields_createdAt_Delete {
+  permission: Boolean!
+}
+
+type TestCreateAccess {
+  permission: Boolean!
+  where: JSONObject
+}
+
+type TestReadAccess {
+  permission: Boolean!
+  where: JSONObject
+}
+
+type TestUpdateAccess {
+  permission: Boolean!
+  where: JSONObject
+}
+
+type TestDeleteAccess {
+  permission: Boolean!
+  where: JSONObject
+}
+
+type test2Access {
+  fields: Test2Fields
+  create: Test2CreateAccess
+  read: Test2ReadAccess
+  update: Test2UpdateAccess
+  delete: Test2DeleteAccess
+}
+
+type Test2Fields {
+  test2: Test2Fields_test2
+  updatedAt: Test2Fields_updatedAt
+  createdAt: Test2Fields_createdAt
+}
+
+type Test2Fields_test2 {
+  create: Test2Fields_test2_Create
+  read: Test2Fields_test2_Read
+  update: Test2Fields_test2_Update
+  delete: Test2Fields_test2_Delete
+}
+
+type Test2Fields_test2_Create {
+  permission: Boolean!
+}
+
+type Test2Fields_test2_Read {
+  permission: Boolean!
+}
+
+type Test2Fields_test2_Update {
+  permission: Boolean!
+}
+
+type Test2Fields_test2_Delete {
+  permission: Boolean!
+}
+
+type Test2Fields_updatedAt {
+  create: Test2Fields_updatedAt_Create
+  read: Test2Fields_updatedAt_Read
+  update: Test2Fields_updatedAt_Update
+  delete: Test2Fields_updatedAt_Delete
+}
+
+type Test2Fields_updatedAt_Create {
+  permission: Boolean!
+}
+
+type Test2Fields_updatedAt_Read {
+  permission: Boolean!
+}
+
+type Test2Fields_updatedAt_Update {
+  permission: Boolean!
+}
+
+type Test2Fields_updatedAt_Delete {
+  permission: Boolean!
+}
+
+type Test2Fields_createdAt {
+  create: Test2Fields_createdAt_Create
+  read: Test2Fields_createdAt_Read
+  update: Test2Fields_createdAt_Update
+  delete: Test2Fields_createdAt_Delete
+}
+
+type Test2Fields_createdAt_Create {
+  permission: Boolean!
+}
+
+type Test2Fields_createdAt_Read {
+  permission: Boolean!
+}
+
+type Test2Fields_createdAt_Update {
+  permission: Boolean!
+}
+
+type Test2Fields_createdAt_Delete {
+  permission: Boolean!
+}
+
+type Test2CreateAccess {
+  permission: Boolean!
+  where: JSONObject
+}
+
+type Test2ReadAccess {
+  permission: Boolean!
+  where: JSONObject
+}
+
+type Test2UpdateAccess {
+  permission: Boolean!
+  where: JSONObject
+}
+
+type Test2DeleteAccess {
+  permission: Boolean!
+  where: JSONObject
 }
 
 type usersAccess {
@@ -2086,14 +2701,22 @@ type PayloadPreferencesDeleteAccess {
 }
 
 type Mutation {
+  createTest(data: mutationTestInput!, draft: Boolean): Test
+  updateTest(id: String!, autosave: Boolean, data: mutationTestUpdateInput!, draft: Boolean): Test
+  deleteTest(id: String!): Test
+  duplicateTest(id: String!): Test
+  createTest2(data: mutationTest2Input!, draft: Boolean): Test2
+  updateTest2(id: String!, autosave: Boolean, data: mutationTest2UpdateInput!, draft: Boolean): Test2
+  deleteTest2(id: String!): Test2
+  duplicateTest2(id: String!): Test2
   createUser(data: mutationUserInput!, draft: Boolean): User
   updateUser(id: String!, autosave: Boolean, data: mutationUserUpdateInput!, draft: Boolean): User
   deleteUser(id: String!): User
-  refreshTokenUser(token: String): usersRefreshedUser
+  refreshTokenUser: usersRefreshedUser
   logoutUser: String
   unlockUser(email: String!): Boolean!
-  loginUser(email: String, password: String): usersLoginResult
-  forgotPasswordUser(disableEmail: Boolean, email: String!, expiration: Int): Boolean!
+  loginUser(email: String!, password: String): usersLoginResult
+  forgotPasswordUser(disableEmail: Boolean, expiration: Int, email: String!): Boolean!
   resetPasswordUser(password: String, token: String): usersResetPassword
   verifyEmailUser(token: String): Boolean
   createPage(data: mutationPageInput!, draft: Boolean): Page
@@ -2107,6 +2730,30 @@ type Mutation {
   updatePayloadPreference(id: String!, autosave: Boolean, data: mutationPayloadPreferenceUpdateInput!, draft: Boolean): PayloadPreference
   deletePayloadPreference(id: String!): PayloadPreference
   duplicatePayloadPreference(id: String!): PayloadPreference
+}
+
+input mutationTestInput {
+  test: String
+  updatedAt: String
+  createdAt: String
+}
+
+input mutationTestUpdateInput {
+  test: String
+  updatedAt: String
+  createdAt: String
+}
+
+input mutationTest2Input {
+  test2: String
+  updatedAt: String
+  createdAt: String
+}
+
+input mutationTest2UpdateInput {
+  test2: String
+  updatedAt: String
+  createdAt: String
 }
 
 input mutationUserInput {
@@ -2138,6 +2785,7 @@ input mutationUserUpdateInput {
 type usersRefreshedUser {
   exp: Int
   refreshedToken: String
+  strategy: String
   user: usersJWT
 }
 
