@@ -16,28 +16,31 @@
     "generate:types": "payload generate:types",
     "generate:schema": "payload-graphql generate:schema",
     "standalone-script": "payload run ./src/scripts/standalone-script.ts",
-    "generate:importmap": "payload generate:importmap"
+    "generate:importmap": "payload generate:importmap",
+    "generate:importmap2": "payload generate:importmap --use-tsx",
+    "generate:importmap3": "payload-bun generate:importmap"
   },
   "engines": {
     "node": "^18.20.2 || >=20.9.0"
   },
   "dependencies": {
-    "@payloadcms/db-mongodb": "file:./payloadcms-db-mongodb-3.0.0-beta.77.tgz",
-    "@payloadcms/db-postgres": "file:./payloadcms-db-postgres-3.0.0-beta.77.tgz",
-    "@payloadcms/next": "file:./payloadcms-next-3.0.0-beta.77.tgz",
-    "@payloadcms/richtext-lexical": "file:./payloadcms-richtext-lexical-3.0.0-beta.77.tgz",
-    "@payloadcms/ui": "file:./payloadcms-ui-3.0.0-beta.77.tgz",
+    "@payloadcms/db-mongodb": "file:./payloadcms-db-mongodb-3.0.0-beta.80.tgz",
+    "@payloadcms/db-postgres": "file:./payloadcms-db-postgres-3.0.0-beta.80.tgz",
+    "@payloadcms/next": "file:./payloadcms-next-3.0.0-beta.80.tgz",
+    "@payloadcms/richtext-lexical": "file:./payloadcms-richtext-lexical-3.0.0-beta.80.tgz",
+    "@payloadcms/ui": "file:./payloadcms-ui-3.0.0-beta.80.tgz",
     "babel-plugin-react-compiler": "^0.0.0-experimental-592953e-20240517",
     "cross-env": "^7.0.3",
     "graphql": "^16.8.2",
     "next": "15.0.0-canary.104",
-    "payload": "file:./payload-3.0.0-beta.77.tgz",
+    "payload": "file:./payload-3.0.0-beta.80.tgz",
     "react": "19.0.0-rc-06d0b89e-20240801",
     "react-dom": "19.0.0-rc-06d0b89e-20240801",
-    "sharp": "0.32.6"
+    "sharp": "0.32.6",
+    "tsx": "^4.17.0"
   },
   "devDependencies": {
-    "@payloadcms/graphql": "file:./payloadcms-graphql-3.0.0-beta.77.tgz",
+    "@payloadcms/graphql": "file:./payloadcms-graphql-3.0.0-beta.80.tgz",
     "@types/node": "^20.14.9",
     "@types/react": "npm:types-react@19.0.0-rc.0",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.0",
@@ -49,22 +52,22 @@
     "overrides": {
       "@types/react": "npm:types-react@19.0.0-rc.0",
       "@types/react-dom": "npm:types-react-dom@19.0.0-rc.0",
-      "@payloadcms/db-mongodb": "file:./payloadcms-db-mongodb-3.0.0-beta.77.tgz",
-      "@payloadcms/db-postgres": "file:./payloadcms-db-postgres-3.0.0-beta.77.tgz",
-      "@payloadcms/next": "file:./payloadcms-next-3.0.0-beta.77.tgz",
-      "@payloadcms/richtext-lexical": "file:./payloadcms-richtext-lexical-3.0.0-beta.77.tgz",
-      "@payloadcms/ui": "file:./payloadcms-ui-3.0.0-beta.77.tgz",
-      "payload": "file:./payload-3.0.0-beta.77.tgz"
+      "@payloadcms/db-mongodb": "file:./payloadcms-db-mongodb-3.0.0-beta.80.tgz",
+      "@payloadcms/db-postgres": "file:./payloadcms-db-postgres-3.0.0-beta.80.tgz",
+      "@payloadcms/next": "file:./payloadcms-next-3.0.0-beta.80.tgz",
+      "@payloadcms/richtext-lexical": "file:./payloadcms-richtext-lexical-3.0.0-beta.80.tgz",
+      "@payloadcms/ui": "file:./payloadcms-ui-3.0.0-beta.80.tgz",
+      "payload": "file:./payload-3.0.0-beta.80.tgz"
     }
   },
   "overrides": {
     "@types/react": "npm:types-react@19.0.0-rc.0",
     "@types/react-dom": "npm:types-react-dom@19.0.0-rc.0",
-    "@payloadcms/db-mongodb": "file:./payloadcms-db-mongodb-3.0.0-beta.77.tgz",
-    "@payloadcms/db-postgres": "file:./payloadcms-db-postgres-3.0.0-beta.77.tgz",
-    "@payloadcms/next": "file:./payloadcms-next-3.0.0-beta.77.tgz",
-    "@payloadcms/richtext-lexical": "file:./payloadcms-richtext-lexical-3.0.0-beta.77.tgz",
-    "@payloadcms/ui": "file:./payloadcms-ui-3.0.0-beta.77.tgz",
-    "payload": "file:./payload-3.0.0-beta.77.tgz"
+    "@payloadcms/db-mongodb": "file:./payloadcms-db-mongodb-3.0.0-beta.80.tgz",
+    "@payloadcms/db-postgres": "file:./payloadcms-db-postgres-3.0.0-beta.80.tgz",
+    "@payloadcms/next": "file:./payloadcms-next-3.0.0-beta.80.tgz",
+    "@payloadcms/richtext-lexical": "file:./payloadcms-richtext-lexical-3.0.0-beta.80.tgz",
+    "@payloadcms/ui": "file:./payloadcms-ui-3.0.0-beta.80.tgz",
+    "payload": "file:./payload-3.0.0-beta.80.tgz"
   }
 }

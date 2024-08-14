@@ -1,4 +1,7 @@
 import { CollectionConfig } from 'payload'
+import { revalidateTag } from 'next/cache'
+
+console.log('revalidateTag', revalidateTag)
 
 export const TestCollection: CollectionConfig = {
   slug: 'test',
