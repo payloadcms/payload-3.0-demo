@@ -1,3 +1,10 @@
+# 🚨 Payload 3.0 is now stable. This repository has been archived.
+To set up a new project with 3.0 you can now use:
+```
+pnpx create-payload-app@latest
+```
+
+
 # Payload 3.0 Beta Demo
 
 This repo showcases a demo of the Payload 3.0 Beta running completely within Next.js.
