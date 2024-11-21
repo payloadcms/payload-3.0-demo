@@ -26,7 +26,7 @@ const Page = async () => {
             </Link>{' '}
             or in the{' '}
             <Link
-              href="https://discord.com/channels/967097582721572934/1215659716538273832"
+              href="https://discord.gg/damphACG"
               target="_blank"
             >
               dedicated channel in Discord
